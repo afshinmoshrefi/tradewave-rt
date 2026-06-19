@@ -1,0 +1,9 @@
+[Unit]
+Description=TradeWave RT - daily lifecycle pass (re-engage drifting members; Sunday weekend-study touch)
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/flask/tradewave_realtime
+EnvironmentFile=/etc/tradewave_realtime/secrets.env
+ExecStart=/home/flask/tradewave_realtime/.venv/bin/flask lifecycle-tick

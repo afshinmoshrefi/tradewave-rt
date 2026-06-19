@@ -1,0 +1,13 @@
+[Unit]
+Description=TradeWave RT - Anne-Marie coach Discord bot
+After=network-online.target
+
+[Service]
+WorkingDirectory=/home/flask/tradewave_realtime
+EnvironmentFile=/etc/tradewave_realtime/secrets.env
+ExecStart=/home/flask/tradewave_realtime/.venv/bin/python run_bot.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

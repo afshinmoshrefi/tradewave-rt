@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Account{% endblock %}
+{% block content %}
+<div class="app-head"><div><div class="eyebrow">Your account</div><h1 style="font-size:1.9rem">Account</h1></div></div>
+<div class="card" style="max-width:560px">
+  <div class="field"><label>Name</label><div>{{ current_user.display_name or ' - ' }}</div></div>
+  <div class="field"><label>Email</label><div>{{ current_user.email }}</div></div>
+  <div class="field"><label>Plan</label>
+    <div>
+      {% if subscription %}
+        {{ "Founding annual" if subscription.plan == "annual" else "Founding monthly" }}
+        <span class="badge cat">{{ subscription.status }}</span>
+        {% if subscription.current_period_end %}
+          <span class="small muted">renews {{ subscription.current_period_end.strftime('%b %-d, %Y') }}</span>
+        {% endif %}
+      {% else %}Early access (free){% endif %}
+      {% if current_user.is_staff %} · <span class="badge cat">Admin</span>{% endif %}
+    </div>
+  </div>
+  {% if just_subscribed %}<div class="flash">You're in - founding rate locked while you stay subscribed. Welcome.</div>{% endif %}
+  {% if billing_enabled %}
+  <div class="field"><label>Billing</label>
+    <div>
+      {% if subscription %}
+        <form method="post" action="{{ url_for('billing.portal') }}" style="display:inline">
+          <button class="btn btn-sm btn-ghost" type="submit">Manage billing</button>
+        </form>
+      {% else %}
+        <form method="post" action="{{ url_for('billing.checkout') }}" style="display:inline">
+          <input type="hidden" name="plan" value="monthly">
+          <button class="btn btn-sm btn-primary" type="submit">{{ plans.monthly.label }}</button>
+        </form>
+        <form method="post" action="{{ url_for('billing.checkout') }}" style="display:inline;margin-left:6px">
+          <input type="hidden" name="plan" value="annual">
+          <button class="btn btn-sm btn-ghost" type="submit">{{ plans.annual.label }}</button>
+        </form>
+        <div class="small muted" style="margin-top:6px">14-day money-back guarantee. Founding rate locked while continuously subscribed.</div>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+  <div class="field"><label>AI disclosure</label>
+    <div>{% if current_user.accepted_ai_disclaimer %}Acknowledged ✓{% else %}Not yet acknowledged{% endif %}</div></div>
+  <div class="field"><label>Trader profile</label>
+    <div><a href="{{ url_for('mentor.profile_page') }}">What your coach knows about you &rarr;</a></div></div>
+  <div class="field"><label>Your progress</label>
+    <div><a href="{{ url_for('main.progress') }}">Your month with the coach &rarr;</a></div></div>
+  <div class="field"><label>Discord</label>
+    <div>
+      {% if current_user.discord_user_id %}
+        Connected &#10003; <span class="small muted">your member role follows your account</span>
+      {% elif current_user.discord_link_code %}
+        Your link code: <b style="font-family:monospace">{{ current_user.discord_link_code }}</b>
+        <div class="small muted">In the server's #link-up channel, type:
+          <span style="font-family:monospace">!link {{ current_user.discord_link_code }}</span></div>
+      {% else %}
+        <form method="post" action="{{ url_for('main.discord_code') }}" style="display:inline">
+          <button class="btn btn-sm btn-ghost" type="submit">Connect Discord</button>
+        </form>
+      {% endif %}
+    </div>
+  </div>
+  <form method="post" action="{{ url_for('auth.logout') }}"><button class="btn btn-danger" type="submit">Sign out</button></form>
+</div>
+{% if current_user.is_staff %}
+<div class="card" style="max-width:560px;margin-top:14px">
+  <h3 style="margin-bottom:8px">Anne-Marie tools</h3>
+  <p class="muted small" style="margin-bottom:12px">Shape the coach's knowledge and post to the member feed.</p>
+  <a class="btn btn-primary btn-sm" href="{{ url_for('admin.dashboard') }}">Open admin →</a>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,307 @@
+{% extends "base.html" %}
+{% block title %}Anne-Marie Baiynd's map, method, and AI mentor{% endblock %}
+{% block content %}
+
+{# ---------------- HERO ---------------- #}
+<section class="hero">
+  <div class="hero-inner">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="pill">Built with Anne-Marie Baiynd · Free during early access</span>
+      <h1>Stop trading <span class="grad">alone</span></h1>
+      <p class="sub">
+        Every session, <b>Anne-Marie Baiynd's</b> level map is computed her way and waiting
+        for you before the bell: the master candles, the direction read, the levels that
+        matter. And an AI mentor trained on her method starts by asking where <i>you</i> are,
+        builds your plan, and checks in on you every trading day. A map for the market and a
+        steady hand for you, from the neuroscience researcher turned futures trader who wrote
+        McGraw-Hill's <i>The Trading Book</i>.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="{{ url_for('auth.signup') }}">Meet your mentor free</a>
+        <a class="btn btn-ghost" href="#demo">See how the coach responds</a>
+      </div>
+      <div class="cta-micro">No credit card. It opens with six questions about you, then builds your plan.</div>
+      <div class="disclosure-micro">
+        An AI trained on her strategy, not Anne-Marie herself. Educational only, never buy or
+        sell calls. Trading futures carries substantial risk of loss.
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img class="hero-portrait"
+           src="{{ url_for('static', filename='img/anne-marie-baiynd.png') }}"
+           alt="Anne-Marie Baiynd, futures trader and author of The Trading Book">
+    </div>
+  </div>
+  </div>
+</section>
+
+{# ---------------- TRUST STRIP ---------------- #}
+<section class="trust">
+  <div class="trust-lead">Why listen to her</div>
+  <div class="chip-row">
+    <span class="trust-chip"><b>Author</b> of <i>The Trading Book</i> (McGraw-Hill, 2011)</span>
+    <span class="trust-chip"><b>Former neuroscience researcher</b> and applied mathematician</span>
+    <span class="trust-chip"><b>Full-time futures trader</b> since 2005</span>
+  </div>
+  <div class="appeared">Seen on TD Ameritrade Network · Benzinga · MoneyShow · TradersExpo · CMT Association</div>
+</section>
+
+{# ---------------- PROBLEM ---------------- #}
+<section class="section" id="problem">
+  <div class="eyebrow">The real problem</div>
+  <h2>It was never the setups. It was the moment after</h2>
+  <p class="muted lead">You can read a chart. That stopped being the problem a long time ago. You wait,
+  you take the entry, the plan is clean for about ninety seconds. Then the candle moves against you,
+  your stomach drops, and the part of your brain that knows the rules goes quiet. A backtest cannot
+  reach you at 2:47 in the afternoon. A coach can. That is the entire reason this exists.</p>
+  <div class="grid grid-2 tight">
+    <div class="x-item">You revenge-trade a red number instead of letting the day end red</div>
+    <div class="x-item">You size up after a loss to "make it back faster"</div>
+    <div class="x-item">You chase the entry you already missed instead of waiting for the next one</div>
+    <div class="x-item">You move the stop "just this once," then again</div>
+    <div class="x-item">You overtrade out of boredom on a day with no clean setup</div>
+    <div class="x-item">You hand back a green week in twenty minutes and cannot explain why</div>
+  </div>
+</section>
+
+{# ---------------- DEMO ---------------- #}
+<section class="section" id="demo">
+  <div class="center" style="margin-bottom:22px">
+    <div class="eyebrow">See it before you sign up</div>
+    <h2>A coach that will not give you a hot tip, on purpose</h2>
+    <p class="muted" style="max-width:560px;margin:8px auto 0">This is the kind of exchange it is built for.
+    It is trained to teach you to read the market and hold your rules, and it will never tell you what to buy or sell.</p>
+  </div>
+  <div class="mock wide">
+    <div class="mock-head">
+      <div class="coach-ava sm">AM</div>
+      <div><div class="who">Anne-Marie <span class="ai-tag">AI coach</span></div>
+      <div class="small muted">educational only · no buy or sell calls</div></div>
+    </div>
+    <div class="mock-body">
+      <div class="mock-bubble user">I just took a loss on NQ and I want to get it right back. Tell me the trade.</div>
+      <div class="mock-bubble coach">I'm not going to hand you a trade, and a moment like this is exactly when you would regret it if I did. So let's slow down. Are we still trading with the higher-timeframe trend, or are you about to fight it to feel better?</div>
+      <div class="mock-bubble coach">Is there a clean level for a limit, or are you about to chase a candle that already left? A zero-trade day is a win, and the market opens again tomorrow.</div>
+      <div class="mock-bubble coach">Sit on your hands for the next two bars and tell me what you actually see, not what you want to see.</div>
+    </div>
+  </div>
+</section>
+
+{# ---------------- WHAT YOU GET ---------------- #}
+<section class="section" id="what-you-get">
+  <div class="center" style="margin-bottom:24px">
+    <div class="eyebrow">What you get</div>
+    <h2>Four things free today, and the AM Map with membership</h2>
+    <p class="muted">One login, no credit card to start. No upsell wall between you and the core of it.</p>
+  </div>
+  <div class="grid grid-2">
+    <div class="card feat">
+      <div class="ic">&#128506;&#65039;</div>
+      <h3>The Daily Level Map</h3>
+      <p>Her structural levels for the ES and NQ, computed her way every session: the four master
+      candles, the direction read, and the levels from the last two days that still matter. On
+      your Today page, ready before you are.</p>
+    </div>
+    <div class="card feat">
+      <div class="ic">&#129309;</div>
+      <h3>A mentor that knows you</h3>
+      <p>It starts the way she would: where are you in your trading, what do you want, what trips
+      you up? Then it assigns your lessons, remembers your story, and checks in every trading
+      day: what is the plan, and did you follow it? <span class="ai-tag">&#129302; AI coach</span></p>
+    </div>
+    <div class="card feat">
+      <div class="ic">📚</div>
+      <h3>The Method, step by step</h3>
+      <p>Her process in five stages: read the day, the levels, permission to enter, manage the
+      trade, the trader's mind. Forty lessons in her own words, in teaching order, with the
+      coach one tap away on every one.</p>
+    </div>
+    <div class="card feat">
+      <div class="ic">📰</div>
+      <h3>Her notes, the moment she posts them</h3>
+      <p>When Anne-Marie sees something worth saying about the day, it lands at the top of your
+      Today page that minute, and your coach can talk it through with you.</p>
+    </div>
+    <div class="card feat">
+      <div class="ic"><img src="{{ url_for('static', filename='img/ninjatrader.png') }}"
+           alt="NinjaTrader" style="width:24px;height:24px"></div>
+      <h3>The AM Map, on your own chart <span class="ai-tag">with membership</span></h3>
+      <p>Our NinjaTrader indicator draws her whole map on your chart from your own data feed:
+      the master candle boxes, the two-day levels, the trend gate, and the MOC check, updating
+      live as each candle closes. <b>And coming for founding members: turn it on, and it hands
+      your completed trades to your coach for a debrief against her levels.</b></p>
+    </div>
+  </div>
+  <div class="catch-chip">Free during early access. No card on file, no hidden trial. When founding membership opens, early members get the founding rate first.</div>
+</section>
+
+{# ---------------- THE INDICATOR ---------------- #}
+<section class="section" id="indicator">
+  <div class="center" style="margin-bottom:24px">
+    <div class="eyebrow">The AM Map, up close</div>
+    <h2>Her levels, live on your NinjaTrader chart</h2>
+    <p class="muted" style="max-width:640px;margin:8px auto 0">The AM Map is the TradeWave
+    Realtime indicator for NinjaTrader. It runs Anne-Marie's method right on your chart,
+    computed from your own data feed. No flipping to a website mid-session, no copying numbers
+    by hand: the map is just there, updating the moment each master candle closes.</p>
+  </div>
+  <div class="grid grid-2">
+    <div class="card feat">
+      <div class="ic">&#128197;</div>
+      <h3>The master candles, boxed live</h3>
+      <p>Globex open, Europe open, US open, and the institutional close draw as boxes as they
+      complete, with the 1:30 watch candle marked. Today plus the prior two sessions stay on
+      the chart, exactly like her two-day rule.</p>
+    </div>
+    <div class="card feat">
+      <div class="ic">&#128678;</div>
+      <h3>The trend gate and the MOC check</h3>
+      <p>The 30-minute 50/200 trend gate and her market-on-close volume validation are computed
+      on the chart, so "is today even a day to trade" is answered before you ask.</p>
+    </div>
+  </div>
+  <div class="catch-chip">The AM Map is included with membership when founding opens.
+  NinjaTrader first, more platforms planned. It computes from your own feed, so it runs in
+  real time on any instrument you chart.</div>
+  <p class="muted small center" style="margin-top:14px;max-width:640px;margin-left:auto;margin-right:auto">
+  Coming for founding members: flip one switch and the AM Map sends your completed trades to
+  your coach, which debriefs your day against her levels - was the entry at a map level, did
+  you wait for the fade or chase, did you exit level to level, was the size right for the day.
+  Off by default and always your call. It only ever shares trades you have already closed:
+  your coach never sees a live position, by design.</p>
+</section>
+
+{# ---------------- HOW IT WORKS ---------------- #}
+<section class="section" id="how">
+  <div class="eyebrow">How it works</div>
+  <h2>From here to your first coaching conversation in under a minute</h2>
+  <div class="steps">
+    <div class="step"><div class="step-n">1</div><div><b>Create your free account.</b> Email and a password. No credit card.</div></div>
+    <div class="step"><div class="step-n">2</div><div><b>Confirm you understand the coach.</b> It is an AI trained on her method, educational only, and never gives buy or sell calls.</div></div>
+    <div class="step"><div class="step-n">3</div><div><b>Start talking.</b> Ask it anything: a setup, a fear, a habit you want to break. Read the Strategy Library alongside it whenever you want depth.</div></div>
+  </div>
+</section>
+
+{# ---------------- WHO IS ANNE-MARIE ---------------- #}
+<section class="section" id="who-she">
+  <div class="card who-card">
+    <div class="who-photo">
+      <img src="{{ url_for('static', filename='img/anne-marie-baiynd.png') }}" alt="Anne-Marie Baiynd, trader and author of The Trading Book">
+    </div>
+    <div class="who-body">
+      <div class="eyebrow">Who you're learning from</div>
+      <h2>She came up through neuroscience, not a trading desk</h2>
+      <p class="muted">In 1994 Anne-Marie Baiynd was researching vagus nerve stimulation for epilepsy,
+      with a background in applied mathematics and graduate work in statistics. In 2005 she sat in on a
+      technical-trading seminar, got hooked, and made the mistake she now warns everyone about: she
+      traded real money before she was ready, and she lost for roughly eighteen months. Instead of
+      quitting, she did the scientist thing. She switched to paper trading and studied price tick by
+      tick until she could see the market's rhythm. Out of that came a repeatable, rules-based method,
+      her Market Positioning System, and a framework for managing the fear and FOMO that wreck most
+      traders. She wrote it down, McGraw-Hill published it, and today she trades live almost every
+      morning and teaches the discipline that took her years to earn.</p>
+      <div class="cred-bullets">
+        <div>📕 Author of <i>The Trading Book</i> (McGraw-Hill, 2011) and <i>The Trading Book Course</i> (2013)</div>
+        <div>🧠 Former neuroscience researcher with a background in applied mathematics and statistics</div>
+        <div>📈 Full-time futures trader since 2005 (ES, NQ, CL, GC, RTY); CEO of TheTradingBook.com</div>
+        <div>🎓 Presenter for the CMT Association; runs a live members' futures trading room at TheTradingBook.com</div>
+        <div>🎙️ Featured on the TD Ameritrade Network and Benzinga; speaker at MoneyShow and TradersExpo</div>
+        <div>📖 Featured in <i>Traders at Work</i> and in StockTwits founder Howard Lindzon's <i>The StockTwits Edge</i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ---------------- SOCIAL PROOF (her own words) ---------------- #}
+<section class="section">
+  <div class="center" style="margin-bottom:18px"><div class="eyebrow">In her own words</div>
+    <h2>The discipline this coach is built to drill</h2></div>
+  <div class="grid grid-3">
+    <div class="quote">"The ability to simply wait is such an important skill for a trader to acquire." <span class="muted small">She frames doing nothing as a trader's superpower.</span></div>
+    <div class="quote">"You've got to keep your mind on lockdown and work within a rigid set of rules." <span class="muted small">Stocks &amp; Commodities, 2011</span></div>
+    <div class="quote">"I taught myself. I watched price. I watched momentum." <span class="muted small">On how she learned, after 18 months of losses.</span></div>
+  </div>
+  <p class="muted small center" style="margin-top:16px;max-width:620px;margin-left:auto;margin-right:auto">
+    We will never post win rates or P&amp;L screenshots. What we will show, as we grow: real, verifiable
+    quotes from early members about their own discipline. Nothing invented.
+  </p>
+</section>
+
+{# ---------------- HONEST BY DESIGN ---------------- #}
+<section class="section" id="honest">
+  <div class="card">
+    <div class="eyebrow">Honest by design</div>
+    <h2>In a category full of alerts and pumps, the restraint is the point</h2>
+    <div class="grid grid-2" style="margin-top:14px">
+      <div>
+        <p class="muted">The coach is an AI trained on Anne-Marie Baiynd's strategy and trading
+        psychology. It is not Anne-Marie herself, and it will never message you pretending to be her.
+        It is educational only: not financial advice and not a signal service. It teaches you to read
+        the market and manage yourself, and it will not tell you what to trade, even when you ask. You
+        confirm you understand all of this before your first chat.</p>
+      </div>
+      <div>
+        <div class="disclosure"><span>🤝</span><div>
+          <span class="b">Who is behind this:</span> TradeWave Realtime is built by TradeWave
+          (Tara Data Research LLC) in partnership with Anne-Marie Baiynd, who approved an AI coach
+          trained on her method. This is not a third party scraping her book.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ---------------- FAQ ---------------- #}
+<section class="section" id="faq">
+  <div class="center" style="margin-bottom:18px"><div class="eyebrow">Straight answers</div><h2>Questions traders ask first</h2></div>
+  <div class="faq">
+    <details><summary>Is it really free? What's the catch?</summary>
+      <p>Yes, the account is free during early access and no credit card is required to start. You get
+      the AI coach, the Strategy Library, and her posts at no cost while we finish building. When
+      founding membership opens, early-access members hear first and get the founding rate, locked in
+      for as long as they stay subscribed. There is no hidden trial that bills you and no card on file
+      to forget about.</p></details>
+    <details><summary>Is this a signal service or alerts?</summary>
+      <p>No. The coach is educational only. It teaches you to read the market and manage your own
+      discipline, and it is built to never tell you what to buy or sell, even when you ask. If you want
+      someone to hand you trades, this is honestly the wrong product.</p></details>
+    <details><summary>Is this actually Anne-Marie messaging me?</summary>
+      <p>No, and we will never pretend it is. The coach is an AI trained on Anne-Marie Baiynd's
+      documented method and trading psychology. It is clearly labeled as software, not the real person.
+      Anne-Marie Baiynd is real and her method is real; the coach is a tool trained on that method.</p></details>
+    <details><summary>Who is Anne-Marie Baiynd, and why should I trust her?</summary>
+      <p>She is a former neuroscience researcher and applied mathematician who became a full-time
+      futures trader in 2005, wrote McGraw-Hill's <i>The Trading Book</i>, presents for the CMT
+      Association, and still trades futures live every session. An independent trader
+      and educator with a clean, non-hype reputation, not a guru selling a dream.</p></details>
+    <details><summary>Does it work with NinjaTrader?</summary>
+      <p>Yes. The AM Map, our NinjaTrader indicator, draws her full map on your own chart,
+      computed from your own data feed: the master candle boxes, the two-day levels, the trend
+      gate, and the market-on-close validation. It is included with membership when founding
+      opens, and more platforms are planned after NinjaTrader.</p></details>
+    <details><summary>Is this financial advice?</summary>
+      <p>No. Nothing here is financial advice, and nothing the coach says is a recommendation to buy or
+      sell any instrument. It is educational. Trading futures carries substantial risk of loss. You are
+      responsible for your own decisions and should consult a licensed professional for personal advice.</p></details>
+    <details><summary>I trade futures intraday and struggle with discipline. Is this for me?</summary>
+      <p>Then yes, this was built for you. It is aimed at active intraday futures and day traders (ES,
+      NQ, CL, GC, RTY) who can read a chart but keep breaking their own rules. If discipline, fear, and
+      FOMO are the gap between you and consistency, that is precisely the gap the coach is trained on.</p></details>
+  </div>
+</section>
+
+{# ---------------- FINAL CTA ---------------- #}
+<section class="section center">
+  <div class="card final-cta">
+    <h2>Slow the game down. Trade with structure</h2>
+    <p class="muted" style="max-width:560px;margin:10px auto 20px">A zero-trade day is a win. Let the
+    level come to you. You don't have to learn that alone at 2pm with your finger over the buy button
+    anymore. Your free account includes the Anne-Marie AI coach, the full Strategy Library, and her
+    ongoing posts.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('auth.signup') }}">Start coaching free</a>
+    <div class="cta-micro">No credit card. About 30 seconds to your first chat.</div>
+    <div class="disclosure-micro">An AI trained on her method, educational only. It will never give a buy or sell call. © 2026 Tara Data Research LLC.</div>
+  </div>
+</section>
+{% endblock %}

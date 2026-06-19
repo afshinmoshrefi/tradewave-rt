@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Trade debrief{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div><div class="eyebrow">Educational debrief - past trades only</div>
+  <h1 style="font-size:1.9rem">Your trades</h1></div>
+</div>
+<p class="muted" style="max-width:640px">Log a trade you already closed and your coach grades it against
+that day's map - was the entry at a level, with the trend gate, did you exit level to level. Process, not
+profit: no dollar amounts, ever. This is how you find what is actually leaking.</p>
+{% if not paid %}
+<p class="muted small" style="max-width:640px;margin-top:6px">
+  Free plan: one debrief a week, with the structural read. A subscription unlocks unlimited
+  debriefs and the exact map levels behind every grade.
+  {% if next_free %}<br><b>Your next free debrief unlocks {{ next_free.strftime('%b %-d') }}.</b>{% endif %}
+</p>
+{% endif %}
+
+<div class="card" style="max-width:640px;margin-top:14px">
+  <h3 style="margin-bottom:10px">Log a completed trade</h3>
+  <form method="post" action="{{ url_for('trades.log_trade') }}">
+    <div class="grid grid-2">
+      <div class="field"><label>Instrument</label>
+        <select name="instrument">
+          <option>ES</option><option>NQ</option><option>MES</option><option>MNQ</option>
+          <option>CL</option><option>GC</option></select></div>
+      <div class="field"><label>Direction</label>
+        <select name="side"><option value="long">Long</option><option value="short">Short</option></select></div>
+      <div class="field"><label>Entry price</label>
+        <input type="text" name="entry_price" inputmode="decimal" placeholder="e.g. 7341.50"></div>
+      <div class="field"><label>Exit price</label>
+        <input type="text" name="exit_price" inputmode="decimal" placeholder="e.g. 7349.00"></div>
+      <div class="field"><label>Size (no dollars)</label>
+        <select name="size_bucket">
+          <option value="smallest">Smallest / micro</option>
+          <option value="small">Small</option>
+          <option value="normal" selected>Normal</option>
+          <option value="large">Large for me</option></select></div>
+      <div class="field"><label>Session date</label>
+        <input type="date" name="session_date"></div>
+    </div>
+    <div class="field"><label>What happened? <span class="muted small">(your words - no account size or dollars)</span></label>
+      <textarea name="note" rows="2" placeholder="e.g. saw it stall at the Europe low and faded it, got nervous and took a small win early"></textarea></div>
+    <button class="btn btn-primary" type="submit">Log it and debrief with my coach &rarr;</button>
+  </form>
+</div>
+
+<h3 style="margin:22px 0 8px">Past trades</h3>
+{% if not trades %}<p class="muted small">Nothing logged yet. Your first debrief is where the patterns start to show.</p>{% endif %}
+{% for t in trades %}
+<div class="card" style="max-width:640px;margin-bottom:10px">
+  <div style="display:flex;justify-content:space-between;align-items:baseline">
+    <b>{{ t.instrument }} {{ t.side }}</b>
+    <span class="small muted">{{ t.session_date.strftime('%b %-d') }} &middot; size {{ t.size_bucket }}</span>
+  </div>
+  <div class="small muted" style="margin:4px 0">{{ grade_summary(t.grade) }}</div>
+  {% if paid and t.grade.notes %}
+  <ul class="small" style="margin:4px 0 0;padding-left:18px">
+    {% for n in t.grade.notes %}<li>{{ n }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+  {% if t.note %}<div class="small">{{ t.note }}</div>{% endif %}
+  <a class="small" href="{{ url_for('chat.coach') }}?q=Debrief my {{ t.instrument }} {{ t.side }} trade from {{ t.session_date }}">Talk it through with your coach &rarr;</a>
+</div>
+{% endfor %}
+{% endblock %}

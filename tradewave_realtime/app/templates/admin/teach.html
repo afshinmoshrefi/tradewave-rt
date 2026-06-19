@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}Teach the coach{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div>
+    <div class="eyebrow">15 minutes that reach every member</div>
+    <h1 style="font-size:1.9rem">Teach the coach</h1>
+  </div>
+</div>
+<p class="muted" style="max-width:640px">Talk (or type) an answer the way you'd teach it.
+The draft keeps your words. One tap and every member's coach knows it - that minute.</p>
+
+{% if not draft %}
+<form method="post" class="card" style="max-width:680px;margin-top:14px">
+  <input type="hidden" name="flag_id" value="{{ flag_id }}">
+  <div class="field">
+    <label for="topic">What's the topic? <span class="muted small">(optional)</span></label>
+    <input type="text" id="topic" name="topic" value="{{ topic }}"
+           placeholder="e.g. How I set stops when the 3:30 candle is huge">
+  </div>
+  <div class="field">
+    <label for="answer">Her answer - speak or type</label>
+    <textarea id="answer" name="answer" rows="8"
+      placeholder="Tap the mic and just talk, the way you'd explain it to a trader...">{{ answer }}</textarea>
+    <div class="btn-row" style="margin-top:8px">
+      <button type="button" class="btn btn-sm btn-ghost" id="micBtn">&#127908; Start dictation</button>
+      <span class="small muted" id="micStatus"></span>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Draft the lesson &rarr;</button>
+</form>
+{% else %}
+<form method="post" action="{{ url_for('admin.teach_publish') }}" class="card" style="max-width:680px;margin-top:14px">
+  <input type="hidden" name="flag_id" value="{{ flag_id }}">
+  <div class="eyebrow">Draft - check it captures what she said</div>
+  <div class="field"><label>Title</label>
+    <input type="text" name="title" value="{{ draft.title }}"></div>
+  <div class="grid grid-2">
+    <div class="field"><label>Category</label>
+      <select name="category">
+        {% for c in ["method","psychology","rules","glossary"] %}
+        <option value="{{ c }}" {{ 'selected' if draft.category==c }}>{{ c }}</option>
+        {% endfor %}
+      </select></div>
+    <div class="field"><label>Curriculum stage (0 = reference)</label>
+      <input type="number" name="stage" min="0" max="5" value="{{ draft.stage }}"></div>
+  </div>
+  <div class="field"><label>Lesson</label>
+    <textarea name="content" rows="10">{{ draft.content }}</textarea></div>
+  <div class="field"><label>Her verbatim words <span class="muted small">(kept for provenance)</span></label>
+    <textarea name="source_quote" rows="4" readonly
+      style="opacity:.7">{{ draft.source_quote }}</textarea></div>
+  <div class="btn-row">
+    <button class="btn btn-primary" type="submit">Publish as her words - goes live now</button>
+    <a class="btn btn-ghost" href="{{ url_for('admin.teach') }}">Start over</a>
+  </div>
+</form>
+{% endif %}
+{% endblock %}
+{% block scripts %}
+<script>
+(function () {
+  const btn = document.getElementById('micBtn');
+  if (!btn) return;
+  const status = document.getElementById('micStatus');
+  const area = document.getElementById('answer');
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) { btn.style.display = 'none'; status.textContent = 'Dictation needs Chrome/Edge - typing works everywhere.'; return; }
+  let rec = null, listening = false;
+  btn.addEventListener('click', () => {
+    if (listening) { rec.stop(); return; }
+    rec = new SR();
+    rec.continuous = true; rec.interimResults = false; rec.lang = 'en-US';
+    rec.onresult = (e) => {
+      for (let i = e.resultIndex; i < e.results.length; i++) {
+        if (e.results[i].isFinal) {
+          area.value = (area.value ? area.value + ' ' : '') + e.results[i][0].transcript.trim();
+        }
+      }
+    };
+    rec.onend = () => { listening = false; btn.innerHTML = '&#127908; Start dictation'; status.textContent = ''; };
+    rec.onerror = () => { status.textContent = 'Mic error - check permission.'; };
+    rec.start(); listening = true;
+    btn.innerHTML = '&#9209;&#65039; Stop'; status.textContent = 'Listening...';
+  });
+})();
+</script>
+{% endblock %}

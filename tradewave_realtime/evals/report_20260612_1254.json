@@ -1,0 +1,47 @@
+{
+  "ran_at": "2026-06-12T12:54:06.639302",
+  "suites": {
+    "today": [
+      {
+        "case": "What are today's ES levels on the map?",
+        "ok": true,
+        "hits": [
+          "7247",
+          "7266",
+          "7275.25",
+          "7283",
+          "7299",
+          "7300.75",
+          "7326.5",
+          "7328.75",
+          "7335.25",
+          "7335.5",
+          "7337.25",
+          "7342",
+          "7350.75",
+          "7367.75",
+          "7374.25",
+          "7386.5",
+          "7387.75",
+          "7390.5",
+          "7392.25",
+          "7392.5",
+          "7398.25",
+          "7412",
+          "7412.5",
+          "7420"
+        ],
+        "invented": [],
+        "reply": "Here are the ES levels from today's map, laid out cleanly for your pre-open work:\n\n**Today's candles (live captures, approximate until tonight's reconciliation):**\n- 7412.50 - Globex open high\n- 7412.00 - Europe open high\n- 7398.25 - Globex open low\n- 7392.25 - Europe open low\n\n**Prior sessions for "
+      },
+      {
+        "case": "Walk me through today's NQ read in two s",
+        "ok": true,
+        "verdict_match": true,
+        "gate_match": true,
+        "invented": [],
+        "reply": "Here is the two-sentence read:\n\nThe 30-minute SMA gate is not aligned on NQ right now (50 rising, 200 rising but the stack is not confirmed clean as of the last read), so her rule is stand down or smallest possible size - micros only if you trade at all. The candles are nested and sideways, meaning "
+      }
+    ]
+  }
+}

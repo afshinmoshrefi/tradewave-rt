@@ -1,0 +1,55 @@
+#Statistical Hybrid: 30-min IB & Statistical Dashboard
+# Strategy: Option 2 - Visual Confirmation & Manual Scaling
+
+
+input probability_threshold = 65;
+
+# --- PART 1: DASHBOARD LABELS (TOP OF CHART) ---
+def dow = GetDayOfWeek(GetYYYYMMDD());
+def current_stat = if dow == 1 then 52 
+                   else if dow == 2 then 78 
+                   else if dow == 3 then 61 
+                   else if dow == 4 then 45 
+                   else 71;
+
+def is_high_prob = current_stat >= probability_threshold;
+
+AddLabel(yes, " DAY: " + (if dow == 1 then "Mon" else if dow == 2 then "Tue" else if dow == 3 then "Wed" else if dow == 4 then "Thu" else "Fri"), Color.WHITE);
+AddLabel(yes, " STAT PROB: " + current_stat + "% ", if is_high_prob then Color.GREEN else Color.YELLOW);
+AddLabel(yes, " THRESHOLD: " + probability_threshold + "% ", Color.GRAY);
+AddLabel(yes, if is_high_prob then " SIZE: FULL " else " SIZE: REDUCED ", if is_high_prob then Color.CYAN else Color.ORANGE);
+
+# --- PART 2: 30-MIN STRUCTURAL ANCHOR (0930-1000) ---
+def is_ib_period = SecondsFromTime(0930) >= 0 and SecondsTillTime(1000) > 0;
+def is_after_ib = SecondsFromTime(1000) >= 0;
+
+rec ib_high = if SecondsFromTime(0930) == 0 then high 
+              else if is_ib_period then Max(high, ib_high[1]) 
+              else ib_high[1];
+
+rec ib_low = if SecondsFromTime(0930) == 0 then low 
+             else if is_ib_period then Min(low, ib_low[1]) 
+             else ib_low[1];
+
+# Calculate the 50% Midpoint
+def ib_mid = (ib_high + ib_low) / 2;
+
+# Plotting the Anchor Levels
+plot IBH = if is_after_ib then ib_high else Double.NaN;
+plot IBL = if is_after_ib then ib_low else Double.NaN;
+plot Midpoint = if is_after_ib then ib_mid else Double.NaN;
+
+# Formatting
+IBH.SetDefaultColor(Color.CYAN);
+IBL.SetDefaultColor(Color.CYAN);
+Midpoint.SetDefaultColor(Color.GRAY);
+
+IBH.SetPaintingStrategy(PaintingStrategy.HORIZONTAL);
+IBL.SetPaintingStrategy(PaintingStrategy.HORIZONTAL);
+Midpoint.SetPaintingStrategy(PaintingStrategy.HORIZONTAL);
+Midpoint.SetStyle(Curve.SHORT_DASH); # Dashing the line to distinguish it from the boundaries
+
+# --- PART 3: THE SCALP TRIGGER (SPRING LOGIC) ---
+# Triggers if price goes below IBL then closes back inside
+def spring_long = close[1] < IBL and close > IBL;
+Alert(spring_long, "MES COUNTER-TREND SPRING: CHECK DASHBOARD FOR SIZE", Alert.BAR, Sound.Chimes);

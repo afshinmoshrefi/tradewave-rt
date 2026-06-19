@@ -1,0 +1,65 @@
+# ===== TradeWave Realtime (.177) disaster-recovery repo =====
+# Private repo. Secrets are kept OUT of git (GitHub push protection blocks them and
+# we don't want credentials in a remote): secrets.env, the Cloudflare tunnel credential,
+# and cert.pem live ONLY in the off-box tarball (and at /etc + /root on the box).
+# Committed here: all code/docs/config, the systemd units, cloudflared config.yml
+# (non-secret ingress), the SQLite DB snapshot + nightly history, and RESTORE.md.
+
+# --- Python virtualenvs (317M, rebuilt from _system/requirements.lock) ---
+.venv/
+**/.venv/
+venv/
+env/
+
+# --- Python bytecode / caches ---
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# --- SQLite transient sidecars ---
+*.db-wal
+*.db-shm
+*.db-journal
+
+# --- Live/working copies: the committed authoritative DB lives under _system/data ---
+tradewave_realtime/data/*.db
+/backups/
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.tmp
+
+# --- Claude / agent transcript stores (archived off-box, not in this repo) ---
+.claude/
+**/.claude/
+
+# --- Accidental junk dir at repo root (md5-dup of the agreement .docx) ---
+/1/
+
+# --- SECRETS: never track. These live in the off-box tarball, not in git. ---
+secrets.env
+secrets.env.*
+_system/secrets/
+# Cloudflare tunnel credential (uuid .json) + origin cert
+_system/cloudflared/*.json
+_system/cloudflared/cert.pem
+*.pem
+# (config.yml under _system/cloudflared IS tracked - it has no secret)
+
+# --- Host key material that must never be tracked ---
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+.gnupg/
+secring.*

@@ -1,0 +1,531 @@
+0:00But how do you know which of those days we
+0:077 secondsactually have? And so one my note was was, hey, let's show a day that's sideways
+0:1515 secondsand then let's show a day that's clear trending up or
+0:2222 secondsclear trending down. And then what we do is just go boilerplate from those ranges. So today
+0:3131 secondsis a perfect example of it's sideways
+0:3838 secondswhen it uh when it opens it's very sideways for the day. Let me let me get to my Hang on.
+0:5858 secondsUm, okay. Where is thinker swim?
+1:081 minute, 8 secondsCan't seem to find it.
+1:121 minute, 12 secondsHuh? It's weird. Okay, so hang on. Well, let me what I need to do
+1:211 minute, 21 secondsis not make this over complicated and then what we can do is let claw define the clean risk parameters for us.
+1:311 minute, 31 secondsOkay?
+1:311 minute, 31 secondsYou don't need to make it perfect because remember something the nuances is already taken care of. That's the machine learning.
+1:411 minute, 41 secondsOkay? So, we need to give it the rule.
+1:451 minute, 45 secondsYes. So, I'm what that's what I'm trying to do. I'm trying to go what's the clear because see a lot of times I look at
+1:531 minute, 53 secondsthings and I go okay from a discretionary perspective I I think I can take the trade I need to be careful on what I'm doing but clearly
+2:032 minutes, 3 secondsdiscretionary right so let me allow me to share if I may and
+2:112 minutes, 11 secondsthen let's try and answer this question you get the question in the frame and then I'm going to answer it again.
+2:212 minutes, 21 secondsSo,
+2:232 minutes, 23 secondslet me move these pivots out of the way settings.
+2:282 minutes, 28 secondsHide the pivot and then I'm going to ask if I can share share all windows.
+2:392 minutes, 39 secondsOkay.
+2:432 minutes, 43 secondsAll right. So you have the questions in the background and so you can bring the questions to here. I
+2:502 minutes, 50 secondsjust copy and paste it to here if that helps. Where is here in the chat? No, I I I just switch computers.
+2:582 minutes, 58 secondsOh,
+3:003 minutesyou just Okay. So, I I don't uh I don't know where to look because what I want to show you is
+3:083 minutes, 8 secondswhat um I need to look at the picture in order to to give you the answer.
+3:163 minutes, 16 secondsThe picture of the chart. I need to look at the picture of the chart in order to turn the pictures into words that will answer the question.
+3:263 minutes, 26 secondsAh, gotcha.
+3:273 minutes, 27 secondsRight? Because my brain only sees in pictures. It doesn't I have I see in the
+3:343 minutes, 34 secondspictures and then the pictures have to I have to turn the pictures to words.
+3:393 minutes, 39 secondsNo, I'm I'm with you. I understand. I'm the same way. Uh good thing um AI doesn't have to.
+3:483 minutes, 48 secondsYeah. All right. Um,
+3:513 minutes, 51 secondsso do you want me to bring it up or Yes, you bring up the the first questions again
+4:004 minutesand I will look at the chart and uh answer the question from there.
+4:074 minutes, 7 secondsOkay,
+4:144 minutes, 14 secondsthere are a list of questions right up there. Okay, I'm going to move. You want me to share?
+4:214 minutes, 21 secondsYou call No, no, you don't. Yes, you can. You can share them. You You can definitely share them. What I want to do
+4:294 minutes, 29 secondsis see, we had another MOC validation. So,
+4:344 minutes, 34 secondsMonday is going to be another buy the dip day. Interesting.
+4:434 minutes, 43 secondsOkay.
+4:464 minutes, 46 secondsUm All right. So the question that we have is
+4:574 minutes, 57 secondsgive it to me again. Let me share and bring it up.
+5:035 minutes, 3 secondsWell, we don't have to do this right now. If you No, no, no. Let's do it. Let's do it. Let's do it. Yeah, let's do it.
+5:115 minutes, 11 secondsYou just look I know. I I am exhausted. I'm exhausted.
+5:155 minutes, 15 secondsI did not sleep last night. I've been up since 2:30. Yeah. Were you holding the baby?
+5:235 minutes, 23 secondsUh, no. Actually, I I am in insomniac most of the time and sometimes it's just very bad. So,
+5:325 minutes, 32 secondsyeah.
+5:325 minutes, 32 secondsOh, I hate that. That must that happens to me rarely, but it's not fun when it does.
+5:405 minutes, 40 secondsYeah, it's it's pretty bad. Okay, so let's uh let's confirm default. And so
+5:465 minutes, 46 secondsthe word the term confirmation default does this mean all the candles are in the right direction?
+5:555 minutes, 55 secondsNo. The whole idea was Claude is trying to make this mechanical.
+6:026 minutes, 2 secondsYes. But I don't know what the word confirmation default. I don't know what that means. What does that term mean?
+6:126 minutes, 12 secondsWell, there's a way to find out. ask. Okay.
+6:536 minutes, 53 secondsIt's very interesting to see how many tokens it takes up.
+6:576 minutes, 57 secondsWell, I use their I use this model.
+7:047 minutes, 4 secondsMhm. Max effort opus 4.7 the top of the line it has
+7:137 minutes, 13 secondsum otherwise it wouldn't have taken so much.
+7:157 minutes, 15 secondsYeah. Okay. So two ways B24 can enter a trade once it's
+7:217 minutes, 21 secondspicked up of a level. Let's say 7085 pre-place limit. Put a buy order at this
+7:307 minutes, 30 secondsplace. If price drops, it's really passive confirmation entry. Don't place anything yet. Watch price approach this.
+7:407 minutes, 40 secondsLet it touch and briefly dip. Then wait for proof it's holding.
+7:477 minutes, 47 secondsTwo five minute candles trending back back up. Bodies not overlapping. Yes.
+7:587 minutes, 58 secondsYes. Okay. So the default question is which of these two
+8:078 minutes, 7 secondsuse automatically every time it sees a setup?
+8:178 minutes, 17 secondsLet's use confirmation entry as the base case. Okay.
+8:288 minutes, 28 secondsQuestion one, use confirmation entry.
+8:408 minutes, 40 secondsBut um But not on days, right?
+8:518 minutes, 51 secondsWell, on a trend day,
+8:558 minutes, 55 secondsthe fivem minute candlestick is always going to tell you something. So, if it breaks to
+9:029 minutes, 2 secondsthe north on a trending day north, two non-over overlapping candles means 10 minutes after the high on the 9:30
+9:109 minutes, 10 secondscandle, you go long with the stop at the bottom of the 9:30 candle plus,
+9:209 minutes, 20 secondsyou know,
+9:259 minutes, 25 secondsmaybe five ticks if it's a full trending day.
+9:309 minutes, 30 secondsYeah, but couldn't she lose a lot of gains?
+9:349 minutes, 34 secondsWell, it depends on the risk, right? The width of that uh 9:00 a.m. candle. If it's all if all
+9:429 minutes, 42 secondsof them are trending in one area, it's not going to break the bottom of that candle. I see.
+9:509 minutes, 50 secondsIt just won't.
+9:539 minutes, 53 secondsI mean anything can happen of course but the probability of that happening becomes very small.
+10:0210 minutes, 2 secondsGotcha.
+10:0810 minutes, 8 secondsSo one of the senior tech guys at Ninja I found out he's actually an old friend
+10:1710 minutes, 17 secondsof mine but I found out he's now at Ninja in the strategy department.
+10:2310 minutes, 23 secondsand I uh I'm going to get on the phone with
+10:3010 minutes, 30 secondshim and talk to him about what he might see as as opportunities
+10:3910 minutes, 39 secondsfor us on the Ninja platform that are significant more than just the general guy in the uh marketplace.
+10:4910 minutes, 49 secondsSo, we'll see how that goes. Cool.
+10:5410 minutes, 54 secondsYeah. I just I was last night I was laying down. I was having a cup of coffee and I was thinking to myself,
+11:0011 minutes"Dan, I need to call Dan Hoffman." And I did not have Dan's new number. And so I
+11:0911 minutes, 9 secondscalled another friend. I said, "Hey, you got Dan's number?" And he said, "Yeah,
+11:1311 minutes, 13 secondslet me call him and see what he's into and then I'll send him send him over to you." And he said, "Yep, absolutely.
+11:1911 minutes, 19 secondsLet's talk next week." So awesome. He's Yeah, he's on my list.
+11:2711 minutes, 27 secondsI I I talked to somebody at Ninja and I told them about the jacket I have and she's like, "Well, I don't have one of those."
+11:3611 minutes, 36 secondsI'm like, "Go ask your marketing. They might." Oh, that's hilarious. I love that.
+11:4211 minutes, 42 secondsHere's the Okay, second question. Read that to me if you wouldn't mind. Entrylevel selection on full trend day.
+11:5211 minutes, 52 secondsThat's the second question. When price is pulling back on a clean trend day and multiple structural levels, you actually
+12:0212 minutes, 2 secondsenter on question mark. You mentioned slope,
+12:0712 minutes, 7 secondssteepness, distance from the moving averages, and overhead supply versus underlying
+12:1712 minutes, 17 secondsDE chart walkth through um underlying demand. That's that word is demand. I don't know why it got cut off.
+12:2612 minutes, 26 secondsUnderlying demand. Oh that yeah, that's why. Okay.
+12:3412 minutes, 34 secondsOkay. Um,
+12:3712 minutes, 37 secondsso this is what I'm talking about in terms of the nuance.
+12:4112 minutes, 41 secondsSo let me uh let me show you my chart and we're going to look at a full trend day.
+12:5212 minutes, 52 secondsSo let me uh let me share thinker swim.
+12:5912 minutes, 59 secondsSo here we are. We're going to go look for a trend day.
+13:0513 minutes, 5 secondsAnd we're going to go backwards in time.
+13:1113 minutes, 11 secondsOh, we only have five days here. Let's go to 90 days.
+13:1613 minutes, 16 secondsAll right. So, we're going to look at a trend down. We're going to look at a trend up. First one, we'll look at the trend down.
+13:2513 minutes, 25 secondsOkay. So, here's a clean trend down day.
+13:3213 minutes, 32 seconds30 minute of the uh the last 30 minute closing range,
+13:3913 minutes, 39 secondsright? The the GlobeEx area comes just above it. So,
+13:4713 minutes, 47 secondsit's still sitting in a space where you go, well, you know, it's not great, but you don't want it to expand.
+13:5813 minutes, 58 secondsIt moves up. We got a downward slope in 50. the the 200 is sideways here, right?
+14:0514 minutes, 5 secondsBecause you're going to measure from the 9:30 candle. Well, it's going to be a little bit down to be honest. So, you're going to measure from the 9:30 candle to
+14:1414 minutes, 14 secondsthe next 9:30 candle for what trend actually is, right? Yep.
+14:1914 minutes, 19 secondsOkay. So, we have the 4hour c the 4:00 a.m. candle that comes in
+14:2614 minutes, 26 secondsand it dances right at the closing range candle and then it loses the edge. So,
+14:3214 minutes, 32 secondsnow we have uh this is one where you go this is sort of the two of three. Remember we were
+14:4114 minutes, 41 secondstalking about is there a way for two of three? Now, there really is. But our
+14:4714 minutes, 47 secondsgoal is not to fire off so many trades that we get a lot of slippage, but at
+14:5614 minutes, 56 secondsthe same time fire off enough trades that um we have what we need to. So this
+15:0615 minutes, 6 secondsopening range candle at the GlobeEx open and the 4hour candle, they're inside of each other. The 4hour candlestick holds
+15:1515 minutes, 15 secondsthe GlobeEx candlestick and the 30 minute closing range holds the 4 a.m.
+15:2315 minutes, 23 secondscandlestick. So this is all sticky,
+15:2615 minutes, 26 secondsright? But what we do know is the closing candle
+15:3415 minutes, 34 secondsis going to get broken. So if we want to think about master candles where the
+15:4115 minutes, 41 secondsmost of the volume is running right now which may change in times forward but right now it's the opening range candle and the closing range candle.
+15:5215 minutes, 52 secondsSo, the one thing that we don't want to do if we're taking a low
+16:0016 minutesis to lose the low of the closing 30 minute candlestick of the last day.
+16:0716 minutes, 7 secondsNow, the moving average tells us we have a short because the 50 is down, but the 200 is also down and I'm under the 200.
+16:1916 minutes, 19 secondsSo, I'm looking for the break. Now,
+16:2116 minutes, 21 secondswe're not talking about any trades opening up pre-market. Now, we're talking about aftermarket,
+16:3016 minutes, 30 secondsafter the market opens. So, they make the 9:30 low. The top of the candle will be the stop.
+16:3916 minutes, 39 secondsThe bottom of the candle going to be that entry point, right? So, notice it's 40 points wide.
+16:4916 minutes, 49 secondsIt's 40 points wide. So if we're staring that down and we go,
+16:5716 minutes, 57 secondshey, I don't want to take a 40 point wide trade. What I think our system should say is,
+17:0517 minutes, 5 secondshey, that's that range is expanded.
+17:0917 minutes, 9 secondsTry and get an order at the midpoint and cut that risk in half. Here's what you risk running.
+17:1817 minutes, 18 secondsyou risk the chart rolling out of bed and going forward and you never get taken in.
+17:2717 minutes, 27 secondsSo, what you could do is say, "Hey, I'm going to enter half size at the break of the candle."
+17:3817 minutes, 38 secondsOr I'm just going to wait and do the entire order at the midpoint here. So for me,
+17:4917 minutes, 49 secondsthere's so much discretionary motion that occurs in the day. Here's what I'm looking for. My VWAP is down. My 50 is
+17:5617 minutes, 56 secondsdown. I've lost the 30 minute low. My thought is I'm going to take a short here,
+18:0518 minutes, 5 secondsbut I'm going to add to the position at the VWAP
+18:1218 minutes, 12 secondsor at the midpoint of this particular candlestick formation. That's that's what I am going to do now.
+18:2118 minutes, 21 secondsI could tell by the formation. Hey, if I add one here and I go up and I add again
+18:3018 minutes, 30 secondsbecause everything's trending in general, right? Here's our two of three,
+18:3618 minutes, 36 secondswhich I said, hey, let's not worry about two of three. We make it all three.
+18:4218 minutes, 42 secondsWait, uh, can you tell me what you mean by two of three? Okay, remember one of the questions you asked was,
+18:5018 minutes, 50 secondsis there an entry where two of the three requirements are met? Meaning the
+18:5918 minutes, 59 secondsGlobeEx open, the 4:00 a.m. open, and the 9 the 9:30 open, right?
+19:0519 minutes, 5 secondsIn real actual terms, the answer is yes. However,
+19:1419 minutes, 14 secondshere's how we can work this. If the candlesticks are congested, if the Gloex candlestick and the 4:00 a.m.
+19:2619 minutes, 26 secondscandlestick and the 3:30 close candlestick are congested.
+19:3619 minutes, 36 secondsMaybe what we do is take the failed bounce at the nine. I don't
+19:4319 minutes, 43 secondsknow. All I know heruristically is what happens to me when I come in on the day.
+19:4919 minutes, 49 secondsAnd so my goal is here is here's another trending down day. And again, it has
+19:5719 minutes, 57 secondsthis overlap, but the close of the candle body tells me what's going on with the chart. And so here's my 3:30
+20:0720 minutes, 7 secondsclose. Here's my GlobeEx open. They plant the flag here. They can't hold it
+20:1320 minutes, 13 secondson the GlobeEx. So immediately they've lost the ledge. My thought is I'm gonna
+20:2120 minutes, 21 secondssay, "Wait a second. I'm going to try and short right there." High. Exactly.
+20:2920 minutes, 29 secondsThat's what I want to try.
+20:3120 minutes, 31 secondsYes. Exactly. Right. I'm going to try and short the top of the 330 candlestick.
+20:3920 minutes, 39 secondsRight. And then as it loses the 330 low, I
+20:4620 minutes, 46 secondsmight add to the position. And so I'm going to and as soon as that 4 a.m. candlestick drops,
+20:5420 minutes, 54 secondsyou know, I am moving my stop down to the top of that 4 a.m. candlestick. So that's going to be that rotation.
+21:0521 minutes, 5 secondsFrom there, notice what happens here. It bounces all the way back up, but it can't get past the 4 a.m. high. So, my thought is, wait a second.
+21:1721 minutes, 17 secondsHigh, low, lower high, lower low, lower high, lower low, lower high, lower low.
+21:2321 minutes, 23 secondsI'm going to I'm going to try and short the top of that 4 a.m. candlestick.
+21:2721 minutes, 27 secondsYeah. So instead of taking the trade at the break here, I'm taking the trade at
+21:3721 minutes, 37 secondsthe bounce. And for me, that's what I'm always doing because I'm terrified of the risk thresholds.
+21:4621 minutes, 46 secondsSo I rarely take a breakdown trade. What I will take is a failed retest,
+21:5521 minutes, 55 secondsa look above and fail,
+21:5921 minutes, 59 secondsa look below and fail. And so this sort of motion keeps my risk low.
+22:1022 minutes, 10 secondsBut I feel like if we get into very trending markets and we wait for the
+22:2022 minutes, 20 secondsretest of this, it's never going to get us. And let me show you what it looks like when the market starts tearing ahead.
+22:3122 minutes, 31 secondsSo, let's look at this one.
+22:3622 minutes, 36 secondsThis is your typical trade where if you're thinking about it normally,
+22:4522 minutes, 45 secondsand I'm going to draw the box around here so you can see what's going on.
+22:5322 minutes, 53 secondsThis is the region here. Let's say we're doing the analytics. Here's my 30 minute
+23:0123 minutes, 1 seconduh closing candle. Here's my GloEx. It breaks.
+23:0523 minutes, 5 secondsAnd here's my uh uh 4:00 a.m. It also breaks, but then
+23:1423 minutes, 14 secondsthe news comes out and it rallies all the way up.
+23:2023 minutes, 20 secondsAnd so this is my commentary about overhead supply,
+23:2523 minutes, 25 secondsright? demand is down here, but the overhead supply, notice I've got these
+23:3223 minutes, 32 secondstwo down, this one up. This would normally tell us not to trade. Two of three,
+23:3923 minutes, 39 secondsnot to trade, right?
+23:4223 minutes, 42 secondsBecause the 200 is down. That's number one. So, and there's overhead supply. So
+23:4923 minutes, 49 secondsthis 200 keeps uh keeps the framework that says listen
+23:5823 minutes, 58 secondsabove the 200 you're going to see supply and that supply is going to force
+24:0624 minutes, 6 secondsprice down. So, you're going to look for that. And when that 9:30 candle comes,
+24:1224 minutes, 12 secondsthis is the reason I say if it's not all three of them, don't take it because this gigantic move could
+24:2124 minutes, 21 secondsjust throw things completely out of whack. Right?
+24:2524 minutes, 25 secondsIt's and it's these things that we want to be mindful of if we start using it uh intraday.
+24:3724 minutes, 37 secondsand in the pre-market, meaning we can trade above there, above the break of that very high 3:30 closing
+24:4724 minutes, 47 secondscandle, but we know it's going to stair step here to the prior 9:30, to the prior
+24:5524 minutes, 55 seconds3:30, to the prior 4 a.m., to the prior 6:00 p.m. We know that's where it's going. And there you have it. That's
+25:0425 minutes, 4 secondswhere it went. But you can't take a trade here. And so the reason I go,
+25:0825 minutes, 8 seconds"Hey, listen. Two out of three you don't take a trade." It's because of these sorts of things. If it's got that overlap
+25:1525 minutes, 15 secondsin something like this where here's the candle body, 6:00 p.m.,
+25:2225 minutes, 22 secondshere's the 4:00 a.m. body.
+25:2825 minutes, 28 secondsThe bodies are not near each other and they're lower. We've got a downward sloping 200. So when the market opens,
+25:3725 minutes, 37 secondswe lose this area, it's a short. Now notice if I said, well, here we are in a
+25:4525 minutes, 45 secondstrending space. Why don't we just take it at the 50%.
+25:4925 minutes, 49 secondsWe never get a trade and the trade is almost 75 points deep.
+25:5525 minutes, 55 secondsSo this is the rub, right? The what did you say? Why? No, no, no. I said wow.
+26:0226 minutes, 2 secondsYeah. And so my concern is
+26:1226 minutes, 12 secondswhen we have this perfectly in line where we have the 6 p.m. body higher
+26:1926 minutes, 19 secondsthan the 4 a.m. body higher than the 9:30 body. The break of that area is
+26:2826 minutes, 28 secondsgoing to be our entry point. Now any bounces up we can add to that position
+26:3526 minutes, 35 secondsand we could make our stop the 50% line to tighten up on the risk.
+26:4726 minutes, 47 secondsBut I fear do I fear this? Yes. I fear what machine
+26:5526 minutes, 55 secondslearning will tell us is, hey, if you give it that kind of risk parameter,
+27:0127 minutes, 1 secondyou're going to get blown out of your trade and it's going to go right in the direction that you want.
+27:0827 minutes, 8 secondsIt might, but m machine learning is only going to do that if that's what it's seen. That's what I'm saying. Yeah.
+27:1627 minutes, 16 secondsYeah. I don't know what it's going to see because all I know in my mind is,
+27:2227 minutes, 22 secondsyou know, some days it trends down and some days it will chop in that zone and
+27:2927 minutes, 29 secondslose the edge. Now, you notice the prior 30 minute opening range literally is where that new resistance area is. So,
+27:4127 minutes, 41 secondsyou know, you've got yourself a nice trade, but it's it's better to leave the
+27:4927 minutes, 49 secondssystem fluid enough to see what's going on in my mind. So, this is ideal downward formations.
+28:0028 minutesVery rarely does it come back and do this. If we've got the break of the GlobeEx and then the 4:00 a.m. and then the 9:30 all in the same direction,
+28:0928 minutes, 9 secondsthat's classic selloff or classic upside. And so the upside would look
+28:1728 minutes, 17 secondslike um oh for goodness sakes
+28:3028 minutes, 30 secondswhere would the upside look like? Um the upside would look like this, right?
+28:4028 minutes, 40 secondsTrend up.
+28:4228 minutes, 42 secondsUh the the the 200 is flat to down though. This is very
+28:4828 minutes, 48 secondsinteresting. It really tells you about the draft that the chart has when that 200 starts
+28:5928 minutes, 59 secondsflattening out without slope. But here we have it. 6:00 p.m.
+29:0529 minutes, 5 secondsWhat? What? Where is 9? It It doesn't have time, so I'm not sure what time. This is 9:30. That's 9:30.
+29:1229 minutes, 12 secondsYes. So, the magenta is always 9:30, right? Where would be the entry here?
+29:1829 minutes, 18 secondsYeah, the entry is here at the top of the range. Okay.
+29:2429 minutes, 24 secondsYes, the entry is here at the top of the range. So what this tells you, remember
+29:3129 minutes, 31 secondsthis is why we use a Fibonacci. Watch the Fibonacci tells us
+29:4129 minutes, 41 secondsthe target should be the 200 200%. It only goes to 150. But when you
+29:5029 minutes, 50 secondstake a look at this, when the moving average of the 200 is flat, it's going
+29:5729 minutes, 57 secondsto dampen the outset of what it is you're looking for.
+30:0330 minutes, 3 secondsIt's going to dampen it. And so that's why I'm always looking at it. I will say, "All right, my 200 is flat.
+30:1230 minutes, 12 secondsI'm not going to look for I I do want to look for 200%, but I'm going to start at
+30:1930 minutes, 19 seconds150%. So it might be the space where we say, "Hey, I'm going to take the 100%
+30:2830 minutes, 28 secondsand go to 150." It might be 1618 to be honest.
+30:3530 minutes, 35 secondsIt could be either of those. I just use 50 because it's easy, right? And we could take the trade again at the 50%
+30:4430 minutes, 44 secondspullback of the 9:00 a.m. candle.
+30:4930 minutes, 49 secondsbecause it's still outperforming all the others,
+30:5330 minutes, 53 secondsright? Candle body here, candle body here, candle body here. They do not overlap. So, that pullback gives us the
+31:0231 minutes, 2 secondsrange. Now, notice where the pullback comes to. It's a 4 a.m. candle. That's going to be that likely support zone.
+31:1031 minutes, 10 secondsBut see, that's only this case in this space. If you're staring at it and
+31:1731 minutes, 17 secondsyou're trying to build something vanilla, it's going to be the 50%
+31:2131 minutes, 21 secondspullback of the 930 candle. At which point the first goal would be the top of the candle, the second goal would be the
+31:3031 minutes, 30 seconds150. The question is if we don't let's say the qualifier
+31:3831 minutes, 38 secondsfor the uh 200 simple moving average is for us to go up in wherever we're going.
+31:5131 minutes, 51 secondsRight? Our delta from here this 9:30 of the prior day. Remember, we're going
+31:5831 minutes, 58 seconds9:30 to 9:30 to to get the moving average. Here is the 200 here,
+32:0832 minutes, 8 secondsand it's measuring 6514.
+32:1132 minutes, 11 secondsHere's the 200 here, and it's measuring 65.
+32:1632 minutes, 16 secondsSo maybe we say I don't know what percentage that is, but when it's less than a certain amount,
+32:2732 minutes, 27 secondsyou can't look for hyperextensions.
+32:3032 minutes, 30 secondsThe the steeper the slope, the bigger the extensions we're going to get because it's like a runaway train. They
+32:3932 minutes, 39 secondsjust keep buying. The algos just keep buying and pushing the price up.
+32:4632 minutes, 46 secondsWow.
+32:5032 minutes, 50 secondsYeah, exactly. So amazed at how many things you consider.
+32:5932 minutes, 59 secondsYeah,
+33:0033 minutesit all makes sense. I feel like I'm looking at the solution to a really difficult exam that makes sense after you see the solution.
+33:0833 minutes, 8 secondsExactly. And we all we all know that the question is how do we
+33:1533 minutes, 15 secondsmake the landscape vanilla and then as it goes through
+33:2433 minutes, 24 secondsits iterations it discovers all right here's what happened to the
+33:3233 minutes, 32 secondsmoving average because it every time it doesn't get to the 200% retracement.
+33:3933 minutes, 39 secondsor here's what happens when we disobey
+33:4633 minutes, 46 secondsthe overlap rule and try to trade a breakout. Yeah.
+33:5333 minutes, 53 secondsWell, the way I see us doing this, if we can create our first successful
+34:0134 minutes, 1 secondautoeration that actually works,
+34:0634 minutes, 6 secondsthen we can use multiple machine learning models to actually start adding nuances that would improve it. So,
+34:1834 minutes, 18 secondsokay. So what is the need to have the idea would be to have
+34:2534 minutes, 25 secondsfind a lot of trades and then have machine learning veto some of them. Ah okay.
+34:3334 minutes, 33 secondsSo you know how you have all these complex nuances in your mind which is hard to um mechanically
+34:4234 minutes, 42 secondsdecide that'll be job of the machine learning.
+34:4634 minutes, 46 secondsOkay. All right. So mechanical rules okay machine learning is the nuance which is
+34:5334 minutes, 53 secondsgoing to first it's just going to veto trades and then later on it could for example
+35:0135 minutes, 1 secondum come up with the best probability of the target should the target 150% or 80%.
+35:0935 minutes, 9 secondsYeah it or 300%. Right. But that would be the next stage.
+35:1635 minutes, 16 secondsFirst first we have to get the most version.
+35:2035 minutes, 20 secondsLet's get Yeah. So let's get the other questions answered. Okay. So we can do that.
+35:2835 minutes, 28 secondsLet me find I can't believe how disorganized I was today. Usually I'm not this bad.
+35:4235 minutes, 42 secondsUm, this is one.
+35:5035 minutes, 50 secondsWe've got wildfires all over the southeast because it's been so dry. You're kidding.
+35:5735 minutes, 57 secondsThere's a burn ban. Yeah, there's a burn ban here. Everything in the mountains in the Appalachins. I just saw a note that said 90 homes destroyed in Georgia.
+36:0936 minutes, 9 secondsMajor roads closed as wildfires rage. Oh my god. I've seen them in California, but only there.
+36:1736 minutes, 17 secondsYeah, they're pretty terrifying down here. They will jump across the interstate.
+36:2236 minutes, 22 secondsYeah, Ive I've I've driven in LA and I could see fires both sides of me
+36:2936 minutes, 29 secondsand then I went to a cousin's house who had radio on the entire time waiting for evacuation notice.
+36:3836 minutes, 38 secondsUm Wow.
+36:3936 minutes, 39 secondsAnd and there were fires right in in right near them. Mhm. You could see them.
+36:4636 minutes, 46 secondsYeah. So notice something very interesting today.
+36:5136 minutes, 51 secondsSee how the cattle bodies did do not overlap here.
+36:5636 minutes, 56 secondsHere's the 6 p.m. cattle body. Here's the 4 a.m. cattle body. Here's the 9:30
+37:0337 minutes, 3 secondscandle body. It said go full size long on the break here.
+37:1037 minutes, 10 secondsHow? Why?
+37:1437 minutes, 14 secondsWell, one the candle bodies are not overlapping. Two,
+37:2237 minutes, 22 secondswe have institutional MOC validated by the size of the spike relative to the motion. And three,
+37:3537 minutes, 35 secondsyou're above the 330 closing candle.
+37:4337 minutes, 43 secondsAnd so it looks really noisy, but the candle bodies
+37:5037 minutes, 50 secondsare in the space that says go full size on Fridays. This is the only place that
+37:5837 minutes, 58 secondsit says go full size if you breach those levels because Fridays are more bullish than any other day of the week.
+38:0738 minutes, 7 secondsReally?
+38:0838 minutes, 8 secondsYes. And that thing that just says full size that is something you wrote.
+38:1438 minutes, 14 secondsThat's something Claude. No Gemini wrote that for me. Could you share that with me?
+38:2138 minutes, 21 secondsI think I have given you this one. But let me see.
+38:2438 minutes, 24 secondsOkay. Just tell me what the name is because then I can find it. It is called probability threshold.
+38:3738 minutes, 37 secondsYeah. Statistical hybrid 30 minute IB and statistical dashboard visual confirmation and manual scaling.
+38:5138 minutes, 51 secondsOkay, I'll go search for if not I'll let you know if I can't find it.
+38:5738 minutes, 57 secondsLet me let me just send it to you anyway so you don't have to fret about that again. All right.
+39:0539 minutes, 5 secondsUm Okay.
+39:3539 minutes, 35 secondsAll right. Okay.
+39:4239 minutes, 42 secondsUh, you want to see the next one? Yeah. Yeah. Yeah. Let's do the next one.
+39:4939 minutes, 49 secondsHere's number three. Market on close ratio.8 to 1. You gave me greater than 1.2 is green.
+39:5939 minutes, 59 secondsGreater than one equals to orange. Less than8 is gray. Mhm.
+40:0640 minutes, 6 secondsHow about 8 to1? It'll stay gray. Stay gray. Yeah.
+40:1440 minutes, 14 secondsIt just means there's not enough institutional flow to confirm forward motion. Okay,
+40:2440 minutes, 24 secondsgood. And now number four, priority among old levels on sideway day sideways
+40:3240 minutes, 32 secondsdays. When multiple prior day highs or lows cluster near the same price, prior
+40:4140 minutes, 41 secondsday 3:30 high, prior day 9:30 high, the two days ago 30-day high,
+40:5040 minutes, 50 secondswhich one wins? I don't even get what it mean. Okay. So, the one with the most volume is going to win.
+40:5840 minutes, 58 secondsOh, that makes sense. Yeah, exactly. So, that's for number four.
+41:0441 minutes, 4 secondsAnd we don't care whether it's a bullish or bearish candle because everything ends up being bullish if the 200 is moving to the north.
+41:1441 minutes, 14 secondsGotcha. Okay, makes sense. Actually, I should have had that answer.
+41:2341 minutes, 23 secondsIt's Listen, the fact that you're juggling everything around, it's pretty incredible. Oh, I'm not doing a very good job of it.
+41:3141 minutes, 31 secondsSo, Oh, yeah, you are. You absolutely are.
+41:3541 minutes, 35 secondsAnd what I love is you're really making me think through the gray areas
+41:4441 minutes, 44 secondsthat I sit in discretionary mode. And some of the days, it's the days where I go, you knucklehead, you should have
+41:5141 minutes, 51 secondsjust seen that. And it's really helped me get better at defining my ranges and
+41:5941 minutes, 59 secondsmy execution events. So, it's it's been very very good for me. Uh painful, but good.
+42:0842 minutes, 8 secondsNo, it's amazing how many things you consider. You are like a parallel superco computer your mind when you are in front of one of these. I'm serious.
+42:1942 minutes, 19 secondsIt's like most of the time I'm just amazes how many things can you possibly consider.
+42:2842 minutes, 28 secondsAmazing.
+42:3042 minutes, 30 secondsWell, I think once the main things are set, you're just looking for a couple of other things. Do you know what I mean? Yes.
+42:3842 minutes, 38 secondsYeah.
+42:3942 minutes, 39 secondsNo, I understand that. I mean to me I can on some of the days trend days are
+42:4642 minutes, 46 secondseasy. I can see it right now but when it's not an obvious trend day
+42:5442 minutes, 54 secondsfor someone like me it's still so I'm beginning to see them and um
+43:0243 minutes, 2 secondsbelieve me if I begin to see them that says a lot. It's good.
+43:1043 minutes, 10 secondsAll right. What's the next one? Did we read this one? Outside news. Yeah, please read.
+43:1943 minutes, 19 secondsOutside news candle levels timing when a mid session candle has volume exceeding both prior day 9:30 and 3:30.
+43:2843 minutes, 28 secondsUhhuh.
+43:3043 minutes, 30 secondsAnd it's half added to the
+43:3743 minutes, 37 secondstradable level pool right away for the rest of today or only for tomorrow onward.
+43:4443 minutes, 44 secondsOkay. I don't think I understand that.
+43:4643 minutes, 46 secondsUm don't either. stays as long as it's the highest candle
+43:5343 minutes, 53 secondsvolume in the recent in recent days,
+44:0144 minutes, 1 secondright? So, let's take an example. Let's sort of flesh this out together. If you could still see my screen.
+44:0844 minutes, 8 secondsI cannot. I'm I'm sharing. I cannot. Okay. So, you can Oh, now I can see her. Okay. Hang on. Let me do it again. Yes.
+44:1644 minutes, 16 secondsLet me do it again. Let me do it again. Oh, sugar. There you go.
+44:2744 minutes, 27 secondsCome on, Sy. What you doing? So, okay, let me share this.
+44:3644 minutes, 36 secondsWow. Okay,
+44:3944 minutes, 39 secondsso here is one of these days that we're talking about.
+44:4544 minutes, 45 secondsThis is a news candle. and it had 237,000 contracts. That's almost
+44:5544 minutes, 55 secondstwice the 930 candle and it is
+45:0445 minutes, 4 secondsabout what 60% more than the closing candidate. So this range matters. I think this range will matter for days.
+45:1645 minutes, 16 secondsSo, what we have to do is tell
+45:2145 minutes, 21 secondsthe machine to keep an eye out for candlesticks during the
+45:3045 minutes, 30 secondscourse of a day, not in our master candles,
+45:3545 minutes, 35 secondswhether it's the 6 or the 4 or the 9:30 or the 3:30,
+45:4145 minutes, 41 secondsthat big volume steps into. Yeah. The outlier volume.
+45:4745 minutes, 47 secondsYes. And that area is going to end up the the wick of it
+45:5545 minutes, 55 secondswill either be a support zone if the 200 is moving to the north or
+46:0346 minutes, 3 secondsthe wick on the top will be resistance if the 200 is moving to the south.
+46:1246 minutes, 12 secondsGot it. By the way, how do you know it's a news candle? Just volume.
+46:1946 minutes, 19 secondsI estimate that it's in news candle because of volume. I see. Yeah,
+46:2746 minutes, 27 secondsbecause it seems like there's the left one, the one right to the left of it is also a news.
+46:3446 minutes, 34 secondsThat was a news candle also.
+46:3646 minutes, 36 secondsNo, the one right to immediate left of it. The one this one. Oh, yeah. They're both news candles.
+46:4446 minutes, 44 secondsI see.
+46:4446 minutes, 44 secondsYeah. But this one carried the most volume. So, we know the sellers tried to force it down, but there was a lot of
+46:5246 minutes, 52 secondsdemand right there. And that demand was actually that 7085.
+46:5946 minutes, 59 secondsSo, I was waiting for that 7085 to hold.
+47:0547 minutes, 5 secondsLet me show you what the the fivem minute candlestick looks like because this is the trade that I took.
+47:2047 minutes, 20 secondsI said, "All right, let me wait for it to hold." And so here's what started happening.
+47:2947 minutes, 29 secondsWere you watching the five minute candle? I was watching the one minute. Oh, okay.
+47:3447 minutes, 34 secondsThe the one minute though to give machine learning the one minute, I think it's going to end up getting a lot of noise.
+47:4247 minutes, 42 secondsJust my just my gut. But machine learning uses the one minute to place orders.
+47:4847 minutes, 48 secondsOkay. So, let's go to the one minute then.
+47:5347 minutes, 53 secondsUses both one minute and 30 minutes right now, but Okay, great.
+47:5847 minutes, 58 secondsFive minutes added is Yeah. So let's stick to the one minute.
+48:0348 minutes, 3 secondsSo the goal would be you reach the support zone 7085
+48:1348 minutes, 13 secondsand then you pull back and hold the support zone again
+48:2048 minutes, 20 secondsand then you breach the candlestick formation that was
+48:2748 minutes, 27 secondsresistance. And so for me, I could see it basing right here. And so that's why I took it at 7092.
+48:3648 minutes, 36 secondsAnd I thought, all right, 7079 is my stop. So this was the formation I was looking for. And this is a look below and fail.
+48:4748 minutes, 47 secondsThat's what a look below and fail looks like. It looks below, it comes back up, and it pulls back to a higher low. So,
+48:5648 minutes, 56 secondsit tries to continue down but fails to continue down and then moves up as
+49:0249 minutes, 2 secondsopposed to the look below and go here. It loses the edge,
+49:1149 minutes, 11 secondstries to get back up but can't.
+49:1549 minutes, 15 secondsAnd then it's the same trade to the downside.
+49:2549 minutes, 25 secondsInteresting. Yeah. So, if we use the one minute candle,
+49:3349 minutes, 33 secondswhich is fine. I I prefer that we try to stay consistent. So, if we use the one minute candle, what the one minute
+49:4049 minutes, 40 secondscandle has a tendency to do is just chop around. So, what we want it to do is
+49:4749 minutes, 47 secondsbreach the support ledge and recover it, but
+49:5549 minutes, 55 secondsthen not break the candle low that made the breach.
+50:0350 minutes, 3 secondsSo, this candle becomes the real support zone.
+50:0750 minutes, 7 secondsThat's where the stop would be. So you would tell it, hey, when it pulls back here
+50:1550 minutes, 15 secondsand then begins to bounce again, you take it off of that candle close that breached
+50:2450 minutes, 24 secondsand then failed, right? The look below and fail. This candlestick high gives us the automated version of where to enter.
+50:3650 minutes, 36 secondsAnd the stop is the low of the candlestick that accomplished the breach.
+50:4650 minutes, 46 secondsGot it. You see?
+50:5950 minutes, 59 secondsOkay. You have another what? We have another one. One more, I think. Okay.
+51:0651 minutes, 6 secondsJust I appreciate all the work you're doing.
+51:1151 minutes, 11 secondsI can't Oh, thank you.
+51:1251 minutes, 12 secondsI can't even imagine thinking about doing something like this
+51:1951 minutes, 19 secondson my own. I It would be impossible. You are literally a godsend. I'm so happy.
+51:2751 minutes, 27 secondsYou're You're probably getting a idea why the other people couldn't do it.
+51:3151 minutes, 31 secondsOh, I totally need to know. Yeah, I totally get it.
+51:3551 minutes, 35 secondsTrading at some levels to be able to do that.
+51:3951 minutes, 39 secondsAnd the last one is about CL bigger exception.
+51:4551 minutes, 45 secondsIf the entry candle is is is inside the prior 3:30 or prior 9:30 candle, 3:30 on CL.
+51:5451 minutes, 54 secondsYes, I know. It's very interesting. But they do too, right? They have that late.
+52:0152 minutes, 1 secondBut here's what here's what uh both Gemini and Claude
+52:0652 minutes, 6 secondstell me. Gemini and Claude had this
+52:1352 minutes, 13 secondswhat I think we need to do. Although, you know, it works just fine.
+52:2152 minutes, 21 secondsIt's just not as clean.
+52:2652 minutes, 26 secondsSo um
+52:3452 minutes, 34 secondsand see all these newsy candles. This is this is news. This news came at 7. This
+52:4252 minutes, 42 secondsHave you been reading about the insider trading on oil this past week?
+52:5152 minutes, 51 secondsNo, not at all. Oh my gosh.
+52:5652 minutes, 56 secondsSomebody somebody sold 4,000 contracts here at one time and then bought it back.
+53:0853 minutes, 8 secondsThey sold it up here and then bought it to cover.
+53:1353 minutes, 13 secondsWait, I'm not looking at your Sorry, screen. I'm I'm looking now. 8:00 on 422nd.
+53:2153 minutes, 21 secondson the 422. Both of these were tweets.
+53:3053 minutes, 30 secondsThis and this.
+53:3353 minutes, 33 secondsSomebody made $400 million.
+53:4153 minutes, 41 secondsMy god.
+53:4353 minutes, 43 secondsYeah. And what they think it was they just arrested some guy uh today that was part of the Maduro.
+53:5353 minutes, 53 secondsYeah, that I saw. Did you see that? I saw that. That poor guy made what?
+53:5753 minutes, 57 seconds2,000 bucks. I bet you this $400 million guy is going to get I know he's not
+54:0454 minutes, 4 secondsgoing to get anything to administration and it's probably pro probably
+54:1154 minutes, 11 secondsTrump's Trump's son made 150 million on some insider trading.
+54:1654 minutes, 16 secondsYes, recently I saw that. Yeah, I saw that. It's just you know trust is man when it goes everything crumbles.
+54:2854 minutes, 28 secondsYeah. Do you know what's different about Trump compared to others? All others cheated and tried to hide it.
+54:3654 minutes, 36 secondsYes.
+54:3754 minutes, 37 secondsHe cheats and has no problem telling everybody. It's like what are you going to do? I know.
+54:4554 minutes, 45 secondsI know. It's the devil. You know, I guess that's it.
+54:5154 minutes, 51 secondsYou can't I'm telling you what a crazy world we live in. I know.
+54:5654 minutes, 56 secondsor else you're going to cry if you don't. So, let me go back on the CL event here. Let me rework it. Put it off
+55:0555 minutes, 5 secondsto the side. Um, I still think the 9:30 and the 3:30 candles work, but there's been so much noise. See the GlobeEx event how it holds as the floor still?
+55:1855 minutes, 18 secondsGloex still is what time? 6 PM. Oh, same one. Same one. 4:00 a.m. Same one.
+55:2855 minutes, 28 secondsOh, Glo had I I thought crude had different Same same timing.
+55:3555 minutes, 35 secondsYeah, the GlobeEx opens at the same time. When their bell rings is different, but people don't care.
+55:4255 minutes, 42 secondsThey're trading just like we are. They start here at 8 to 8:30,
+55:4955 minutes, 49 secondsbut these edges still get captured by the GlobeEx.
+55:5455 minutes, 54 secondsvery or they get captured by the 4 a.m. candle. It's quite remarkable.
+56:0156 minutes, 1 secondGod, I can't wait till we make our first one because then we can start Yes. testing it for everything.
+56:0956 minutes, 9 secondsYes. Um anything that has volume and stocks. Yeah, exactly.
+56:1556 minutes, 15 secondsYeah, it's going to be exciting. I am actually working on a couple of things over the weekend, looking through uh the
+56:2556 minutes, 25 secondstop volume stocks and then building the code that shows what happens with the
+56:3356 minutes, 33 secondspre-market and the 930 candle where the 200 is and
+56:3956 minutes, 39 secondssee how much of it uh resonates the same way the futures
+56:4756 minutes, 47 secondsmarket resonates. So, we'll have that um in our mind cogitating correct
+56:5456 minutes, 54 secondsfor more. Oh my gosh, somebody just sold a thousand contracts in uh the ES just like five minutes ago.
+57:0557 minutes, 5 secondsAfter market. Yeah, after market. I thought the market closed.
+57:1057 minutes, 10 secondsNo, they're settling. Yeah, they're settling.
+57:1357 minutes, 13 secondsOh, it's a settling. Yeah, it's settling. Mhm. Settling. Yeah.
+57:1857 minutes, 18 secondsUm I did have one other question for you since do did we I mean did it answer the CL
+57:2657 minutes, 26 secondsquestion? Actually I think this the CL question is let's table it
+57:3357 minutes, 33 secondsand let me revamp these the ideas. I Yes. and then send them back to you
+57:4257 minutes, 42 secondsbecause it it may be that we can get more granularity shifting the open, but I still want to
+57:5057 minutes, 50 secondssit where all the volume is and where all the volume is is at 9:30. So, I I'm going to guess that it's not going to
+57:5857 minutes, 58 secondsmatter and we can still keep the same structural formation. If they overlap,
+58:0658 minutes, 6 secondsthen you know what we want to see is trend breakout over the prior 30-day
+58:1358 minutes, 13 secondsclose that just like for this one right here where it's sideways.
+58:2058 minutes, 20 secondsWe have the 6 p.m. and the 4:00 a.m.
+58:2358 minutes, 23 secondstrending nicely. The closing 30 minutes very nicely just well below us. We come
+58:3158 minutes, 31 secondsin here at the 9:30 and it's inside the 4 a.m. So these are sideways, but the
+58:3958 minutes, 39 seconds200 is up and the 50 is up, which I use as sort of a mental gauge. And so I will try to buy
+58:5058 minutes, 50 secondsthe pullback of the 4:00 a.m. or the pullback of the 9:30, whichever one I can. And that will make me go, "Oh,
+59:0059 minutesokay. I'm going to buy it and and go long into, you know, my pivot or whatever."
+59:0659 minutes, 6 secondsDidn't you mention that you didn't place any trades today? No.
+59:1059 minutes, 10 secondsSo, my question was, can you show me why you didn't trade today?
+59:1659 minutes, 16 secondsSo, one, I was very tired on mentally. I was not seeing
+59:2359 minutes, 23 secondsum what I needed to in terms of the broad market. It was
+59:2959 minutes, 29 secondstelling me, hey, listen, this is along you have um let me go back to
+59:3859 minutes, 38 secondsI don't know why that ah okay sorry sorry wrong this one needs to be
+59:4759 minutes, 47 secondsum oh hang on studies learn study set
+59:5659 minutes, 56 secondsintraday okay So this one was telling me, listen, this is a long
+1:00:041 hour, 4 secondswhy my candles are not overlapping. My candle bodies are not overlapping.
+1:00:101 hour, 10 secondsI am above the flag planting. So at the very least, I'm going to rise into prior
+1:00:181 hour, 18 secondsresistance and I'm just going to try and take it into 71.84.
+1:00:261 hour, 26 secondsThat's what it told me to do.
+1:00:281 hour, 28 secondsBut I did not do it because my thought was I'm too tired and what if that doesn't
+1:00:381 hour, 38 secondswork and blah blah blah blah blah blah blah blah blah.
+1:00:431 hour, 43 secondsSo this again news candle see how it's the contract number 142,000.
+1:00:551 hour, 55 secondsWow.
+1:00:561 hour, 56 seconds141,000 for the 930 and 127,000 for
+1:01:041 hour, 1 minute, 4 secondsum the 330. It's got MOC attached to it,
+1:01:101 hour, 1 minute, 10 secondsbut this is clearly the candle we're going to be watching, which is the base of our 9:30. So all of it sort of,
+1:01:211 hour, 1 minute, 21 secondsyou know,
+1:01:231 hour, 1 minute, 23 secondsdovetales into the same big numbers over and over and over and over and over again. And see for this one, we have
+1:01:311 hour, 1 minute, 31 secondscandlesticks not retracing. So if we took the breakout here,
+1:01:381 hour, 1 minute, 38 seconds200% would be the first target. And there it is.
+1:01:481 hour, 1 minute, 48 seconds200%. Now it goes to 250, but the Fibonacci will tell you, hey,
+1:01:551 hour, 1 minute, 55 secondsthis is where you're running. If you've got all your moving averages under you and your candle bodies are not overlapping each other,
+1:02:041 hour, 2 minutes, 4 secondsyou're going to have upside pressure, rather.
+1:02:091 hour, 2 minutes, 9 secondsYeah, especially if validated going into the day. So, this validation here is going to cover Monday. So, we're going
+1:02:171 hour, 2 minutes, 17 secondsto have another dip buying formation Sunday night, whenever that is. Okay.
+1:02:261 hour, 2 minutes, 26 secondsOkay,
+1:02:271 hour, 2 minutes, 27 secondsgreat. Hopefully, I'll I have enough enough clarifications for Claude for the final things. I actually answered a whole bunch of them.
+1:02:391 hour, 2 minutes, 39 secondsGood. Uh I I some of was obvious. It just wants to make sure.
+1:02:471 hour, 2 minutes, 47 secondsYeah. And that's always good. Yeah. Yeah. Always good. So, all right. All right.
+1:02:551 hour, 2 minutes, 55 secondsVery Have a great weekend.
+1:02:581 hour, 2 minutes, 58 secondsThank you. I'm going to try and sleep. I hope you get to sleep, too.
+1:03:021 hour, 3 minutes, 2 secondsI'm I'm having my grandchildren coming tonight. Nice. So,
+1:03:091 hour, 3 minutes, 9 secondsI the two boys and the baby girl are going to be here with my daughter and the father is going to stay home working on the house without the kids.
+1:03:201 hour, 3 minutes, 20 secondsNice. Okay. So,
+1:03:231 hour, 3 minutes, 23 secondsthey're going to be with us for the weekend. Seen them. Oh, that's that's great.
+1:03:321 hour, 3 minutes, 32 secondsMy wife has, but I didn't. Yeah. Yeah. Month and a half. So,
+1:03:371 hour, 3 minutes, 37 secondswell, they're Yeah, they're going to look different. Oh god. I know. It's crazy how fast they grow.
+1:03:441 hour, 3 minutes, 44 seconds10 and a half year old one suddenly looks so grown up. It just I know. So, grow so fast.
+1:03:521 hour, 3 minutes, 52 secondsYeah. What's amazing about these kids,
+1:03:551 hour, 3 minutes, 55 secondsI'm sure it's the same with your grandchildren, is that every one of these kids are going to grow up and have a picture and a video of every single day of their life.
+1:04:031 hour, 4 minutes, 3 secondsOh my gosh. No. How crazy is that?
+1:04:081 hour, 4 minutes, 8 secondsThey're going to have everything documented.
+1:04:121 hour, 4 minutes, 12 secondsSo, well, enjoy your You take care. Thank you. You enjoy yours. You enjoy yours. I'll send you a
+1:04:191 hour, 4 minutes, 19 secondsnote and then let's um let's try and connect, you know, Monday to see if I can answer any other questions. Okay.
+1:04:251 hour, 4 minutes, 25 secondsAnd um I'll get you up to speed on what I coded.
+1:04:301 hour, 4 minutes, 30 secondsYeah. I'm going to keep bugging you until I have Yeah, absolutely. Let's do it. It's It's not bugging myself and it's not bugging. It's great
+1:04:381 hour, 4 minutes, 38 secondsfor Claude. Um getting that. By the way, Chat GPT just came out with a new model called G 5.5.
+1:04:481 hour, 4 minutes, 48 secondsUhhuh.
+1:04:491 hour, 4 minutes, 49 secondsAnd all the benchmarks are higher than Claude. All of them like 100%.
+1:04:581 hour, 4 minutes, 58 secondsWow. Finally. It's like the space race.
+1:05:021 hour, 5 minutes, 2 secondsYeah. I mean I use them both. The difference is I have to pay $100 for cloth. You pay $20 for ch and I use them all.
+1:05:111 hour, 5 minutes, 11 secondsCha GPT is is a lot gives a lot more for less.
+1:05:171 hour, 5 minutes, 17 secondsYeah. All right. Going to be interesting. We'll see what happens.
+1:05:211 hour, 5 minutes, 21 secondsThank you for letting me know about chat getting that new version up. So yeah, I mean it it
+1:05:291 hour, 5 minutes, 29 secondsthe other one was the 5.4 was dry. I'm like, "Oh, this is boring to talk to."
+1:05:351 hour, 5 minutes, 35 seconds5.5, they fixed that. Suddenly, it's just odd. Has has a personality.
+1:05:401 hour, 5 minutes, 40 secondsAll right. Very good. I'm going to play with it this weekend. Awesome. Have a good weekend.
+1:05:441 hour, 5 minutes, 44 secondsAll right. Take care, Asheen. Thank you so much for everything. Bye. Bye. Bye.

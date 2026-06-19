@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Sign in{% endblock %}
+{% block content %}
+<div class="auth-wrap">
+  <h1>Welcome back</h1>
+  <p class="sub">Sign in to talk to your coach.</p>
+  {% if WORKOS_ENABLED %}
+  <div class="card">
+    <a class="btn btn-primary" style="width:100%;display:block;text-align:center"
+       href="{{ url_for('auth.workos_start', next=next) }}">Sign in with your TradeWave account</a>
+    <p class="small muted center" style="margin-top:10px">One login for TradeWave Realtime and
+    TradeWave EOD. New here? The same button creates your account.</p>
+  </div>
+  <details class="auth-alt" style="margin-top:10px">
+    <summary class="small muted">Use a local account (dev)</summary>
+    <form method="post" action="{{ url_for('auth.login') }}" class="card" style="margin-top:8px">
+      <input type="hidden" name="next" value="{{ next }}">
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@email.com">
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Your password">
+      </div>
+      <button class="btn btn-primary" type="submit" style="width:100%">Sign in</button>
+    </form>
+  </details>
+  {% else %}
+  <form method="post" action="{{ url_for('auth.login') }}" class="card">
+    <input type="hidden" name="next" value="{{ next }}">
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required autofocus placeholder="you@email.com">
+    </div>
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required placeholder="Your password">
+    </div>
+    <button class="btn btn-primary" type="submit" style="width:100%">Sign in</button>
+  </form>
+  <div class="auth-alt">New here? <a href="{{ url_for('auth.signup', next=next) }}">Create a free account</a></div>
+  {% endif %}
+</div>
+{% endblock %}

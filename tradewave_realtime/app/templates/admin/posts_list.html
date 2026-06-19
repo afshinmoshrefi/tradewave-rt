@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Posts{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div><div class="eyebrow"><a class="muted" href="{{ url_for('admin.dashboard') }}">Admin</a> › Posts</div>
+  <h1 style="font-size:1.9rem">Member feed posts</h1></div>
+  <a class="btn btn-primary" href="{{ url_for('admin.posts_new') }}">+ New post</a>
+</div>
+<div class="card" style="padding:6px 10px">
+<table class="table">
+  <thead><tr><th>Title</th><th>Status</th><th>Date</th><th></th></tr></thead>
+  <tbody>
+  {% for p in posts %}
+    <tr>
+      <td><a href="{{ url_for('admin.posts_edit', post_id=p.id) }}">{{ p.title }}</a></td>
+      <td>{% if p.published %}<span class="badge on">Live</span>{% else %}<span class="badge off">Draft</span>{% endif %}</td>
+      <td class="small muted">{{ p.created_at.strftime('%b %-d, %Y') }}</td>
+      <td style="text-align:right;white-space:nowrap">
+        <a class="btn btn-sm" href="{{ url_for('admin.posts_edit', post_id=p.id) }}">Edit</a>
+        <form class="inline" method="post" action="{{ url_for('admin.posts_delete', post_id=p.id) }}"
+              onsubmit="return confirm('Delete this post?')">
+          <button class="btn btn-sm btn-danger" type="submit">Delete</button></form>
+      </td>
+    </tr>
+  {% else %}
+    <tr><td colspan="4" class="muted center" style="padding:24px">No posts yet.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

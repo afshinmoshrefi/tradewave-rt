@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{{ BRAND }}{% endblock %} · {{ BRAND }}</title>
+  <meta name="description" content="Anne-Marie Baiynd's daily level map and an AI mentor trained on her method. Stop trading alone.">
+  <meta property="og:title" content="TradeWave Realtime - with Anne-Marie Baiynd">
+  <meta property="og:description" content="Her level map computed every session. An AI mentor that learns where you are, builds your plan, and checks in every trading day. Educational only.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ url_for('static', filename='img/anne-marie-baiynd.png', _external=True) }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/favicon.svg') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}?v={{ ASSET_V }}">
+</head>
+<body>
+<nav class="nav"><div class="container nav-in">
+  <a class="brand" href="{{ url_for('main.index') }}">
+    <span class="dot"></span> TradeWave <span class="rt">Realtime</span>
+  </a>
+  <div class="nav-links">
+    {% if current_user %}
+      <a href="{{ url_for('main.dashboard') }}">Today</a>
+      <a href="{{ url_for('chat.coach') }}">Coach</a>
+      <a href="{{ url_for('trades.trades_page') }}">Trades</a>
+      <a href="{{ url_for('main.feed') }}">Feed</a>
+      <a href="{{ url_for('main.library') }}">Learn</a>
+      {% if current_user.is_staff %}<a href="{{ url_for('admin.dashboard') }}">Admin</a>{% endif %}
+      <a href="{{ url_for('main.account') }}">{{ current_user.name_or_email }}</a>
+      <form method="post" action="{{ url_for('auth.logout') }}" class="inline">
+        <button class="btn btn-sm btn-ghost" type="submit">Sign out</button></form>
+    {% else %}
+      <a href="{{ url_for('main.index') }}#what-you-get">What you get</a>
+      <a href="{{ url_for('main.index') }}#who-she">Who she is</a>
+      <a href="{{ url_for('auth.login') }}">Sign in</a>
+      <a class="btn btn-primary btn-sm" href="{{ url_for('auth.signup') }}">Start coaching free</a>
+    {% endif %}
+  </div>
+</div></nav>
+
+<main class="container">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}<div class="flashes">
+      {% for cat, msg in messages %}<div class="flash {{ cat }}">{{ msg }}</div>{% endfor %}
+    </div>{% endif %}
+  {% endwith %}
+  {% block content %}{% endblock %}
+</main>
+
+<footer><div class="container">
+  <div class="cols">
+    <div>
+      <div class="brand" style="font-size:.95rem"><span class="dot"></span> TradeWave <span class="rt">Realtime</span></div>
+      <div class="small" style="margin-top:6px">with {{ PARTNER }} · part of the TradeWave family</div>
+    </div>
+    <div style="display:flex;gap:18px;flex-wrap:wrap">
+      <a href="{{ url_for('main.legal', page='disclaimer') }}">Disclaimer</a>
+      <a href="{{ url_for('main.legal', page='terms') }}">Terms</a>
+      <a href="{{ url_for('main.legal', page='privacy') }}">Privacy</a>
+    </div>
+  </div>
+  <div class="legal-note">
+    {{ BRAND }} is an educational platform. The “{{ COACH_NAME }}” coach is an {{ COACH_LABEL }} - 
+    not {{ PARTNER }} herself, and not a financial adviser or brokerage. Nothing here is investment
+    advice or a recommendation to buy or sell any security or futures contract. Trading involves
+    substantial risk of loss; past performance does not guarantee future results.
+    © 2026 Tara Data Research LLC.
+  </div>
+</div></footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

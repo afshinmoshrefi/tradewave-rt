@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Disclaimer{% endblock %}
+{% block content %}
+<div class="card prose" style="margin:24px auto">
+  <h1>Disclaimer</h1>
+  <p class="muted">Last updated: June 2026</p>
+
+  <h2>Educational purpose only</h2>
+  <p>TradeWave Realtime is an educational platform operated by Tara Data Research LLC. All
+  content - including the “Anne-Marie” AI coach, the strategy library, and the member feed - 
+  is provided for <b>informational and educational purposes only</b>. Nothing here is
+  investment advice, a recommendation, or a solicitation to buy or sell any security, futures
+  contract, or other financial instrument.</p>
+
+  <h2>The “Anne-Marie” coach is an AI</h2>
+  <p>The coach is an <b>{{ COACH_LABEL }}</b>. It is software that teaches Anne-Marie Baiynd's
+  method and trading psychology in her style. It is <b>not Anne-Marie Baiynd herself</b>, it
+  does not provide personalized financial advice, and it does not issue trade signals,
+  entries, exits, or price predictions. AI systems can be wrong or incomplete; always apply
+  your own judgment and do your own research.</p>
+
+  <h2>Not a broker, adviser, or signal service</h2>
+  <p>TradeWave Realtime is not a broker-dealer, is not a registered investment adviser, and is
+  not a commodity trading advisor. It does not manage accounts, execute trades, or direct
+  trading in any account.</p>
+
+  <h2>Risk of loss</h2>
+  <p>Trading futures and other leveraged instruments involves <b>substantial risk of loss</b>
+  and is not suitable for every investor. You can lose more than your initial investment. Past
+  performance is not indicative of future results. Any examples are hypothetical and for
+  illustration only. You are solely responsible for your own trading decisions and outcomes.</p>
+
+  <p>By using TradeWave Realtime you acknowledge and accept this disclaimer.</p>
+</div>
+{% endblock %}

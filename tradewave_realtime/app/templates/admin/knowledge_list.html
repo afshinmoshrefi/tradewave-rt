@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Knowledge{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div><div class="eyebrow"><a class="muted" href="{{ url_for('admin.dashboard') }}">Admin</a> › Knowledge</div>
+  <h1 style="font-size:1.9rem">Coach knowledge</h1></div>
+  <a class="btn btn-primary" href="{{ url_for('admin.knowledge_new') }}">+ New knowledge</a>
+</div>
+<div class="card" style="padding:6px 10px">
+<table class="table">
+  <thead><tr><th>Title</th><th>Category</th><th>Status</th><th>Updated</th><th></th></tr></thead>
+  <tbody>
+  {% for e in entries %}
+    <tr>
+      <td><a href="{{ url_for('admin.knowledge_edit', entry_id=e.id) }}">{{ e.title }}</a></td>
+      <td><span class="badge cat">{{ e.category }}</span></td>
+      <td>{% if e.published %}<span class="badge on">Live</span>{% else %}<span class="badge off">Draft</span>{% endif %}</td>
+      <td class="small muted">{{ e.updated_at.strftime('%b %-d') }}</td>
+      <td style="text-align:right;white-space:nowrap">
+        <a class="btn btn-sm" href="{{ url_for('admin.knowledge_edit', entry_id=e.id) }}">Edit</a>
+        <form class="inline" method="post" action="{{ url_for('admin.knowledge_toggle', entry_id=e.id) }}">
+          <button class="btn btn-sm btn-ghost" type="submit">{{ 'Unpublish' if e.published else 'Publish' }}</button></form>
+        <form class="inline" method="post" action="{{ url_for('admin.knowledge_delete', entry_id=e.id) }}"
+              onsubmit="return confirm('Delete this entry?')">
+          <button class="btn btn-sm btn-danger" type="submit">Delete</button></form>
+      </td>
+    </tr>
+  {% else %}
+    <tr><td colspan="5" class="muted center" style="padding:24px">No knowledge yet. Add the first entry.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

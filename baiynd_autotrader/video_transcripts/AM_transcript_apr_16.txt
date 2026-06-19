@@ -1,0 +1,488 @@
+0:011 secondLet me get to my sidekick. Ah, you do volume profile.
+0:1010 secondsOh, yeah. I the everything is for me it's always big collapsed to small.
+0:1818 secondsAlways big collapsed to small. So I must look at the wide angle to see what volume is doing. But that is just sort
+0:2525 secondsof like driving in the car and looking outside and going, "Oh, it's sunny, right?"
+0:3333 secondsVersus turn left here, right? So, it's that's just sort of what's going on here. So,
+0:4040 secondsyeah, I always used volume profile for extremes because the price tends to turn somewhere on the extreme.
+0:4949 secondsYes. And it did in the pre-market. You can see that for the volume profile over several days.
+0:5555 secondsBut the big storyboard is what's happening with this 50 simple moving average. But other than that, let me
+1:021 minute, 2 secondsshow you what I discovered with sidekick. I did an analysis called uh pattern identification.
+1:141 minute, 14 secondsLiterally, I would never have thought to do this until
+1:201 minute, 20 secondsyou taught me the the basis of what machine learning does. And so I want to
+1:281 minute, 28 secondsgive that hat tip to you to helping me pull things together. So the first thing
+1:351 minute, 35 secondsthat I did was listen I had this huristic in my mind about which candles are the most important and is that true?
+1:461 minute, 46 secondsAnd so I said, look at the last 60 days and take these 30 minute candles,
+1:571 minute, 57 seconds3:30 in the afternoon, GlobeEx open,
+2:012 minutes, 1 second4:00 a.m., 9:30 in the morning, all Eastern time, and tell me what it shows.
+2:092 minutes, 9 secondsAnd so this King candle that we're calling it. And so what we'll call that
+2:182 minutes, 18 secondsum I want us to rename the king candle. I want it I want to rename it the institutional candle.
+2:292 minutes, 29 secondsAnd here's why. What I noticed in the data is that that 3:30 candlestick,
+2:382 minutes, 38 secondsand I knew this because I used the prior 3:30 to map out the rest of the day, but
+2:452 minutes, 45 secondsit told me definitively 3:30 to 4 is where institutional flow is dramatically important.
+2:572 minutes, 57 seconds9:30 in the morning ends up being trader flow and continuation of institutional candlesticks that come the day before.
+3:073 minutes, 7 secondsAnd when that 3:30 candlestick is very important and so it mapped it out and I
+3:153 minutes, 15 secondsgot to figure out how to get this data to you because it doesn't have a copy to
+3:233 minutes, 23 secondsclipboard sort of thing. So I have to sort of cut and paste each one of them and then take the pictures open. But it
+3:313 minutes, 31 secondsquantified two very important things for me. The first is yes that 334 candle is
+3:383 minutes, 38 secondsthe one that's going to dominate for prior days.
+3:433 minutes, 43 secondsSo we know from a flow perspective what's going on. When that candle becomes dramatically important is if the
+3:533 minutes, 53 seconds3:30 candlestick moves with at least 20% more volume than
+4:014 minutes, 1 secondthe 3:00 candlestick and what that tells us about market on close positions for
+4:094 minutes, 9 secondsinstitutional flow. We have market on open that's M O and we have market on close M O C.
+4:184 minutes, 18 secondsNow it turns out that this is also incredibly important for stocks
+4:264 minutes, 26 secondsin general because they all move at that same time but some stocks have a little
+4:334 minutes, 33 secondsbit of a sticky patch. So the first thing I realized which was great validation for me is that this structure
+4:424 minutes, 42 secondsbeats every single edge flow statistic that we have. I mapped it against opening range or regular hours, middle
+4:514 minutes, 51 secondsof the day, market lulls. I did everything and I took all the open data that
+4:584 minutes, 58 secondsEdgeful had. I plugged it into Gemini and Gemini said, "Your statistics beat
+5:065 minutes, 6 secondsevery single one of these." And so what what we have now is something that says,
+5:135 minutes, 13 seconds"Hey, we're on the right track. Let's see how many of the instruments it moves for and what instruments those actually
+5:215 minutes, 21 secondsare." So Sidekick gave me the first thing. It gave me what the conviction candles are
+5:285 minutes, 28 secondsrelative to the 30 minute uh closing candlestick.
+5:335 minutes, 33 secondsAnd then what tends to happen based on how much volume occurs in that 330
+5:415 minutes, 41 secondscandle. It tells us how big the stop loss needs to be. If the 30 minute candlestick is not
+5:505 minutes, 50 secondsat least 20% more of the volume, the the stops expand. So I'm going to send all that data to you. I'm going to send it
+5:595 minutes, 59 secondsin nice clean packets and then you can say, "Okay, let me see if that works in terms of what we're looking at, how you
+6:076 minutes, 7 secondscan add it to the machine learning event." So yeah, another thing you might want to do if you can, you know how you said you're going to take screen captures?
+6:176 minutes, 17 secondsMhm. If you take all the screen captures,
+6:206 minutes, 20 secondsthen put all the screen captures in cloud and tell it what it is and how to organize it.
+6:296 minutes, 29 secondsOkay,
+6:296 minutes, 29 secondsyou can say it organize this data for another session of cloud. Okay, knows what to do.
+6:376 minutes, 37 secondsScreen grab.
+6:396 minutes, 39 secondsYes, they can all include. I think you can put up to 10 screen captures at a time.
+6:546 minutes, 54 secondsMy daughter is um a functional medicine physician and she has this amazing office up in here that I'm sitting in
+7:037 minutes, 3 secondsand it's very serene and there's no way I'm going to be able to duplicate this in my own house, but man, do I love this. Anyway,
+7:147 minutes, 14 secondssorry. So, put the screen capture up to 10.
+7:197 minutes, 19 secondsexplain uh explain what it's looking at and then tell it to take the data.
+7:277 minutes, 27 secondsHow do I explain what it's looking at?
+7:307 minutes, 30 secondsWhat what what do I do? I say it can tell colors. Yes. Okay.
+7:397 minutes, 39 secondsAll right.
+7:437 minutes, 43 secondsUh literally then what do I ask him?
+7:467 minutes, 46 secondsTell him to organize the data for consumption by another session of Claude. Claude to organize.
+7:557 minutes, 55 secondsSo,
+7:567 minutes, 56 secondsI'm going to read my uh my spinach notes after we go. Okay.
+8:018 minutes, 1 secondTell Claude to organize for another session of Claude.
+8:088 minutes, 8 secondsOkay. Why would we want to do that? Uh, why can't I use it in the same session?
+8:178 minutes, 17 secondsNo, no, no. Do it if you wanted to send it to me. I mean, oh,
+8:248 minutes, 24 secondsoh, I see. So, you get the data. Okay.
+8:278 minutes, 27 secondsYeah. But if you do that, then you can actually see what it says. It'll shorten it and you might say, "Oh, this is right or this is wrong."
+8:388 minutes, 38 secondsSo that way you can actually massage it the way you like it.
+8:448 minutes, 44 secondsOkay. All right. Very good. This is the kind of stuff that uh AI is so much
+8:518 minutes, 51 secondsbetter than humans to do to give a glob of information to it and tell it to organize it in a
+9:009 minutesa lot of times I do this and I said put this together that makes sense to a human. So I look at it and a lot of
+9:099 minutes, 9 secondstimes I put something that's good for human and I tell it okay now change this for something that's good for AI.
+9:189 minutes, 18 secondsOkay. All right. So, okay. Great. Great. Great. Okay. So, the big thing was how much draw down.
+9:269 minutes, 26 secondsSo, that's going to adjust daily limits and then potential recalibration of
+9:349 minutes, 34 secondsentries is what this uh spaces. So if you say hey I want my max draw down on
+9:409 minutes, 40 secondsthe day to be no more than seven points your entry will be at the minimum
+9:499 minutes, 49 secondsif I can't get it down here for maximum draw down I'm not taking the trade right
+9:569 minutes, 56 secondsokay so uh machine learning will then tell you okay this is a good trade because it has high
+10:0410 minutes, 4 secondschance of working with 7% or it says oh no this is not good because the uh this would have at least maybe 15%
+10:1410 minutes, 14 secondsdraw down for example machine learning could tell you that after the models are created okay
+10:2010 minutes, 20 secondsbecause it looks at I I I use the models based on last 12 years okay so what happens in the intraday
+10:2910 minutes, 29 secondsbecause intraday moves so quickly because of zero DTE that cycle that we use is
+10:3910 minutes, 39 seconds3 to 6 weeks, but we have to check it at the end of every week to make sure that it's still tracking
+10:4710 minutes, 47 secondsand if it's shifting anywhere. So, that would be important, but but Clyde will figure that out. Yes.
+10:5510 minutes, 55 secondsNo, I I actually, you know, I have for end of day, I have an automatic trading system running. Uhhuh.
+11:0111 minutes, 1 secondI have something like that. It's called model drift detection.
+11:0811 minutes, 8 secondsThat means when when the actual model and the real life happening are in sync or out of sync.
+11:2011 minutes, 20 secondsOkay. So this is an important thing I think that the FCMS would like to know and the the portfolio managers in general.
+11:3011 minutes, 30 secondsRight. Do you understand what I mean?
+11:3211 minutes, 32 secondsI do. Exactly. I know exactly what you're saying. I know exactly what you're saying. All right. Great. So,
+11:4011 minutes, 40 secondshere's what I did next. Um,
+11:4511 minutes, 45 secondsthen I built all the things that said, "Hey,
+11:5211 minutes, 52 secondstell me what's going on for each of these instruments and how it changes.
+12:0212 minutes, 2 secondsAnd I know this is going to be hard to see because let me change the setup.
+12:0812 minutes, 8 secondsApplication settings look and feel. Let's go to larger so we can see what's happening.
+12:1712 minutes, 17 secondsAll right. So here what I did was
+12:2712 minutes, 27 secondsuh okay this is the NQ. That's not the one I wanted. I want the ES.
+12:3812 minutes, 38 secondsOh, isn't that interesting? It allows me to. It's not.
+12:4412 minutes, 44 secondsAll right. So, I've got my pivots and of course, we can see a lot of noise here,
+12:5112 minutes, 51 secondsright? We know value area high is likely a target zone for the trader because of
+12:5712 minutes, 57 secondsthe pre-market highs. And so it also is a space where the aggressive trader might decide they want to short back
+13:0413 minutes, 4 secondsinto the zone. But that's that's not important. What's important is this. I built it on individual days. What
+13:1213 minutes, 12 secondshappens on Thursdays in general? So the statistical probability that edgeful
+13:1913 minutes, 19 secondssays about continuation on the day is only 45%.
+13:2813 minutes, 28 secondsBut for me and by continuation I mean higher than the open of the day.
+13:3713 minutes, 37 secondsSo Edgeville says it's only 45% probability that the price action
+13:4413 minutes, 44 secondscontinues to the high. For me, I have that the institutional market on close
+13:5313 minutes, 53 secondshas been validated. And if the 50 simple moving average on the 30 is up,
+14:0114 minutes, 1 secondtrending upward, the dips are still going to get bought.
+14:0614 minutes, 6 secondsThey're absolutely still going to get bought simply because the institutional flow is green and it's been validated for dip buying.
+14:1614 minutes, 16 secondsSo, let me let me make this bigger.
+14:2114 minutes, 21 secondsAn institutional flow. How did you come up with that? Is that the king? Yes, it's the king cattle.
+14:2914 minutes, 29 secondsIt's the king candle. And it tells me,
+14:3214 minutes, 32 secondssee the flow here? Look at the flow at 3:30 to 4. Yeah. Versus the flow at 3 to 3:30.
+14:4214 minutes, 42 secondsHuge. Plus here, this institutional candle is as high in volume as the
+14:5114 minutes, 51 secondsopening candle or higher in terms of volume. So, it continually tells you, listen,
+14:5914 minutes, 59 secondsyou're going to have dip buys, but they might not extend to brand new highs.
+15:0415 minutes, 4 secondsHoly You know, I did not even think about adding that to the machine learning model.
+15:1515 minutes, 15 secondsIt's fantastic. Oh my god, this is huge. Yeah. And and I'm getting 70 and 75%
+15:2515 minutes, 25 secondsaccuracy right now. Wait till you put this one in. Yeah. I can't wait to do it.
+15:3215 minutes, 32 secondsUnfortunately, it takes like six or 10 hours for it to Yeah. No, no, does it's okay. It's no
+15:4015 minutes, 40 secondsbiggie at all. So here we have this on the 30 minute.
+15:4615 minutes, 46 secondsNotice it breaks the 50 simple moving average, but it does not lose the low of
+15:5715 minutes, 57 secondsthe uh 130 candle. And so this little nuance here at this 130 candle, notice I have it pink.
+16:0716 minutes, 7 secondsYeah. And so it means it's an identifier.
+16:1116 minutes, 11 secondsThat's why I've got my line sitting right here.
+16:1516 minutes, 15 secondsWe haven't really talked about it, but it's for the pullback event. This 130 candlestick is a pullback event or it's
+16:2416 minutes, 24 secondsan expansion event. It trend is going in the opposite direction. So, I'm going to tell Claude what it's looking at here,
+16:3516 minutes, 35 secondsand I'm going to put up the scans. Now,
+16:3816 minutes, 38 secondsthe I I need to go backwards in time where I can have downward trends and upward trends so that clock can see both
+16:4616 minutes, 46 secondsof them and then work it out. But this 130 candle that I have in pink, that is a candle that I have always had there,
+16:5616 minutes, 56 secondsbut it's just not uh it only comes into play if we have
+17:0517 minutes, 5 secondsa retracement event that gives us the dip buying formation. Right? So, we can go if it holds the 130 candle and it
+17:1417 minutes, 14 secondsbegins to hold and we had institutional flow then it's very likely to go to the top of the 9:30 candle.
+17:2317 minutes, 23 secondsOkay. You said institutional flow. We're talking about market on close volume.
+17:3017 minutes, 30 secondsI don't know. Okay. Sorry. I'm talking about institutional candle from the previous day. Yes.
+17:3817 minutes, 38 secondsSo now that's our king candle from the previous days and we know it because of volume um verification it it increased.
+17:5217 minutes, 52 secondsI got okay.
+17:5417 minutes, 54 secondsYeah. And so what this tells me this will flash up green or red telling us what institutional flow looks like.
+18:0518 minutes, 5 secondsIt'll tell me what size I want to take, whether it's reduced or
+18:1218 minutes, 12 secondsfull. Reduced size will be orange. No trade will be gray. It'll be nothing.
+18:2018 minutes, 20 secondsAnd then full size will be green. And so this tells me this. And then here's my pivots. It tells me where I am in
+18:2818 minutes, 28 secondsrelation to the pivot. So I'm going to lean bullish anyway.
+18:3218 minutes, 32 secondsPlus institutional flow. It continually tells me to buy the dips. Prior, my eyeballs of the 50 would tell me, "Hey,
+18:4318 minutes, 43 secondslisten. As long as I hold the 130 low and my 50 is moving upward, I'm going to bounce back to the top of that 9:30 candle."
+18:5518 minutes, 55 secondsGot it.
+18:5618 minutes, 56 secondsOkay. So the big takeaway is that this shifts
+19:0319 minutes, 3 secondsevery day of the week. The statistical probability and the threshold size, what size you want to uh position it, it's
+19:1319 minutes, 13 secondsnow triggered by days of the week and what the data say about the range of
+19:2019 minutes, 20 secondsmotion. The threshold is gray at 65 because it's sitting at the minimum. That's telling us, hey, listen,
+19:3219 minutes, 32 secondsbased on Thursday, we still have good solid flow from our threshold event.
+19:4219 minutes, 42 secondsTo me, this absolutely cleans I mean, it cleans everything up. It tells you,
+19:5119 minutes, 51 secondshey, if institutional market on close has been validated from the day before,
+19:5719 minutes, 57 secondsthe only short trades or scalp trades into primary candles like that 9:30
+20:0520 minutes, 5 secondscandle or the 4:00 a.m. candle or anything like that. It's the nuance for
+20:1320 minutes, 13 secondsthe trader who's just looking versus um the automation that we'll have behind it
+20:2220 minutes, 22 secondsin in terms of that. And so the execution event then becomes okay if you want this to execute for you
+20:3120 minutes, 31 secondssize needs to be reduced. So you'd want to use half size or a third. And by size you mean how many contracts? How many contracts?
+20:3920 minutes, 39 secondsOkay. Yeah. So you do reduce size because when you don't have flow, what
+20:4720 minutes, 47 secondsit tells you is that two things. If you have institutional
+20:5420 minutes, 54 secondsflow, the trade becomes the high of the 30 minute candle to go
+21:0121 minutes, 1 secondlong. And notice you can do that at 4:00 a.m. because it really does hold the range. the size of the stop is always
+21:1021 minutes, 10 secondsgoing to be the width of that um 330 candle.
+21:1821 minutes, 18 secondsOkay?
+21:1921 minutes, 19 secondsAs long as market is validated, right? And so from that perspective, it tells you,
+21:2821 minutes, 28 secondshey, if this candle's big, you know,
+21:3021 minutes, 30 secondsyou've got at least x many points of risk. And your first target is going to be the high. If you
+21:3921 minutes, 39 secondstake it in the middle of the night, the first target is going to be the high of the 4hour candlestick. So it's going to
+21:4721 minutes, 47 secondsgive you the range of motion when to stop and start. And then height of 4 a.m. or 4 hour 4, sorry, 4 a.m. I always say 4 hour.
+21:5821 minutes, 58 secondsIt's the 4 a.m. candlestick. So you can buy that dip and it works really well. See, a lot of
+22:0522 minutes, 5 secondspeople right now are going to be confused because they go, "Wait a second. I lost my entire 9:30 candle.
+22:1522 minutes, 15 secondsHere's my 10:30 candle." The guys who trade initial balance are now going to say, "Okay, I had a look below that
+22:2422 minutes, 24 secondsinitial balance and now it's above the initial balance." So, they are trying to go long.
+22:3222 minutes, 32 secondsThey're going to try and push it into that first pivot. What I want to do, can I talk to Claude?
+22:4222 minutes, 42 secondsUh, yeah.
+22:4322 minutes, 43 secondsOkay. So maybe I'll talk to Claude about Yeah, there's a microphone button.
+22:5022 minutes, 50 secondsOkay.
+22:5222 minutes, 52 secondsYou can't have a conversation, I don't think.
+22:5522 minutes, 55 secondsI just want to Yeah. No, I just want to Yeah. You can't dictate talk to Yeah. I want to talk one after the other and then Yeah. Yeah. I do that.
+23:0423 minutes, 4 secondsYeah. And so the big thing is for every single one of these I built um
+23:1423 minutes, 14 secondsI built a pattern that's for the NQ for the YM for gold
+23:2223 minutes, 22 secondsand for oil and all of them came back with
+23:3023 minutes, 30 secondssome super interesting formations. And and what are your king candles of oil?
+23:3723 minutes, 37 secondsThe interestingly enough, it is the 10 a.m. candlestick formation. Now really, but they open at 8.
+23:4523 minutes, 45 secondsI know, but the open does not matter.
+23:4823 minutes, 48 secondsIt's about after after the regular what is it called?
+23:5323 minutes, 53 secondsAfter the opening range formation of the regular trading hours, oil
+24:0124 minutes, 1 secondstrategizes its position. All the traders strategize from that um from that space.
+24:0924 minutes, 9 secondsInteresting. Yeah, it's very very interesting.
+24:1224 minutes, 12 secondsYeah. I I have a whole bunch of questions on your um that ENQ that you had up.
+24:1824 minutes, 18 secondsYeah. Yeah. Yeah. Yeah. Yeah. Let's let's do it. and Q if I can just ask you um
+24:2524 minutes, 25 secondsof course so on the top I'm looking at you have in
+24:3324 minutes, 33 secondscube probability what is that 45% this 45 this 45%
+24:4024 minutes, 40 secondsgives me what the likelihood is of follow through on the day this is the threshold event.
+24:5424 minutes, 54 secondsOkay. So, it says, "Hey, there's only a 45%
+24:5824 minutes, 58 secondsprobability if you bought it at the open and stayed long that you'd be bullish by the close." Oh, I see. Got it.
+25:0625 minutes, 6 secondsThat's what each of those thresholds mean.
+25:0825 minutes, 8 secondsAnd you have ENQ chop risk. How do you Okay. So, this indicator that you have that creates those rectangles. Yes.
+25:2125 minutes, 21 secondsIs that something you can share with me?
+25:2325 minutes, 23 secondsOf course, I'll share everything with you. Yeah.
+25:2725 minutes, 27 secondsYeah. I thought I thought I had it and then I checked and I realized I didn't.
+25:3125 minutes, 31 secondsYeah, you don't. I cuz I built this yesterday. I built this last night.
+25:3625 minutes, 36 secondsWell, you had another one earlier that had rectangles. I didn't have that either.
+25:4025 minutes, 40 secondsYeah, but they Okay, I'll send them all to you. Okay, great. I'll send them all to you.
+25:4825 minutes, 48 secondsMark validated. Okay, this is this is really good.
+25:5325 minutes, 53 secondsYeah, MOC gives us what the trading structure looked like in the prior day.
+25:5925 minutes, 59 secondsAnd notice MOC is almost twice as high as the 3:00
+26:0826 minutes, 8 secondscandle. And so it gives us the market on close validation. And here's the interesting thing.
+26:1826 minutes, 18 secondsNo, we won't go into that. That's that's that's too much in the weeds. Okay. So,
+26:2426 minutes, 24 secondsthis is the structural motion that's going to give us these patterns for traders who use just
+26:3426 minutes, 34 secondsuh flow to tell us what direction to go.
+26:3926 minutes, 39 secondsOkay. Um, what I want to do is obsucate as much as possible
+26:4726 minutes, 47 secondsso that when it shows up for them, it just says,
+26:5426 minutes, 54 secondsuh, here's the structure. You want to buy the dip, best dip, right?
+27:0027 minutesLow of the institutional flow candle risk,
+27:0427 minutes, 4 secondsblah blah blah. That that's going that's going to take until after I create the very first version of course because of my of course all understanding stuff.
+27:1427 minutes, 14 secondsNo no of course but we are just in concept mode here proof of concept mode.
+27:2027 minutes, 20 secondsSo, so the way my mind has put this together so far is that having the machine learning
+27:2627 minutes, 26 secondsto figure out what the probability of the main candle bouncing is at the time for this moment.
+27:3627 minutes, 36 secondsYes. And see that's what this tells us.
+27:3827 minutes, 38 secondsThat's that's what that thing does, but it does it based on a machine learning model.
+27:4427 minutes, 44 secondsOkay. The part that I still have completely not clear on is what the user interface
+27:5327 minutes, 53 secondsshould look like. So I didn't look at edgeful. So if that is too data focused for us.
+28:0228 minutes, 2 secondsI don't I mean I don't I didn't I didn't look at it. By the way, I love your password on that one.
+28:1028 minutes, 10 secondsIt made me smile. It's awesome. Um, but I didn't I didn't log in.
+28:1828 minutes, 18 secondsIt's too data. It's too data driven. And I believe that's why Edgeful is having a
+28:2728 minutes, 27 secondsslow uptick in how people use it because again,
+28:3428 minutes, 34 secondsit's almost too much for the mind to pull together. And so as long as machine learning is doing
+28:4328 minutes, 43 secondsthat, we're we're all great. You're recording this, right? I am. Yes.
+28:4928 minutes, 49 secondsOkay. Great, great, great. So maybe you could send it to me afterwards. So um notice here it's all the way. This is
+28:5728 minutes, 57 secondswhere value area high is here. It's way down here. 26,116.
+29:0529 minutes, 5 secondsValue area high. What is how is that determined?
+29:0829 minutes, 8 secondsOkay, so the reason we can't use value area high is because each
+29:1729 minutes, 17 secondsplatform has a unique way of counting candle
+29:2329 minutes, 23 secondscloses and opens. And so this number can vary from I mean if I'm looking at let's say I'm
+29:3229 minutes, 32 secondsusing Thinker Swim and I go to studies and I say edit studies and I
+29:4229 minutes, 42 secondslook for volume profile
+29:5429 minutes, 54 secondsand I look for my 70%.
+30:0230 minutes, 2 secondsIt gives me a totally different number. It's still above it,
+30:0930 minutes, 9 secondsbut it has 26,000 as value area.
+30:1530 minutes, 15 secondsUh oh, this volume profiles value area. Yes. Oh, okay. Okay, got it.
+30:2230 minutes, 22 secondsYeah. So, that's weird. I know. But it's not so weird that it's
+30:3030 minutes, 30 secondsthe it's the same problem on every platform. If you use Ninja, you're going to get a totally different volume
+30:3730 minutes, 37 secondsprofile. If I open up uh if I open up top step X,
+30:5030 minutes, 50 secondshang on a second. I got too much going on up here. If I open up top step X
+31:0031 minutesand I use this one and I look for my volume profile for my NQ,
+31:1031 minutes, 10 secondsit's going to show something different.
+31:1231 minutes, 12 secondsSo, every single one of them gives us a different value area high,
+31:1931 minutes, 19 secondsvalue area low. It's just It's freaking bananas. I I don't even
+31:2531 minutes, 25 secondsI I don't I can't understand why because Yes, but that's why Edgeold does not use
+31:3331 minutes, 33 secondsthat in its statistics because it's variable across different platforms.
+31:4231 minutes, 42 secondsDon't even ask me why. I have no clue.
+31:4631 minutes, 46 secondsYeah, because I created a volume profile indicator for Ninja when it didn't have one. Uhhuh.
+31:5431 minutes, 54 secondsMany years ago, so I'm very familiar with it. Um,
+32:0132 minutes, 1 secondyeah, I think because it's so different across so many different platforms that we're probably
+32:1132 minutes, 11 secondsbetter off either using it ourselves when we're trading or
+32:1832 minutes, 18 secondsuh but eliminating the the use case for the regular trader until, you know, we develop something else. Yeah. Yeah.
+32:2932 minutes, 29 secondsBecause I'm looking for Yeah. I'm looking for consistency.
+32:3532 minutes, 35 secondsYeah. I don't we we can't completely avoid volume profile because we have so many other ways of exactly
+32:4332 minutes, 43 secondsstatistics. Um I mean eventually we could always add it but the idea the
+32:5032 minutes, 50 secondsinitial idea is to make a simple proof of concept to see if we can actually add value
+32:5732 minutes, 57 secondsand that that would be very interesting. That that's the hardest part. Yeah.
+33:0333 minutes, 3 secondsThe best part is that I want to do this and I don't know how which is good. I mean I'm talking about trading part.
+33:1333 minutes, 13 secondsSo that that actually is an advantage.
+33:1733 minutes, 17 secondsYeah. And notice interestingly how it it behaves
+33:2333 minutes, 23 secondsso robustly around these pivots. It literally tells you when to take profit
+33:3133 minutes, 31 secondsas long as everything sits in the same direction. if MOC is validated,
+33:3733 minutes, 37 secondsif um your 50 simple moving average is up and then we can use the probability of continuation. But this chop risk here,
+33:4933 minutes, 49 secondsit says this is almost the nogo trade.
+33:5433 minutes, 54 secondsThis is what edgeful says in terms of chop risk, but adding
+34:0534 minutes, 5 secondsthe information that because they don't use the simple moving average business on the 30 minute the 50 is the 50 and
+34:1334 minutes, 13 secondsthe 200 are absolutely my go-tos I don't I don't use anything else and people are
+34:2034 minutes, 20 secondslike oh why don't you because it gives me such high reliability
+34:2734 minutes, 27 secondsit truly is phenomenal it's it's truly phenomenal wait what is this line here Yeah, usually when you see something
+34:3534 minutes, 35 secondsThis is a camarilla. Okay. So, the camarillas for the NQ work really well. They don't work as well in the ES.
+34:4534 minutes, 45 secondsOkay. I have no idea what Camarella means. A camarilla is like a pivot point.
+34:5134 minutes, 51 secondsIt's a modified pivot point. Um, let me let me write down to send that to you.
+35:0235 minutes, 2 secondsI can't believe how many different one of these things you keep in your head. Well, it's the same thing for you,
+35:1135 minutes, 11 secondsright? There are a lot of things that you know in your head because you're so entrenched in what it is that you're
+35:1835 minutes, 18 secondsdoing. And so that's just the right. So the Camarillas, they do great for the NQ. Um,
+35:2735 minutes, 27 secondsbut yeah, it's on every single one that Edgeful put together. This system beats all of them.
+35:3635 minutes, 36 secondsAll of them. And by a country mile. So,
+35:4235 minutes, 42 secondsobviously, I'm not going to say anything to them about that, but it's I mean, it's phenomenal. It truly is phenomenal.
+35:4835 minutes, 48 secondsBut I my next real discovery that I hope to pull into is how can we get
+35:5935 minutes, 59 secondsthis? What can we see on stocks that tell us
+36:0736 minutes, 7 secondsfrom institutional flow what we're actually after and could do the main measurements because I know if
+36:1736 minutes, 17 secondsthis appears inside of the 30 minute fractally it's got to appear on the bigger time frames.
+36:2536 minutes, 25 secondsI just don't know what those parameters look like. So, I'm I'm gonna When you talk about stocks, are you
+36:3336 minutes, 33 secondstalking about ES or you're talking about individual stocks?
+36:3636 minutes, 36 secondsNo, I'm talking about stocks like the ones that we'll use in trade wave for stock positioning. Oh, individual stocks. Yes.
+36:4536 minutes, 45 secondsOh, okay. Yes,
+36:4636 minutes, 46 secondsthat part I'm a lot more comfortable with than futures um right now because how much I'm exposed to them,
+36:5636 minutes, 56 secondsright?
+36:5736 minutes, 57 secondsUm but yeah, by the way, I I met with the MVP at Trade Year a couple of months ago. Uhhuh.
+37:0537 minutes, 5 secondsAnd he was telling me there is a guy that has this automated trading system.
+37:1237 minutes, 12 secondsUhhuh. that he makes boatload of money intraday on stocks and I keep asking him how do you do it
+37:2037 minutes, 20 secondsand he won't tell me but he told me I found this statistical model that works over and over again
+37:2837 minutes, 28 secondssee I think we can find that on our own oh I'm sure we can find that yeah I think asking me for it
+37:3637 minutes, 36 secondsyeah I think mysteries revealed is well
+37:4237 minutes, 42 secondson a on uh a huge metaphysical and supernatural space. I
+37:5037 minutes, 50 secondshonestly believe that we are in the age of mysteries revealed and so there's not going to be any mystery that's not
+37:5837 minutes, 58 secondsrevealed to us in the in the coming in the coming decade in my mind. So yeah, I think that would be the next big thing
+38:0638 minutes, 6 secondsthat we can sort of superpower trade wave real time using the stock events as things move forward.
+38:1438 minutes, 14 secondsOh, so definitely I Oh, I love doing that. The problem is we want to do all these things but
+38:2238 minutes, 22 secondsyes, we just Yes. But we have started and we are
+38:2838 minutes, 28 secondsmoving down the right path. And so um what I want to do is um have us wrap
+38:3638 minutes, 36 secondshere in just the next couple minutes because I want my mind to be clear when I'm talking to Howard. And I I want to
+38:4338 minutes, 43 secondsuh pray for wisdom and just knowing the right things to say. So I I want to have time to do that. And then I want to have
+38:5138 minutes, 51 secondstime to put together my clean bullets in terms of where we are openly, what we
+38:5938 minutes, 59 secondswant to do because I trust Howard and he's one of the one of the few people at that level that I trust.
+39:1139 minutes, 11 secondsUm, and so I just want to give him the layers of here is where we are. Our goal is
+39:2039 minutes, 20 secondsto be uh a BTOB with some B to C because people are
+39:2839 minutes, 28 secondsalways going to want to do it on their own and just get the data and then um
+39:3539 minutes, 35 secondsjust see how quickly we can roll it out to these people and if you know if what
+39:4339 minutes, 43 secondswe tell Herb makes him even more interested and we can structure it from an advice
+39:5139 minutes, 51 secondsperspective in terms of what will look good to them. Then we have our pathway
+39:5939 minutes, 59 secondsto our first real proof of concept and sandbox that'll say, "Hey, let's put it
+40:0640 minutes, 6 secondsin uh let's put it in a sandbox somewhere and have it work."
+40:1140 minutes, 11 secondsOkay. Now, I'm unclear about something you just said.
+40:1440 minutes, 14 secondsOkay. Sure. do have trade wave completely mature on end of day.
+40:2140 minutes, 21 secondsOh no, no, I'm just talking about futures and then we're discussing a futures. We have nothing except the document.
+40:3040 minutes, 30 secondsExactly. But that's all that.
+40:3340 minutes, 33 secondsSo what are you going to talk to him about?
+40:3840 minutes, 38 secondsI'm just going to talk to him about what he potentially sees a product like this doing.
+40:4340 minutes, 43 secondsNo. Are you going to talk him about the existing trade wave at all or?
+40:4940 minutes, 49 secondsOf course, because he's in the stock space. Oh, okay. Yes.
+40:5540 minutes, 55 secondsYeah. I I just didn't know if Yeah, I'm covering the whole shebang with him. I'm covering with him what's ready to go,
+41:0341 minutes, 3 secondswhere our future proofs of concepts are,
+41:0741 minutes, 7 secondsand what we foresee as the end goal to bring institutional
+41:1541 minutes, 15 secondslevel metrics to the common guy
+41:2341 minutes, 23 secondswho doesn't have an account with Merrill or Goldman or Morgan Stanley. or JP Morgan.
+41:3241 minutes, 32 secondsGot it.
+41:3241 minutes, 32 secondsOr whomever. Yeah, that's you. You do remember that I added that tickers thing, right? Yes.
+41:4041 minutes, 40 secondsIf you go Okay, show me again. Let me stop.
+41:4641 minutes, 46 secondsShow me again because I thought this is pretty cool.
+41:5741 minutes, 57 secondsI have a headache. I've had a headache for three days. Oh, no.
+42:0042 minutesI know. I'm sorry. I don't mean to me lament the the the barrier of, "Hey, I'm talking to a work colleague versus, hey,
+42:0942 minutes, 9 secondsI'm talking to my friend about what's happening to me." I'm like, "Sorry, I jump over that ledge all the time." So,
+42:1542 minutes, 15 secondsI I apologize, but that's why I'm rubbing my head. Okay. Oh, yes. this. Yes,
+42:2242 minutes, 22 secondsthis is, by the way, this is the new uh Tradewave homepage. Oh, perfect.
+42:3042 minutes, 30 secondsIt's better than it was. And I took your um the video.
+42:3942 minutes, 39 secondsI love that.
+42:4042 minutes, 40 secondsIt looks Yes, I love it. Way better. Love it. And it has all of these.
+42:4742 minutes, 47 secondsUm Yes. Then on here, wave viewer goes to wave viewer and then tickers. Uhhuh.
+42:5542 minutes, 55 secondsGoes to this list of Oh, this is so beautiful. Look technology.
+43:0143 minutes, 1 secondI want to know about I love it that you changed the homepage like this. Fantastic. So, look at this. When you go to these,
+43:0943 minutes, 9 secondsthese are updated daily.
+43:1143 minutes, 11 secondsIt tells you what's going on. Then it tells you 41 years of history that it trade wave has.
+43:2143 minutes, 21 secondsAnd then it tells you what trade wave says with its machine learning for the next 30 days from today.
+43:2943 minutes, 29 secondsOkay,
+43:3043 minutes, 30 secondswhich changes every single day. And it says it's average minus.21%
+43:3743 minutes, 37 secondsin this 30-day window during the midterm election years. Okay,
+43:4243 minutes, 42 secondsfor the next 30 days. Tomorrow it's going to be different. It's always for the next 30 days. Yes.
+43:4943 minutes, 49 secondsAnd then tells you best months for Oh my gosh. AMD is so good.
+43:5843 minutes, 58 secondsGives you better stats for monthly performance, best years, for worst years. And then it compares midterm
+44:0844 minutes, 8 secondselection years which next year is going to say year before election right
+44:1544 minutes, 15 secondsor P plus or year three and then compares that to consecutive years right
+44:2244 minutes, 22 secondsokay so let me ask you a question do you think
+44:2944 minutes, 29 secondsthat there's a way for us to incorporate
+44:3744 minutes, 37 secondsThe average return
+44:4444 minutes, 44 secondson the day um on the days into earnings and the
+44:5444 minutes, 54 secondsdays after earnings. So let's say we do 10 days 10 days before
+45:0345 minutes, 3 secondsearning because we're coming into earning season. Of course.
+45:0745 minutes, 7 secondsSo I think that would be a very interesting metric.
+45:1145 minutes, 11 secondsAbsolutely. I can add that. So, we can do 10 days before, 10 days after, and
+45:1745 minutes, 17 secondsthen say, okay, where's the statistical uh significance? Or is it just a bunch
+45:2645 minutes, 26 secondsof noise until after 10 days of of price action? Or how many
+45:3245 minutes, 32 secondsdays of statistical noise in there exists before the price chooses a direction?
+45:4145 minutes, 41 secondsSure. I mean 10 I can do 10 days, 20 days. I can do both. I can I can do all of that.
+45:4945 minutes, 49 secondsUm you can also click here.
+45:5245 minutes, 52 secondsCan you can you tell can you ask machine learning to tell you which is the best to use in general?
+46:0346 minutes, 3 secondsOf course, it probably gets super squishy. What it have to do is go and test them all and then
+46:1246 minutes, 12 secondswe can learn on that one also. So we can literally have multiple layers of machine learning statistics
+46:2146 minutes, 21 secondsright and see this one just went to AMD on trade
+46:2846 minutes, 28 secondswave because I clicked that see AMD trade wave. Okay. So this and where was the tab for this one in in where did when you went backwards?
+46:4046 minutes, 40 secondsWhen you go to this is tradewave.ai. Uh-huh. Tickers. Tickers. Perfect. Tickers.
+46:4946 minutes, 49 secondsOkay. Beautiful.
+46:5246 minutes, 52 secondsSo I am so happy that Dave Farriet introduced us to
+47:0247 minutes, 2 secondseach other. I just feel like the whole world
+47:0847 minutes, 8 secondsopened up in a fantastically dramatic way. Oh, I am too.
+47:1647 minutes, 16 secondsYeah, this is this is superb. Okay, one other before we go. Okay,
+47:2247 minutes, 22 secondsI met with this guy named Michael Sachello.
+47:3047 minutes, 30 secondsLook at him.
+47:4247 minutes, 42 secondsAre we connected on LinkedIn? I need to do that. Oh, I don't know. I think so. Okay.
+47:5047 minutes, 50 secondsLet me see. This guy. Okay.
+47:5547 minutes, 55 secondsHead of Somebody introduced me to him. I just had a meeting with him and look at his background.
+48:0548 minutes, 5 secondsHead of content, crossf functional leader, datadriven creator and look at where he's worked. Last
+48:1248 minutes, 12 secondsthing he did was senior investing and trading platform editor in investopedia.
+48:2148 minutes, 21 secondsInteresting.
+48:2348 minutes, 23 secondsAnd anyways, he studied Oxford economics. Is he a Brit? Apparently,
+48:3248 minutes, 32 secondsI didn't even notice that, but yeah. So,
+48:3548 minutes, 35 secondsI met with him and he just sent me an email. Um,
+48:4348 minutes, 43 secondsextract analysis. Okay, this is what the email he just sent me.
+48:4948 minutes, 49 secondsLast email. Look at this. I've seen I'm like a kid in a candy store. If I'm interested in it,
+48:5748 minutes, 57 secondshe he I just gave him an account to play with trade wave. Mhm.
+49:0349 minutes, 3 secondsAnd I have the ability to and he just I think likes it.
+49:0949 minutes, 9 secondsAwesome. But anyway, what I was going to tell you, I mean, the reason I told you that is he was so interested and he seems to be a marketing guy.
+49:2349 minutes, 23 secondsThat's what I got interested in. So, I'm supposed to talk to him next week and he
+49:3049 minutes, 30 secondsis going to tell me what he thinks he can do for Trade Wave. Okay. Awesome.
+49:3849 minutes, 38 secondsAwesome. Mike Sachero,
+49:4249 minutes, 42 secondsby the way, I mentioned your name to him and one other guy. They both went and checked you out.
+49:4849 minutes, 48 secondsI mentioned your name to have whoever I know. It gives me credibility. I appreciate that. All right. Okay.
+49:5649 minutes, 56 secondsThat's great.
+49:5749 minutes, 57 secondsOkay. I just wanted to that one also. And I will Yeah, we'll have something that
+50:0650 minutes, 6 secondsum Yeah.
+50:0850 minutes, 8 secondsYeah, I'm going to work on uh the stuff here. I'll give you um I'll give you a
+50:1550 minutes, 15 secondscall after I talk to Howard to see how um how it went and then um
+50:2450 minutes, 24 secondswe'll strategize just quickly on the phone about what I need to do based on any anything
+50:3350 minutes, 33 secondsthat he said. And then, you know, my goal is to get the three of us on a call
+50:4050 minutes, 40 secondstogether. That's that's my goal cuz I know he's going to want to meet you, uh, get a feel for you and and all of that.
+50:4950 minutes, 49 secondsAnd so that that's next on the list.
+50:5250 minutes, 52 secondsYeah, that would be great. I mean, I mean, the whole point is for him to see value and actually see dollar sign in
+51:0051 minuteshis head that yes, I can convert this. Yes.
+51:0351 minutes, 3 secondsSo I actually mentioned this to Mike Sacher and I said that you are talking to
+51:1151 minutes, 11 secondsHoward is like the only thing in Howard's head is he's trying to sell stock twits. Yeah, he really does want to sell.
+51:1951 minutes, 19 secondsListen, he's been an investor.
+51:2551 minutes, 25 secondsHe builds He is the reason we have hashtags. Really?
+51:3151 minutes, 31 secondsYes. He invests. He invented the hashtag and he invented the dollar sign
+51:3851 minutes, 38 secondsto use inside of uh Twitter and anywhere. It's been a universal
+51:4651 minutes, 46 secondsadoption. So's been around a long time, but it has a
+51:5351 minutes, 53 secondsdreadful time gaining traction.
+51:5851 minutes, 58 secondsSo if he sees an avenue,
+52:0452 minutes, 4 secondslisten, Stock Twitz has 200,000 free members. Wow.
+52:1152 minutes, 11 secondsRight. Yeah. So it's huge.
+52:1652 minutes, 16 secondsAnd they do all kinds of uh letter marketing and all sorts of stuff. I'm
+52:2452 minutes, 24 secondsgoing to keep my mind open to him and say, "Hey,
+52:3152 minutes, 31 secondsif if he does want to sell sell talk stock twits,
+52:3952 minutes, 39 secondsmaybe there's a way for us to piggyback on a part of that that
+52:4852 minutes, 48 secondsmakes stock twits more sellable. But if they come to a sale, they're going to
+52:5652 minutes, 56 secondshave to create an entirely new agreement with Tradewave and Trade Wave Real Time. What do you think?
+53:0453 minutes, 4 secondsAbsolutely. This is this is the kind of things that's a good kind of ideas. It's a I mean the idea of a win-win.
+53:1353 minutes, 13 secondsExactly.
+53:1453 minutes, 14 secondsIdeal. And this has matured. This this didn't take a week to create. This took Yes. Over four years.
+53:2253 minutes, 22 secondsYes.
+53:2353 minutes, 23 secondsAnd 20 were years of thinking. So it's not exactly. It's not something that
+53:3053 minutes, 30 secondssomebody pasted up with clawed in 3 weeks.
+53:3453 minutes, 34 secondsNo. No. This this Yeah. I think this is
+53:4253 minutes, 42 secondsI don't know why it didn't come to me earlier to talk to Howard, but I think we needed
+53:5153 minutes, 51 secondsto have a a different vision and I think that vision is morphing for
+53:5953 minutes, 59 secondsus because there's so many applications for this instrument.
+54:0754 minutes, 7 secondsthis platform. It's I mean literally the sky's is the limit.
+54:1454 minutes, 14 secondsLiterally the sky's the limit. We need one to start with.
+54:1954 minutes, 19 secondsExactly. Exactly. And so we just, you know, it's I think about us being the,
+54:2854 minutes, 28 secondsyou know, the guys hunting for gold and we just don't want to stop before we hit the g the vein and the mother lode. And
+54:3754 minutes, 37 secondsit's coming. I know it. It's coming. All right, I'm going to get to work. Um, does Spinach send you a copy?
+54:4554 minutes, 45 secondsIt does.
+54:4654 minutes, 46 secondsGood. It it it sends me a copy of the that says Yeah. Okay. Okay. All right. Great.
+54:5354 minutes, 53 secondsBut I also get this video and what I do is that I also come up with the transcription of the video.
+55:0155 minutes, 1 secondOkay. And I use that.
+55:0355 minutes, 3 secondsYeah. Send me the video if you don't mind. Sure. Have a copy of it. Yeah. Yeah. Yeah.
+55:0955 minutes, 9 secondsOkay. And then um my my brain is fried.
+55:1455 minutes, 14 secondsSo, after I get through all of today,
+55:1955 minutes, 19 secondsI'm I'm going to take a day where I just have to sit back. I've done no personal trading and I have to eat. Yes,
+55:3055 minutes, 30 secondseating is good.
+55:3155 minutes, 31 secondsSo, I have to I have to make Where are you? Where is your daughter, by the way?
+55:3555 minutes, 35 secondsShe's in North Carolina. She's in Okay. So, you're not that far away from No, I'm not too far. Yeah, not too far.
+55:4255 minutes, 42 secondsDid you drive or fly? No, I driving. We as a a younger couple, we literally drove a million miles. Well,
+55:5555 minutes, 55 secondsliterally kids everywhere and we would drive everywhere and we're like, "Nah,
+55:5955 minutes, 59 secondsnow we're flying." Which has its own whatevers. But, you know, maybe maybe Trade Wave really takes off and I get to buy a NetJet Jets card. So,
+56:0856 minutes, 8 secondsI hope so. I hope I I come with you guys to pick the color of the jet.
+56:1756 minutes, 17 secondsWell, we're just, you know, netjets is just like a uh Yeah. It's not worth buying a plane. Yeah. Exactly.
+56:2456 minutes, 24 secondsYou really don't want to buy a plane. Exactly. Exactly.
+56:2856 minutes, 28 secondsPlane requires constant maintenance. By the way, my mother once came to visit me
+56:3556 minutes, 35 secondsand she was very upset and said, "I sent you to United States to go study aeronautical engineering. Why did you go
+56:4356 minutes, 43 secondsto electrical?" I'm like, "I never intended to study aeronautical engineering." Then she realized she never talked to me about it.
+56:5356 minutes, 53 secondsI expected you to read my mind, son. I didn't expect you to read. Literally, women have a tendency to do that.
+57:0057 minutesYou should know. You should know by what I said.
+57:0457 minutes, 4 secondsLiterally. So, my older sister who's actually here now was just Okay. From from the one from Terra.
+57:1257 minutes, 12 secondsShe got here last night.
+57:1457 minutes, 14 secondsFantastic. I was just going to ask you about her.
+57:1757 minutes, 17 seconds72 hours to to she had to take a bus to IstAnul and then
+57:2557 minutes, 25 secondsand she said how long is she going to stay?
+57:2857 minutes, 28 secondsDon't know. But for now, she's going to stay here. At some point, she'll go to California with my other sister and
+57:3557 minutes, 35 secondsniece. And so, she's going to be here for some time. Okay. Awesome. Great.
+57:4157 minutes, 41 secondsYeah, it's a lot more comfortable that she's here now. Mhm. And uh but anyway, she was saying, "Oh,
+57:4857 minutes, 48 secondsyeah, we were talking about it a lot." I'm like, "Without me?" Yeah. Yeah. Yes.
+57:5457 minutes, 54 secondsThey discussed so bad about that. We just expect our men to read our minds and they just get Oh, yes. My wife always tells me that.
+58:0558 minutes, 5 secondsYou should know this. I know.
+58:0858 minutes, 8 secondsI find myself saying that all the time and I know it's wrong. So, I'm working on it. I'm working on it.
+58:1558 minutes, 15 secondsIt's amazing how simple-minded men are and no women believes it.
+58:2158 minutes, 21 secondsIt's It is It is true. It's They're very Just give it to me straight. You gotta tell me and then everything will go fine. Yeah, I know.
+58:3158 minutes, 31 secondsExactly. Well, I hope your your headache goes away and Thank you. Yeah. Yeah. Me, too. But what I need is
+58:3958 minutes, 39 secondsI'm out of rhythm. I haven't done any of my exercising. I didn't uh I normally do my cold showers. I So, I just have to
+58:4758 minutes, 47 secondsget into a rhythm. Yeah. And so, once I find my rhythm here, it'll be okay. But what time is your meeting in in 45 minutes?
+58:5658 minutes, 56 secondsIt is in 45 minutes. Yeah. Okay. I'll talk to you after. Okay. I'll talk to you later. Bye. Thanks. Bye-bye.
+
+Sync to video time

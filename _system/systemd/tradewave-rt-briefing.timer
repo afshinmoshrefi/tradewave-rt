@@ -1,0 +1,9 @@
+[Unit]
+Description=Briefing digest: poll weekday mornings every 15 min (07:00-12:45 ET) until her video is up; the script exits once today's digest is published
+
+[Timer]
+OnCalendar=Mon..Fri *-*-* 07..12:00/15:00 America/New_York
+Persistent=true
+
+[Install]
+WantedBy=timers.target

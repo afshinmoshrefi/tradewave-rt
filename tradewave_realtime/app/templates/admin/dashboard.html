@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div><div class="eyebrow">Anne-Marie's workspace</div><h1 style="font-size:1.9rem">Admin</h1></div>
+  {% if current_user.is_admin %}
+  <a class="btn btn-sm btn-ghost" href="{{ url_for('admin.ops') }}">&larr; Operations</a>
+  {% endif %}
+</div>
+<div class="kpi" style="margin-bottom:20px">
+  <div class="k"><div class="n">{{ kb_published }}/{{ kb_total }}</div><div class="l">Knowledge published</div></div>
+  <div class="k"><div class="n">{{ index_size }}</div><div class="l">Coach memory chunks</div></div>
+  <div class="k"><div class="n">{{ post_total }}</div><div class="l">Feed posts</div></div>
+  <div class="k"><div class="n">{{ review_open }}</div><div class="l"><a href="{{ url_for('admin.reviews') }}">Questions for you</a></div></div>
+</div>
+<div class="card" style="margin-bottom:18px;border-color:rgba(167,139,250,.35)">
+  <h3>&#9728;&#65039; Today's insight</h3>
+  <p class="muted" style="margin:8px 0 10px">What are you seeing today? One or two lines - it
+  lands on every member's Today page the moment you publish, and your coach can talk about it.</p>
+  <form method="post" action="{{ url_for('admin.insight') }}">
+    <textarea name="text" rows="2" placeholder="e.g. Watch how price behaves at the Europe low - inventory feels heavy and the bounces are getting weaker."
+      style="width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:inherit;padding:10px;font:inherit;margin-bottom:10px"></textarea>
+    <button class="btn btn-primary btn-sm" type="submit">Publish to Today</button>
+  </form>
+</div>
+<div class="grid grid-2">
+  <div class="card">
+    <h3>🧠 Teach the coach</h3>
+    <p class="muted" style="margin:8px 0 14px">Add or refine what the “{{ COACH_NAME }}” coach knows. Every change is grounded into its answers right away - this is how it sounds like <i>you</i>.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary btn-sm" href="{{ url_for('admin.teach') }}">&#127908; Teach the coach</a>
+      <a class="btn btn-sm" href="{{ url_for('admin.knowledge_new') }}">+ New knowledge</a>
+      <a class="btn btn-sm" href="{{ url_for('admin.knowledge_list') }}">Manage knowledge</a>
+    </div>
+  </div>
+  <div class="card">
+    <h3>&#128197; Your schedule</h3>
+    <p class="muted" style="margin:8px 0 14px">Add a drop-in or a live session - members see it on Today, and the coach can mention it.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary btn-sm" href="{{ url_for('admin.schedule') }}">Manage schedule</a>
+    </div>
+  </div>
+  <div class="card">
+    <h3>📰 Post to members</h3>
+    <p class="muted" style="margin:8px 0 14px">Publish a lesson or note to the member feed.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary btn-sm" href="{{ url_for('admin.posts_new') }}">+ New post</a>
+      <a class="btn btn-sm" href="{{ url_for('admin.posts_list') }}">Manage posts</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

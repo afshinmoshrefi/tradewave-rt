@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Coach review queue{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div>
+    <div class="eyebrow">Keep it sounding like you</div>
+    <h1 style="font-size:1.9rem">Coach review queue</h1>
+  </div>
+</div>
+<p class="muted" style="max-width:680px">When a member thumbs-down an answer, it lands here
+(anonymized). If the coach got the method wrong or doesn't sound like you, fix the knowledge
+entry behind it - the coach learns it instantly. Then mark it handled.</p>
+
+{% if not items %}
+<div class="card" style="margin-top:16px"><p class="muted">Nothing waiting. The coach is
+behaving itself.</p></div>
+{% endif %}
+
+{% for it in items %}
+<div class="card" style="margin-top:14px;max-width:760px">
+  <div class="small muted">{{ it.member }} &middot; {{ it.msg.created_at.strftime('%b %-d, %-I:%M%p') }} UTC
+    &middot; <b>{{ it.kind }}</b></div>
+  {% if it.question_text %}
+  <div style="margin:10px 0 6px"><b>They asked</b> <span class="small muted">(anonymized)</span>:
+    <div class="review-q">{{ it.question_text[:600] }}</div></div>
+  {% endif %}
+  <div><b>The coach answered:</b>
+    <div class="review-a">{{ it.msg.content[:1200] | md }}</div></div>
+  <div class="btn-row" style="margin-top:10px">
+    <a class="btn btn-sm btn-primary" href="{{ url_for('admin.teach', flag_id=it.msg.id) }}">&#127908; Answer this</a>
+    <a class="btn btn-sm" href="{{ url_for('admin.knowledge_list') }}">Fix the knowledge &rarr;</a>
+    <form method="post" action="{{ url_for('admin.review_handled', message_id=it.msg.id) }}" style="display:inline">
+      <button class="btn btn-sm btn-ghost" type="submit">Mark handled</button>
+    </form>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,9 @@
+[Unit]
+Description=TradeWave RT - levels sync (keyprovider captures + hourly EODHD + map rebuild)
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/flask/tradewave_realtime
+EnvironmentFile=/etc/tradewave_realtime/secrets.env
+ExecStart=/home/flask/tradewave_realtime/.venv/bin/flask levels-sync

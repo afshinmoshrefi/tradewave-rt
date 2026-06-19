@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block title %}Operations{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div><div class="eyebrow">Site operator</div><h1 style="font-size:1.9rem">Operations</h1></div>
+  <a class="btn btn-sm btn-ghost" href="{{ url_for('admin.dashboard', workspace=1) }}">Anne-Marie's workspace &rarr;</a>
+</div>
+
+<div class="kpi" style="margin-bottom:20px">
+  <div class="k"><div class="n">{{ users_total }}</div><div class="l">Accounts</div></div>
+  <div class="k"><div class="n">{{ intakes_done }}</div><div class="l">Intakes done</div></div>
+  <div class="k"><div class="n">{{ subs_active }}</div><div class="l">Active subs</div></div>
+  <div class="k"><div class="n">{{ msgs_24h }}</div><div class="l">Chat msgs (24h)</div></div>
+</div>
+
+<div class="card" style="max-width:760px">
+  <h3>Levels engine - session {{ session }}</h3>
+  {% for m in maps %}
+    <div class="small">{{ m.instrument }}: <b>{{ m.status }}</b> &middot; built {{ m.built_at.strftime('%H:%M') }} UTC</div>
+  {% endfor %}
+  <table class="table levels-table" style="margin-top:10px">
+    <thead><tr><th>Inst</th><th>Window</th><th>Source</th><th>O / H / L / C</th><th>Vol</th></tr></thead>
+    <tbody>
+    {% for c in candles %}
+      <tr><td>{{ c.instrument }}</td><td>{{ c.window }}</td><td>{{ c.source }}</td>
+        <td class="small">{{ c.open }} / {{ c.high }} / {{ c.low }} / {{ c.close }}</td>
+        <td class="small">{{ c.volume or '-' }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="card" style="max-width:760px;margin-top:14px">
+  <h3>Capture drift (last 7 days, beyond tolerance)</h3>
+  {% if not drift %}<p class="muted small">None - captures are matching the overnight truth.</p>{% endif %}
+  {% for c in drift %}
+    <div class="small rail-flag">{{ c.session_date }} {{ c.instrument }} {{ c.window }}:
+      capture O/C {{ c.capture_open }}/{{ c.capture_close }} vs final {{ c.open }}/{{ c.close }}
+      (drift {{ c.recon_drift }})</div>
+  {% endfor %}
+</div>
+
+{% macro role_row(u) %}
+  <tr>
+    <td class="small">{{ u.email }}{% if u.display_name %} <span class="muted">· {{ u.display_name }}</span>{% endif %}</td>
+    <td class="small muted">{{ u.created_at.strftime('%b %-d') }}</td>
+    <td>
+      {% if u.id == current_user.id %}
+        <span class="small">Site operator <span class="muted">(you)</span></span>
+      {% else %}
+        <form method="post" action="{{ url_for('admin.ops_set_role', user_id=u.id) }}"
+              style="display:flex;gap:6px;align-items:center">
+          <input type="hidden" name="q" value="{{ q }}">
+          <select name="role" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:6px;color:inherit;padding:4px 6px;font:inherit">
+            <option value="member" {{ 'selected' if u.role == 'member' }}>Member</option>
+            <option value="partner" {{ 'selected' if u.role == 'partner' }}>Partner - her workspace</option>
+            <option value="admin" {{ 'selected' if u.role == 'admin' }}>Site operator</option>
+          </select>
+          <button class="btn btn-sm btn-ghost" type="submit">Save</button>
+        </form>
+      {% endif %}
+    </td>
+  </tr>
+{% endmacro %}
+
+<div class="card" style="max-width:760px;margin-top:14px" id="people">
+  <h3>People &amp; roles</h3>
+  <p class="muted small" style="margin:6px 0 10px">Who can see what.
+  <b>Member</b> gets the product. <b>Partner</b> opens the Anne-Marie workspace
+  (teach, schedule, questions, insights, posts) but not this Operations page.
+  <b>Site operator</b> is everything. When Anne-Marie first signs in with her real
+  email, search for it here and set her to Partner.</p>
+
+  <div class="eyebrow" style="margin-top:10px">Staff</div>
+  <table class="table" style="margin-top:4px">
+    <tbody>
+    {% for u in staff %}{{ role_row(u) }}{% endfor %}
+    </tbody>
+  </table>
+
+  <form method="get" action="{{ url_for('admin.ops') }}#people"
+        style="display:flex;gap:8px;margin:14px 0 6px">
+    <input type="text" name="q" value="{{ q }}" placeholder="Find anyone by email or name..."
+           style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:8px;color:inherit;padding:8px 10px;font:inherit">
+    <button class="btn btn-sm" type="submit">Search</button>
+    {% if q %}<a class="btn btn-sm btn-ghost" href="{{ url_for('admin.ops') }}#people">Clear</a>{% endif %}
+  </form>
+
+  {% if q %}
+    <div class="small muted" style="margin-bottom:4px">{{ result_total }} match{{ 'es' if result_total != 1 }}
+      for &ldquo;{{ q }}&rdquo;{% if result_total > results|length %} - showing the newest {{ results|length }}, refine to narrow{% endif %}</div>
+    {% if results %}
+    <table class="table"><tbody>
+      {% for u in results %}{{ role_row(u) }}{% endfor %}
+    </tbody></table>
+    {% endif %}
+  {% else %}
+    <div class="eyebrow" style="margin-top:6px">Newest signups</div>
+    <table class="table" style="margin-top:4px"><tbody>
+      {% for u in recent %}{{ role_row(u) }}{% endfor %}
+    </tbody></table>
+    <div class="small muted" style="margin-top:4px">Everyone else: search above ({{ users_total }} accounts total).</div>
+  {% endif %}
+</div>
+
+<div class="card" style="max-width:760px;margin-top:14px">
+  <h3>Recent emails</h3>
+  {% if not recent_sends %}<p class="muted small">None yet.</p>{% endif %}
+  {% for n in recent_sends %}
+    <div class="small">{{ n.sent_at.strftime('%b %-d %H:%M') }} &middot; {{ n.kind }} &middot; user {{ n.user_id }} &middot; {{ n.subject }}</div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div>
+    <div class="eyebrow">Welcome</div>
+    <h1 style="font-size:1.9rem">Hi {{ current_user.name_or_email }} 👋</h1>
+  </div>
+  <a class="btn btn-primary" href="{{ url_for('chat.coach') }}">Talk to your coach →</a>
+</div>
+
+<div class="grid grid-3">
+  <a class="card feat" href="{{ url_for('chat.coach') }}" style="text-decoration:none;color:inherit">
+    <div class="ic">💬</div>
+    <h3>Your coach</h3>
+    <p>Ask Anne-Marie's AI coach about a setup, a rule, or your mindset. <span class="ai-tag">🤖 AI coach</span></p>
+  </a>
+  <a class="card feat" href="{{ url_for('main.library') }}" style="text-decoration:none;color:inherit">
+    <div class="ic">📚</div>
+    <h3>Strategy library</h3>
+    <p>{{ lib_count }} lessons on her method and psychology, in writing.</p>
+  </a>
+  <a class="card feat" href="{{ url_for('main.feed') }}" style="text-decoration:none;color:inherit">
+    <div class="ic">📰</div>
+    <h3>Anne-Marie's feed</h3>
+    <p>Her latest lessons and notes for members.</p>
+  </a>
+</div>
+
+{% if posts %}
+<section class="section">
+  <h2 style="margin-bottom:14px">Latest from the feed</h2>
+  {% for p in posts %}
+    <div class="post">
+      <h3>{{ p.title }}</h3>
+      <div class="meta">{{ p.created_at.strftime('%B %-d, %Y') }}</div>
+      <div class="body muted">{{ (p.body[:240] ~ ('…' if p.body|length > 240 else '')) | md }}</div>
+      <a class="small" href="{{ url_for('main.feed') }}">Read in feed →</a>
+    </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+<div class="disclosure" style="margin-top:10px">
+  <span>🤖</span>
+  <div>Your coach is an {{ COACH_LABEL }} - not Anne-Marie herself, and not financial advice.
+  It teaches her method; it won't tell you what to trade.</div>
+</div>
+{% endblock %}

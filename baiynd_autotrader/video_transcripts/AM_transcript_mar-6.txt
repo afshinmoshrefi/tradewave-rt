@@ -1,0 +1,1039 @@
+0:088 secondsI am going to show you the newest feature that you might have forgotten that we talked about.
+0:2121 secondsBecause I sent you the testimonial, by the way. You did? Oh, thank you so much.
+0:2626 secondsYes. I responded to the email that you sent for my um email address with all
+0:3333 secondsthe clear directions on how to do it. I totally appreciate that. So, yeah, I I sent it up there for you. You can have a peek at it.
+0:4141 secondsOh, I didn't get it.
+0:4444 secondsOh, it should be maybe hasn't arrived yet.
+0:4848 secondsUm let me double check here. Let's go to sense uh outbox sent.
+0:5959 secondsYep. It's um it's the response to could you make me a trade wave email
+1:071 minute, 7 secondsaddress that you responded and then I responded back and it's in the outbox.
+1:121 minute, 12 secondsSo Oh, it it hasn't come yet. It's come. It'll come.
+1:171 minute, 17 secondsOkay. Sounds good. Yeah, emails go from when you first send it, it goes to
+1:251 minute, 25 secondsoutbox. It goes from outbox, then it's sent. And when it's sent, it goes to the sent folder.
+1:341 minute, 34 secondsOh, okay.
+1:351 minute, 35 secondsSo, there are two different folders for outbox and sent.
+1:391 minute, 39 secondsOkay. All right. Okay. What are we watching? What are we looking at? I'm going to click on settings.
+1:471 minute, 47 secondsOkay. Now there's a new thing down here. It says securities groups. Oh, you click that.
+1:561 minute, 56 secondsThis is all the securities that trade wave gives you. And you can check and uncheck it. So if you don't like any of
+2:032 minutes, 3 secondsthem, like I don't want forex all, I don't want indices all, I don't want the Korea ones.
+2:112 minutes, 11 secondsOkay.
+2:112 minutes, 11 secondsBut then I have another one called published lists. Okay. Look at these four.
+2:192 minutes, 19 secondsThese are the ones that the the bottom one is the one that you sent me. Nice.
+2:242 minutes, 24 secondsDogs with weeklyies. And then I added three more. I love it.
+2:302 minutes, 30 secondsAnd see, you don't have this, but I can give you an access.
+2:342 minutes, 34 secondsThe add tab allows you to create another one and publish it to everyone.
+2:402 minutes, 40 secondsAh, okay. Very good. for now after.
+2:442 minutes, 44 secondsBut the users won't see this. They have to know they have to go to the publish list and checkbox
+2:532 minutes, 53 secondsany of So you have to go to your your publish list and checkbox the ones you want.
+3:003 minutesAnd after you do, it comes up here. Oh my gosh, how nice.
+3:083 minutes, 8 secondsRight there. And then this one is watch list. Those are my own personal. Okay. Love it.
+3:143 minutes, 14 secondsSo, I have these four and when you click it, like here is top 50 stocks by value.
+3:223 minutes, 22 secondsYeah.
+3:243 minutes, 24 secondsIt's only those 50. So, it's a lot shorter list. Wow.
+3:303 minutes, 30 secondsAnd it shows it right there so you can remember what that was.
+3:383 minutes, 38 secondsOkay. Awesome. Let me show you one other thing. Okay,
+3:483 minutes, 48 secondsthis thing Zoom puts it in the worst possible place. Yes, I know.
+3:563 minutes, 56 secondsIf you ask questions,
+3:593 minutes, 59 secondslet's say you ask about what is seasonality? Mhm.
+4:054 minutes, 5 secondsI can't even spell seasonality. You actually had spelled it right. Oh, I did.
+4:144 minutes, 14 secondsYes, I should be. I've written it so much.
+4:184 minutes, 18 secondsSo, not only comes up with an answer here, it pops up this detailed description of what seasonal patterns are. It's a detail.
+4:284 minutes, 28 secondsOh my gosh, look at you see that. Okay, that's fantastic.
+4:354 minutes, 35 secondsAnd you just click out of it. So, a lot of things if you ask it gives you a full panel or you can click on this question
+4:434 minutes, 43 secondsmark up here and see them all. Here is
+4:504 minutes, 50 secondsevery single one of these. What is trade wave ratio? You click it and it has all Oh my gosh, Ashen, this is wonderful.
+5:025 minutes, 2 secondstrend chart. Look at this trend chart.
+5:045 minutes, 4 secondsIt shows actually uses the example of a CVX and it explains how it's calculated.
+5:125 minutes, 12 secondsWow.
+5:155 minutes, 15 secondsIn detail. So people that that's fantastic. Dig in they can. That's fantastic.
+5:245 minutes, 24 secondsSo those are things I mean that was your idea I added. had not occurred to me. And I like that so much. It looks so good.
+5:345 minutes, 34 secondsAnd this one is something I wanted to do for so long, but I thought it's such an enormous amount of work, but then
+5:435 minutes, 43 secondsI have context. So I gave massive amount of information to AI and I had it build it for me.
+5:515 minutes, 51 secondsI love that you've got the little things to say, you know, what is a sharp ratio? Yes. See the sharp ratio. I love that.
+5:595 minutes, 59 secondsSo that actually opens up one of those panels. That's fantastic.
+6:056 minutes, 5 secondsIt gives you the full and it's supposed it's written for non finance, non-mathematician,
+6:126 minutes, 12 secondsand non technical people. It It's
+6:216 minutes, 21 secondsI love that. Oh my goodness sakes. I added this one to trend long because nobody knows what that is. I made that up.
+6:316 minutes, 31 secondsAnd it also gives you the formula and what it uses to calculate it. Oh my gosh.
+6:396 minutes, 39 secondsFantastic.
+6:416 minutes, 41 secondsYeah. I have nothing to hide. I just That's fantastic.
+6:466 minutes, 46 secondsYeah. So, it tells you how it calculates it.
+6:526 minutes, 52 secondsAnd yeah, those are the only two I put in there. But then after I did those two, cuz I always wanted to do this, I realized I should do it for
+7:017 minutes, 1 secondeverything. And that's when this came up.
+7:067 minutes, 6 secondsThat's fantastic. Oh my gosh, that's incredible.
+7:107 minutes, 10 secondsSo all of that Oh, wait. Why did this little chart here on the right hand side all of a sudden
+7:177 minutes, 17 secondschange which one? Um though it says cumulative return GWW S&P 500
+7:267 minutes, 26 secondsand it was that chart looked different a minute ago. I don't know why.
+7:337 minutes, 33 secondsCan you show me?
+7:357 minutes, 35 secondsUm I which one you're talking about?
+7:377 minutes, 37 secondsUm it would be the small one that says cumulative um oh cumulative chart.
+7:457 minutes, 45 secondsYes. Yes. Yes.
+7:467 minutes, 46 secondsCould it be that it wasn't refreshed yet? Yes, possibly. That's probably what it was because sometimes
+7:547 minutes, 54 secondssometimes it takes longer than other things because it makes so many API calls to the app server.
+8:028 minutes, 2 secondsMhm.
+8:028 minutes, 2 secondsUm I don't know how many people are on the site right now. Ah okay.
+8:098 minutes, 9 secondsUh sometimes it takes a little bit.
+8:128 minutes, 12 secondsAll right, that's good to know. Um yeah what the site is develop has been developed looks fantastic.
+8:218 minutes, 21 secondsSo I can literally stick separate application servers all over the country or world
+8:308 minutes, 30 secondsif we had customers everywhere to reduce lag.
+8:348 minutes, 34 secondsOh that's fantastic. Right now I only have one, right?
+8:388 minutes, 38 secondsOne one I I have multiple, but I have one for production, right?
+8:458 minutes, 45 secondsUm Okay. So, um let me tell you what went on with Stock Trader Network.
+8:538 minutes, 53 secondsOh, yeah. Yeah. They're super excited. They're looking forward to meeting you.
+8:598 minutes, 59 secondsHe sent me um I showed them the interface of Tradewave. Talked to him about how it worked.
+9:079 minutes, 7 secondsOh, you did?
+9:089 minutes, 8 secondsEverything we were on nicer now.
+9:119 minutes, 11 secondsIt It's so nice. And they loved the concept. Absolutely loved the concept.
+9:209 minutes, 20 secondsSo they their one of their sponsors is Trade Station.
+9:289 minutes, 28 secondsYou're kidding. No. And so I said, "Listen,
+9:339 minutes, 33 secondswe want to get inside of a platform and one of the things we'd like to do is
+9:409 minutes, 40 secondscreate something that gives us an inroad to talk to some of those folks. And if you make the introduction,
+9:479 minutes, 47 secondsyou and I've can talk about it and figure out whatever else that you might be able to get for compensation for the
+9:559 minutes, 55 secondsintroduction if the deal closes. but we want to get in there. And they're like,
+9:599 minutes, 59 seconds"Well, yeah, I think this is a good idea." So, two things they said. One,
+10:0710 minutes, 7 secondswhat about the seasonal market news being inside of
+10:1410 minutes, 14 secondsTrade Wave itself where it sits right now? Right now. And they don't uh
+10:2210 minutes, 22 secondswhat they would like, let me try and say this the right way. What they would like is a a dumbed down version for inside of
+10:3410 minutes, 34 secondstheir whatever.
+10:3710 minutes, 37 secondsUm maybe two each person might get one time a week where they could do a search,
+10:4910 minutes, 49 secondsokay,
+10:4910 minutes, 49 secondsor something like that. but a dumbed down version that just says,
+10:5510 minutes, 55 seconds"Hey," it could be static, too. It could be something that just says,
+11:0011 minutes"Hey, for this week, this is what um this this is what Trade Wave is saying.
+11:0711 minutes, 7 secondsIf you'd like to have more, you can do it for da da da da." And then you upsell it from inside there.
+11:1511 minutes, 15 secondsAh, now I get it. Oh, that's very doable.
+11:1911 minutes, 19 secondsYeah. And so they want that from the inside, just give them the freebie. They
+11:2511 minutes, 25 secondswant us to do um two shows a week to talk to people about
+11:3311 minutes, 33 secondsthe product and the um and how it works because everybody in
+11:4211 minutes, 42 secondsthere is they're more sophisticated than the average trader simply because Joel has
+11:5011 minutes, 50 secondsbeen around a long time, Dennis has been around a long time and when they left Benzinga uh a bunch of people went with them and so
+11:5811 minutes, 58 secondsthey have uh a base that is pretty anchored and everybody
+12:0612 minutes, 6 secondsDennis, Joel, and Brent all came from Benzinga. They'd all worked there 10 years plus and so they they know each
+12:1412 minutes, 14 secondsother real well and they know the they know the community really well. And so what they're hoping for is a dumb down
+12:2112 minutes, 21 secondsfree splash version kind of. So no functionality. And then if they see something and they go and they click it,
+12:3112 minutes, 31 secondsthe the popup should say,
+12:3512 minutes, 35 seconds"If you'd like more information, join us for our weekly
+12:4212 minutes, 42 secondsshows." Or you can go ahead if you want to get started right now and subscription
+12:4912 minutes, 49 secondssubscription and you sell it for the regular price in there.
+12:5412 minutes, 54 secondsAbsolutely. That's very doable. So for me, my thought was
+13:0213 minutes, 2 secondsif uh seasonal market news was part of trade wave and when they got it, they
+13:0813 minutes, 8 secondssaw the seasonal market news and they said and I said, "Hey, here is an
+13:1713 minutes, 17 secondsupgrade for you. I don't know really what to charge. So, I h I have to talk to Joel
+13:2413 minutes, 24 secondsand Brent because I don't I don't want it to be uh something that somebody goes, "Oh, I got to pay for that, too." And that's right.
+13:3613 minutes, 36 secondsAnd I want it to be, you know, way cheaper than Trade Wave,
+13:4313 minutes, 43 secondsbut I still want to be able to get some revenue stream from the space. So, I'm thinking maybe 29 bucks introductory and
+13:5213 minutes, 52 secondsthen we'll move it up as it goes from there. Perfect.
+13:5713 minutes, 57 secondsRight. And if you want to scale it, you want to make it first something that's there's no resistance. Exactly.
+14:0514 minutes, 5 secondsAbsolutely. That makes all the sense in the world. And people actually test these. And now that we have all these
+14:1214 minutes, 12 secondstools with AI, we can literally have AI monitor testing and all of these and by
+14:2114 minutes, 21 secondsthe way about AI I tell you all these things but when you talk to potential people don't tell them
+14:3014 minutes, 30 secondsthat oh yeah all I tell them is you I mean you can tell them that I use AI but
+14:3814 minutes, 38 secondsyes all the details I'm just telling you these things about thank you yes that's what I say listen
+14:4514 minutes, 45 secondsthis guy Make it big. Make it Make it a big deal that um Yeah.
+14:5114 minutes, 51 secondsNot that AI has a team with one person.
+14:5714 minutes, 57 secondsYeah. I framed it out as what I really think about you. I was It was great that I got to say exactly what I thought
+15:0615 minutes, 6 secondsabout you. I said, "Hey, listen. This guy is a visionary. He's had a lot of ideas from way back in the way, but with
+15:1615 minutes, 16 secondsa lot of visionaries. Sometimes they're early. Sometimes visionaries are early. And you have been many, many times.
+15:2415 minutes, 24 secondsBiggest my biggest, no, my two biggest thing, multimedia medical systems,
+15:3115 minutes, 31 seconds$46 million investment by Andy Grove, founder of Intel.
+15:3715 minutes, 37 secondsAnd we were so early that internet didn't have the bandwidth
+15:4515 minutes, 45 secondsand the company folded for it. We were the first tele medicine company out there.
+15:5115 minutes, 51 secondsYeah. See, so when you talk to them, I want you to tell them these pieces about you. But I said, "Listen, this guy's a visionary and what he's pulled together,
+16:0316 minutes, 3 secondsopportunity and time have finally come together in that perfect space for him and this is something you're going to have to see." They were super excited.
+16:1416 minutes, 14 secondsWhat Brent sent over to me is he is the um he's the sort of the production manager.
+16:2216 minutes, 22 secondsAnd so he sent over a format that said, "All right, when you guys do a show,
+16:2616 minutes, 26 secondsthis is what we want it to look like. It needs to have this and this and this and this." And so I was going to make a
+16:3416 minutes, 34 secondsframe of doing it. And then um Monday we're supposed to talk again because
+16:4216 minutes, 42 secondsthey want to go back and talk amongst themselves. Dennis couldn't make the call and so they need to fill him in on
+16:5016 minutes, 50 secondseverything. And so on Monday they're going to give me a jingle back and say,
+16:5516 minutes, 55 seconds"All right, here's what we'd like. Um why don't you come in and and uh be guest and talk to our folks?" And so I'm
+17:0517 minutes, 5 secondsgoing to uh as soon as I figure that out, I'll give you a jingle and then I'm going to set up a call for them to meet
+17:1417 minutes, 14 secondsyou and um so they can ask questions about
+17:2017 minutes, 20 secondseverything, anything, whatever. Um and yeah, we we just go from there. But my
+17:2817 minutes, 28 secondsgoal, I said, "Listen fellas, my goal is to get trade wave into the hands of
+17:3617 minutes, 36 secondsinstitutional money managers." And so I am hoping that somehow someway
+17:4617 minutes, 46 secondsyou guys are going to give us platform to do that. And so I want to get on the back end of
+17:5317 minutes, 53 secondsum platforms and we want to get instance just into institutions and we just got
+18:0118 minutes, 1 secondto move fast because you know the we have to strike when the iron is hot and it is very very hot right now. So
+18:0918 minutes, 9 secondswhy they were like why is iron hot?
+18:1118 minutes, 11 secondsWhy is the iron because with them Oh yes yes yes.
+18:1518 minutes, 15 secondsOh yeah yeah yeah. I said, "We have to strike when the iron is hot." And so they're like, "Yeah, we're on it. We're great. We've never um we've never had anything like this,
+18:2718 minutes, 27 secondsso we want to make sure that um everything pulls together all right."
+18:3718 minutes, 37 secondsI I had figured that they had built more affiliate structures, but they're like,
+18:4218 minutes, 42 seconds"Yeah, you know, we just haven't done it." But this one, they're like, "This is this is going to be amazing." They were just flabbergasted.
+18:5418 minutes, 54 secondsReally?
+18:5518 minutes, 55 secondsYes. They absolutely loved it and they loved how it looked. Absolutely loved how it looked. So genius. Yeah. So
+19:0419 minutes, 4 secondsthat's up and running. Um when I I'm going to Chicago on Friday,
+19:1219 minutes, 12 secondsnext Friday.
+19:1419 minutes, 14 secondsAnd I'm going to try and get uh time with Tony Batista at trade tasty
+19:2119 minutes, 21 secondstrade again. He blew me off a couple times, but I'm just going to keep coming. Here's the thing.
+19:2819 minutes, 28 secondsIf you really believe in something and somebody tells you no, but you know it's going to be good for everybody, you just come back and tell them again. I mean,
+19:3919 minutes, 39 secondsno harm, no foul.
+19:4019 minutes, 40 secondsPersistence. This is just I I don't have that gift. I give up very quickly.
+19:4819 minutes, 48 secondsI don't know about that. Maybe it depends on the thing. Yeah. Yeah. Maybe it depends on the thing.
+19:5519 minutes, 55 secondsYou don't know how many times I was sure I'm just going to forget and give up on trading.
+20:0220 minutes, 2 secondsI'm so glad you didn't, man. I'm so glad you did not. I really, really am so glad you did not.
+20:1020 minutes, 10 secondsAll right. What else do we have on the docket? You have to get that little one pager about how great you are and all the things that you do.
+20:1920 minutes, 19 secondsI actually wrote it. I don't like talking about myself.
+20:2220 minutes, 22 secondsI know it. I don't like talking about myself either, but event I I mean literally I was working on them
+20:3120 minutes, 31 secondslike I just don't want to say that I'm this or that. I grew up with my mother
+20:3920 minutes, 39 secondsconstantly telling me that everybody is uh was make was bringing me
+20:4720 minutes, 47 secondsdown to earth like so I never knew I was smarter than average. I am not kidding you until years after I graduated
+20:5620 minutes, 56 secondscollege. I had this thing in my mind if I can do it almost everybody can do it.
+21:0121 minutes, 1 secondI literally had that. It took me a long time to realize that maybe I'm smarter than average. And this is my mother
+21:1021 minutes, 10 secondsalways doing this. And I hear it from my sisters about themselves all the time that
+21:1721 minutes, 17 secondswho do you think we are? We can't do this or that and that. Yeah.
+21:2221 minutes, 22 secondsIsn't that a Yeah. You know, we built a box of of self-limiting beliefs.
+21:2821 minutes, 28 secondsYeah. I my mother was like an angel but she was also somebody who didn't want her children to think that they are
+21:3721 minutes, 37 secondsabove other right well she wanted them to be humble yes she she succeeded she wanted them to be humble and that is
+21:4521 minutes, 45 secondsthat is a great aspiration but at the same time you know sometimes that tears down your
+21:5321 minutes, 53 secondsconfidence especially in if you're in a competitive space So it really it did that. But you should
+22:0122 minutes, 1 secondsee when she passed, I wasn't there because I was there 10 days beforehand in Iran. Mhm.
+22:0822 minutes, 8 secondsHundreds of people came that my sister didn't know to her funeral. That's how popular she was. She used to be a school teacher.
+22:2022 minutes, 20 secondsOh. She taught English. That's awesome.
+22:2422 minutes, 24 secondsYeah. So um but she was that personality had this kind of effect
+22:3322 minutes, 33 secondson me which I've always tried not to do it to my children. Yes. Yeah.
+22:4122 minutes, 41 secondsYeah. That's good. It's a hard thing. It's a hard balance. It is a hard balance.
+22:4922 minutes, 49 secondsIt is a hard balance for sure.
+22:5222 minutes, 52 secondswatching, you know, my By the way, I have one sister still in Tehran. Just heard from her,
+22:5822 minutes, 58 secondsyou know, I I heard that they were shutting all kinds of borders all over
+23:0623 minutes, 6 secondsthe place. So, um Oh, they are they are in such trouble,
+23:1023 minutes, 10 secondsthe revolutionary guard, and they they have realized they are so hated in Iran and rest of the world that they have nowhere to run to. Mhm.
+23:2123 minutes, 21 secondsSo they want to stay and you should see after like Israel or United States bombs another one of their bases,
+23:3023 minutes, 30 secondspeople go on their roofs shouting happy slogans and IRGC people have actually
+23:3823 minutes, 38 secondsshot with machine guns towards civilian apartment complexes.
+23:4423 minutes, 44 secondsYeah, I did hear that. I've seen videos of people on their roofs celebrating and watching explosions.
+23:5723 minutes, 57 secondsThat's how much they're hated. They are.
+23:5923 minutes, 59 secondsYou don't know how Iranians are so westernized and nonre and they have this religious government holding them hostage.
+24:0924 minutes, 9 secondsYeah. Um anyway, sorry.
+24:1224 minutes, 12 secondsIt's going to be interesting to see how it unwinds. I'm very concerned about this particular weekend. It feels like things are sort of coming to some kind of head,
+24:2224 minutes, 22 secondsyou know. So, well,
+24:2524 minutes, 25 secondsI all is she's going to she's supposed to come out at the end of the month, though, right?
+24:3124 minutes, 31 secondsIn April. She has a ticket to come in April, and I've asked her to come. I wish she would come sooner.
+24:3824 minutes, 38 secondsI did, too. Believe me, I I worry about her, but I she's going to be fine. I
+24:4524 minutes, 45 secondsknow she's going to be fine because she doesn't where she lives is not near anything that matters.
+24:5224 minutes, 52 secondsI just hope she can come to United States. Yeah. Yeah.
+24:5824 minutes, 58 secondsComes back. But yeah,
+25:0025 minuteswe'll see. I I am very optimistic about the future. Iran is literally used to be a paradise.
+25:1025 minutes, 10 secondsOh my gosh. I You don't know how I I so remember some of the old stories. It's it's um they
+25:1825 minutes, 18 secondsremind me of the old stories of how amazing Afghanistan was way back when in
+25:2625 minutes, 26 secondsthe space. It was just uh yeah,
+25:2925 minutes, 29 secondsone it's very beautiful. It's a beautiful country but so much growth and
+25:3825 minutes, 38 secondsbut Afghanis the educated class was very small
+25:4425 minutes, 44 secondscompared to Iran. Iran is equivalent to only country that's equivalent in in
+25:5125 minutes, 51 secondsprogress is Israel. you you know one of the ways to measure progress of a society is by the percentage of women
+25:5925 minutes, 59 secondsthat get uh college degrees in Iran it's the same as Italy and it's 90 million population
+26:0826 minutes, 8 secondswow soians are educated they are not like other countries around you
+26:1626 minutes, 16 secondswomen are used to be so liberated liberated did. Mhm.
+26:2326 minutes, 23 secondsUntil these people came and they stole Yeah. the revolution.
+26:2926 minutes, 29 secondsLiterally they stole it by lying and then they created IRGC which is equivalent to SS of Germany.
+26:4026 minutes, 40 secondsWhich their job was to just protect Hitler and the third.
+26:4526 minutes, 45 secondsThat's what their job is, just to protect the regime, not the people. Yeah. Yeah.
+26:5026 minutes, 50 secondsI'm sorry. I I keep No, it's okay. No, listen. I I the emotional Yeah, I think and read all the time. I'm
+26:5926 minutes, 59 secondsalways always staring it down. Um wondering Yeah. what's next. So, yeah.
+27:0627 minutes, 6 secondsUm I'll let you know if something interest do. So, let's go back to um happier stuff.
+27:1527 minutes, 15 secondsOkay.
+27:1727 minutes, 17 secondsum uh two things we wanted to put on the
+27:2327 minutes, 23 secondsdocket. One, how uh how do I go about beginning to train up
+27:3227 minutes, 32 secondsum an AI that will answer like me? H how do we do that?
+27:4027 minutes, 40 secondsOh, that's pretty easy to do right now.
+27:4327 minutes, 43 secondsUm show tell me what to do. is um I can make the infrastructure. Do you want me
+27:5027 minutes, 50 secondsto put this on trade wave for you or do you want to put it on your website?
+27:5727 minutes, 57 secondsUm let's or both.
+28:0228 minutes, 2 secondsLet's think about well here all my website is going to do because I was sick traveling doing all kinds of things. My secure socket layer expired.
+28:1328 minutes, 13 secondsall my data went away and I didn't have the box that said save a
+28:2128 minutes, 21 secondscopy and so everything on my site disappeared into the ether. So yeah, so
+28:3028 minutes, 30 secondswhat I'm just going to do is make a one pager and I have to have the one pager for us to move in to Ninja Trader. I
+28:3828 minutes, 38 secondshave to have it. And so that one pager is just going to be here are my
+28:4528 minutes, 45 secondsaffiliates. It's going to be you. It's going to be Trendspire or mentor Q,
+28:5028 minutes, 50 secondswhatever. And then um I'm just going to have a link to the
+28:5728 minutes, 57 secondsTradewave site that says uh reach out to me there. and you know they get in the trade wave and
+29:0529 minutes, 5 secondsif they ask the chatbot hey how can I um how can I talk to Amie I don't know
+29:1229 minutes, 12 secondswhat to say um why don't you it just automatically will say here why don't you join us for our next webinar
+29:1929 minutes, 19 secondsyou can you can talk to Amory there uh let me ask you a couple of questions where is your do you have a hosted
+29:2729 minutes, 27 secondsserver right now or did you shut it down um I have I use namecheep. Oh, me too.
+29:3529 minutes, 35 secondsI mean I use namecheep for not for my servers. I use I use a hosting company that allows me to have my own server directly.
+29:4529 minutes, 45 secondsAh it's called Katera there is really um Oh cool okay okay. Um yeah I have it in namecheep um but I have no idea.
+29:5829 minutes, 58 secondsI mean I think I I do a shared server. I don't it's not a static IP or Yeah.
+30:0330 minutes, 3 secondsOh yeah. I see. Um if you want I can make you a
+30:1030 minutes, 10 secondsseparate server and I can become it's really up to you. I also have a
+30:1830 minutes, 18 secondsserver that hosts like if you go I have a server that I put multiple smaller websites that are just static on.
+30:2630 minutes, 26 secondsYes. you like go to moshrai.com right now you see it or if you go paradatarresearch.com
+30:3330 minutes, 33 secondsit's just a static page that pops up on that server if you want I can put uh
+30:4130 minutes, 41 secondsput something for you and then give you access to that and include I mean these are all
+30:4830 minutes, 48 secondsso here here is my thought my thought is I'm going to do two I do a video every
+30:5730 minutes, 57 secondssingle morning to go over the futures market.
+31:0031 minutesI talk about the buys, the sells, the go no-go line, where support and resistance are, what direction you should trade in,
+31:0931 minutes, 9 secondsall of that. And so what I thought I would do is
+31:1631 minutes, 16 secondsall my website would have would be links to any YouTube videos I have.
+31:2331 minutes, 23 secondsSo, I would figure out a way to I'll ask Claude how to go how to take my YouTube
+31:3131 minutes, 31 secondsvideo and then punch it in there. And then it would be something like that
+31:3831 minutes, 38 secondsjust shows my LinkedIn page, my um where I am on X. Um like my moshrai.com.
+31:4731 minutes, 47 secondsYeah, just simple. And then something that what I want to do is put a calendar in there that says, "Hey, come to the
+31:5631 minutes, 56 secondsnext Tradewave AI webinar um or whatever I've got going on if I got top step or you know, whatever." Mhm.
+32:0632 minutes, 6 secondsSo, but in terms of anybody contacting me or anything like that, I just want that to go all the way back to trade
+32:1532 minutes, 15 secondswave because I I want to make trade wave the frontfacing event so that if they're talking to me about anything,
+32:2732 minutes, 27 secondsyou know, they know I'm always going to be talking about trade wave. And so that's how I want to that's how I want to do that. wave if you want.
+32:3532 minutes, 35 secondsWell, when you have the if you have when you have your front page, it's also very beautiful. What I was thinking about
+32:4432 minutes, 44 secondsdoing was taking the color scheme that you have and
+32:5232 minutes, 52 secondsbuilding my site with that same color scheme. So when it goes from me to you,
+32:5932 minutes, 59 secondsit doesn't assault the senses.
+33:0333 minutes, 3 secondsWell, one thing I can do is I can the way that page is made, it's a Python script that I had AI create.
+33:1333 minutes, 13 secondsMhm.
+33:1433 minutes, 14 secondsI can literally give you that Python script.
+33:1733 minutes, 17 secondsI would know what to do with it. I'll tell you. Okay.
+33:2233 minutes, 22 secondsAnd you can tell Claude that here's a script. I want you to make me another static web page.
+33:3333 minutes, 33 secondsYes. With this color scheme. Exactly. Okay.
+33:3733 minutes, 37 secondsAnd then after you tell it that, it's going to rewrite the script for you. It'll ask you what you want on it.
+33:4733 minutes, 47 secondsOkay. And literally I can I can and then so how would I
+33:5633 minutes, 56 secondsright that's the thing now how do you put that but it's going to be a static HTML it's going to be a page with a HTML
+34:0434 minutes, 4 secondsalso if you have images you need another folder you can stick that anywhere you can put on your computer you can put it on your
+34:1234 minutes, 12 secondsnamecheep you can put on trade wave you can put on any of my servers or anywhere. It's Yeah,
+34:1934 minutes, 19 secondsthat's how I make websites now. Okay.
+34:2234 minutes, 22 secondsI don't use any of these tools that I actually was talking to Claude and I said, "I want this thing." And it says,
+34:3234 minutes, 32 seconds"Okay, I'll make you a WordPress site."
+34:3434 minutes, 34 secondsAnd I said, "You sound like my grandmother."
+34:3834 minutes, 38 secondsThen it says, "How about if we do a React?" I'm like, "Now you sound like my mother." It's like, "How do you do it?"
+34:4534 minutes, 45 secondsAnd then I I told it I just want AI to write me a script that creates an HTML page, but it does it all the time
+34:5334 minutes, 53 secondsbecause it's as good as proactive because HTML is so fast to load.
+35:0235 minutes, 2 secondsOkay, it's hard to change, but not for AI. So, um, all right.
+35:0935 minutes, 9 secondsI can actually make that script for you in the beginning. Yeah.
+35:1535 minutes, 15 secondsSet it up and then you can just talk to Claude to change it the way you want it. Okay. All right. And I Yeah, I'll Okay,
+35:2335 minutes, 23 secondsI'll try it.
+35:2435 minutes, 24 secondsAnd then And then I'll try that.
+35:2535 minutes, 25 secondsWe'll we'll stick the um a chatbot in there and what Claude will do is interview you.
+35:3635 minutes, 36 secondsOkay.
+35:3735 minutes, 37 secondsAnd it it wants to know what kind of things you want it to respond. Okay.
+35:4635 minutes, 46 secondsAnd it will create a knowledge base. Okay.
+35:5035 minutes, 50 secondsRight now the trade wave knowledge base that runs the chatbot is about 35 pages and it keeps building it.
+36:0036 minutesOkay. So, and where do you feed it information? Yeah. Or how do how does it get information?
+36:0936 minutes, 9 secondsI know that's probably a dumb question,
+36:1136 minutes, 11 secondsbut I don't understand some of it trade wave information. I it asks I I tell it for example,
+36:2036 minutes, 20 secondswhat if people ask about the bar chart? Okay.
+36:2436 minutes, 24 secondsAnd it says what's a bar chart? And I tell it the bar chart is this profit and loss,
+36:3136 minutes, 31 secondsbut I can also tell it go and look at the code so you know exactly how it's created.
+36:3836 minutes, 38 secondsAnd it checks it and complex says now I understand it. I'm like now you got to
+36:4436 minutes, 44 secondstalk to a sixth grader when you talk about this. Okay.
+36:5036 minutes, 50 secondsAnd then it it adds that and sometimes it I don't like it. Then I say okay I asked this question and there is this
+36:5836 minutes, 58 secondsanswer I don't like this change it then it updates constantly updates the knowledge base so you just need the
+37:0837 minutes, 8 secondsbasis for the chatbot itself and you need to train it
+37:1537 minutes, 15 secondsconstantly okay and another thing is you should learn to use cloud co-work Okay. Co-work.
+37:2637 minutes, 26 secondsCo-work. Okay. Cloud co-work is just like the chatbot.
+37:3337 minutes, 33 secondsPlus, it has the ability to control the browser and files on your computer. Okay,
+37:4037 minutes, 40 secondsit asks for approval, but it all the work. Okay,
+37:4437 minutes, 44 secondsyou don't have to do any of these things. Okay.
+37:4737 minutes, 47 secondsBut you have to play with it because it's it's not something we're used to.
+37:5437 minutes, 54 secondsI'm still uncomfortable with it until I get more used to it. I'm more comfortable with cloud code
+38:0138 minutes, 1 secondwhich has to run on a terminal which but codework runs on the browser. Okay. All right.
+38:1038 minutes, 10 secondsSo,
+38:1138 minutes, 11 secondsand you can you can basically tell it to do all these things.
+38:1438 minutes, 14 secondsOkay. So, let's say what I what I really want to do sometimes is just get all my
+38:2338 minutes, 23 secondsSubstack publications cuz I I read a lot of macro stuff. I read a lot of I just
+38:3138 minutes, 31 secondsread a lot of stuff and I would like for Claude to compress and synthesize
+38:4038 minutes, 40 secondsthe information in terms of a broad okay what did everybody talk about this
+38:4738 minutes, 47 secondsweek on the substack and so I think that I can do that. I started reading
+38:5538 minutes, 55 secondsbut then you know I get very uh I get very overwhelmed by
+39:0639 minutes, 6 secondsstep flow inside of that. I started thinking to myself, oh my gosh, I'm click a button.
+39:1439 minutes, 14 secondsOkay,
+39:1539 minutes, 15 secondsyou just have to point to something. For example, if
+39:2439 minutes, 24 secondsI don't know if you're on that list that gets the seasonal market news email, but that email right now
+39:3239 minutes, 32 secondsthere are six new um there are six articles that were published last night, but there's a
+39:4039 minutes, 40 secondsparagraph on the top that talks about all six of them in one paragraph as and and tries to connect them together.
+39:5039 minutes, 50 secondsThat's exactly what you are talking about. It's actually reading all six of them,
+39:5639 minutes, 56 secondstrying to find interreationships to create one paragraph that's like a narrative of today's briefing.
+40:0440 minutes, 4 secondsOkay. Okay. All right.
+40:0740 minutes, 7 secondsBy the way, these things I know they are not going to be easy the first second time you do it, but ask me. I'll I'll
+40:1540 minutes, 15 secondsI'll help you get started on that. And then it becomes um straightforward because you realize
+40:2340 minutes, 23 secondshow little you're going to have to do to to keep it up. Okay. All right. Okay.
+40:3140 minutes, 31 secondsBut don't get overwhelmed in the beginning.
+40:3240 minutes, 32 secondsYeah. I just have to tell myself, don't get frustrated.
+40:3740 minutes, 37 secondsNo. The moment you're frustrated, call me or or I'll ping you. Yeah. Yeah. I'll ping.
+40:4440 minutes, 44 secondsAnd I'm telling you, it doesn't take more than a few days.
+40:4640 minutes, 46 secondsOkay. All right. I just have to give it some uh I just I just have to give it some effort. Okay.
+40:5340 minutes, 53 secondsIn six months you'll be teaching AI if I have anything to do with it.
+41:0241 minutes, 2 secondsUm okay. So the next thing that we
+41:0741 minutes, 7 secondswanted to talk about were um I wanted to show you
+41:1541 minutes, 15 secondsa couple of things. I wanted to show you how I choose
+41:2241 minutes, 22 secondsmy uh my earnings traits. Remember you said, "Hey, just show me how to show me and talk to me about what you're doing."
+41:3141 minutes, 31 secondsAnd then um I also do um intraday stuff, but I wanted to find
+41:4041 minutes, 40 secondsout um this
+41:4841 minutes, 48 secondsI think the smarter thing to do would be just to get law to take the you know what I'm going to ask you what
+41:5641 minutes, 56 secondsto do there. So okay. So, let me share my screen and and make sure this is
+42:0342 minutes, 3 secondsYeah. And then um let's go with maybe Broadcom and then let's go to a daily chart.
+42:1242 minutes, 12 secondsOh, by the way, I got your email. Thank you.
+42:1542 minutes, 15 secondsOkay, good, good, good, good, good. And um yeah. Okay. So,
+42:2342 minutes, 23 secondslet me give you the chart action here.
+42:3042 minutes, 30 secondsSo, let me share it again. Tada.
+42:3442 minutes, 34 secondsAll right. So, most everything I do hold on a second. Yep. I need to shut that down. I need to Whoops that up.
+42:4642 minutes, 46 secondsAll right. Okay.
+42:5242 minutes, 52 secondsSo, here is the premise. The premise is and let me clear all the drawings.
+42:5942 minutes, 59 secondsThe premise is the following.
+43:0543 minutes, 5 secondsMost instruments that sit in trend
+43:1343 minutes, 13 secondswhen they report they generally report in trend.
+43:2043 minutes, 20 secondsAnd so if we're taking a look at this earnings event way back here in March the 7th in 2025,
+43:3543 minutes, 35 secondsyou can see it's got the general formation is something
+43:4243 minutes, 42 secondscalled a post earnings drift, right? And so
+43:4843 minutes, 48 secondswithin 5 days of motion in general it's between 5 and 7 days post earnings the
+43:5743 minutes, 57 secondsdrift that comes after earnings is clear. So you could see what price
+44:0444 minutes, 4 secondsaction is doing. So you can do two things. If the earnings come out and you're sitting in let me let me do something else. Let me add a time frame.
+44:1644 minutes, 16 secondsLet's go three years and a day and and
+44:2844 minutes, 28 secondsall right so I'm going to do three years and a day so we can see how this runs logically and this is just this is the
+44:3744 minutes, 37 secondsmajority of stocks will do what this chart is saying. So way over here at the
+44:4444 minutes, 44 secondsend, we can see that the trend is fairly sideways, earnings comes.
+44:5244 minutes, 52 secondsAnd in this earnings box right here, we can see it's got a topping formation.
+45:0045 minutesIt's got a bottoming edge. Really, it looks like maybe that is the edge right there. So, it loses the edge, recaptures it,
+45:1045 minutes, 10 secondsand then here's looking at dailies.
+45:1345 minutes, 13 secondsYes, these are daily candlesticks. These are daily candlesticks.
+45:1845 minutes, 18 secondsSo, we do something with the weekly candlesticks also, but because there's so much volatility in the charts right now, the daily candlesticks are the
+45:2645 minutes, 26 secondsbetter ones to drift to. So, here's the thought. The thought is
+45:3345 minutes, 33 secondsas the earnings come in within two days, so t + 2. And so here's
+45:4145 minutes, 41 secondsthe thing. If it reports after market close, then the following day is the
+45:4945 minutes, 49 secondsearnings candle. That's going to be the one that's highlighted. It's going to have a high and a low.
+45:5545 minutes, 55 secondsIf the chart is in a sideways structure,
+46:0146 minutes, 1 secondthat's the prior earnings candle over here to the left. I don't know if you can see it shaded, but it's shaded over
+46:0846 minutes, 8 secondshere. So when a chart is sideways like this and it falls out of its earnings
+46:1546 minutes, 15 secondscandle within the third day, the trade is short into support if it falls down
+46:2446 minutes, 24 secondsbelow. Now you could do two things. You can wait for it to fall and retest and your stop would be up here at the
+46:3246 minutes, 32 secondstop of the candle. The the stop is always at the top of the candle if you're going short. and then your target
+46:3946 minutes, 39 secondsis the bottom of support or the move into the next um candlestick formation.
+46:4746 minutes, 47 secondsIf it's sideways,
+46:4946 minutes, 49 secondsit's going to move sideways. Meaning, if it falls out from one earnings event,
+46:5446 minutes, 54 secondsit's going to collapse into a prior earnings event. Or if it's sideways and it pops out, it's going to
+47:0247 minutes, 2 secondsmove to a prior earnings event and then come back in. And so that's exactly what this chart does. And it does it really
+47:1247 minutes, 12 secondspretty routinely. So here is the next one.
+47:1847 minutes, 18 secondsIt comes out. It breaks out of the space. So this was the whole box that
+47:2447 minutes, 24 secondsthe chart had been sitting in for two or three quarters.
+47:3147 minutes, 31 secondsThe next earnings candle opens up outside of the box. We wait two days. On the third day,
+47:4147 minutes, 41 secondsit's moved out of the box. You can take the trade long and the next region would
+47:4947 minutes, 49 secondsbe I like to use a Fibonacci. Oh, for heaven's sakes.
+47:5847 minutes, 58 secondsUm,
+48:0448 minutes, 4 secondsI like to use a a measured move that tells me where it's going to. So, if it breaks out here,
+48:1348 minutes, 13 secondsit's going to go the range of congestion. So, I'm going to go from 100 to 200. That already happens on the
+48:1948 minutes, 19 secondssecond day. And then because the drift is usually five to seven days before it
+48:2848 minutes, 28 secondsbegins to fade a little bit, you have a trade that runs for a couple of days
+48:3548 minutes, 35 secondsinto a bigger area. So these are quick strike trades that'll say, "Hey,
+48:4248 minutes, 42 secondsthis is an upside pressure event that you can do X, Y, or Z." Now, when trade wave comes into the freight, when I
+48:5148 minutes, 51 secondsthink to myself, all right, I see what this is doing. Let me go see what Trade Wave says about the seasonality event
+48:5848 minutes, 58 secondssitting right around this earning space. If Trade Wave says, hey, listen, it's kind of flat until X,
+49:0749 minutes, 7 secondsthen it will determine what kind of position I put on. It could be an iron condor if I'm expecting sideways motion.
+49:1649 minutes, 16 secondsIt could be um a credit spread, a a bull put spread if it's supposed to trend up
+49:2549 minutes, 25 secondsor a bare call spread if it's supposed to trend down on that third day. Now,
+49:3349 minutes, 33 secondsthe other thing that a number of traders keep pushing back with me on is the following. If it's got a breakout
+49:4149 minutes, 41 secondspattern and the earnings are good,
+49:4749 minutes, 47 secondswhy not jump in the day after earnings when it's already outside of the box?
+49:5449 minutes, 54 secondsAnd they have a point. So, as long as it's outside of the box, the stop is the bottom of the candlestick. And so,
+50:0550 minutes, 5 secondsbreaking out of the box also creates the entry. So breaking down outside the box
+50:1250 minutes, 12 secondsbelow creates the long or short, excuse me, it creates the short. Breaking above
+50:1850 minutes, 18 secondsit creates the long. And so because I think that is the simplest rather than
+50:2550 minutes, 25 secondsthe weight state for the times the stock does this, I just go, hey, I just need an alert that tells me when I break
+50:3450 minutes, 34 secondsabove the area or when I break below the area. and then I make the trade. And so
+50:4350 minutes, 43 secondsthe way I'll mechanize whether the price action will continue to run up is all right, what this does trade wave tell me
+50:5050 minutes, 50 secondsabout this? What does trade wave tell me about this time of year? And trade wave has told me that this chart is in bullish formation this time of the year.
+51:0351 minutes, 3 secondsIt's just one of those spaces where it's it's bullish. So,
+51:0951 minutes, 9 secondsI will stay in the trade or add to the trade or whatever it is after that post
+51:1651 minutes, 16 secondsearning script. And that's what I'll do into every single one of them. And I will go until I break
+51:2651 minutes, 26 secondsuntil I break trend. And so the way that I break trend is
+51:3451 minutes, 34 secondsI don't break the prior weekly lows. As long as the prior weekly lows hold, I'm going to stay in trend.
+51:4451 minutes, 44 secondsAnd that's what keeps me in the trade.
+51:4751 minutes, 47 secondsSo for something like this, the trade doesn't work well because it breaks down out of the box. But the post earnings
+51:5551 minutes, 55 secondsdrift again only five days before it starts reversing and then it comes right back into the box. Now it it it does
+52:0352 minutes, 3 secondsmake a good trade if that's the only thing I'm doing for that price action
+52:0952 minutes, 9 secondsevent. And then I will say okay I'll go down to my volatility my implied volatility events and say all right
+52:1852 minutes, 18 secondswhere is my implied V in a percentile event? Does that mean I sell premium or
+52:2652 minutes, 26 secondsI buy premium? And when it's cheap, I buy the premium. When it's expensive, I
+52:3352 minutes, 33 secondssell the premium. So, and those are the sort of things I want to do with the seasonal market um the seasonal market news.
+52:4352 minutes, 43 secondsGoing to do that same sort of setup space. And um
+52:5052 minutes, 50 secondsso it goes. So that that is basically the way the trade functions. And so if
+52:5852 minutes, 58 secondswe're looking at so Broadcom reported just a couple days ago,
+53:0653 minutes, 6 secondsright here's aftermarket close. This is the candlestick. So at this juncture,
+53:1453 minutes, 14 secondsI've closed underneath the high but above the low. So I cannot do anything.
+53:2153 minutes, 21 secondsThe trend is also down.
+53:2453 minutes, 24 secondsSo I have to break trend to feel comfortable. But
+53:3253 minutes, 32 secondsmy the range on my candlestick is very tight. So I literally could say, "All right, I'm going to do I know see how the sideways patches.
+53:4453 minutes, 44 secondsYeah.
+53:4553 minutes, 45 secondsI know I'm going to go either to the top of this box, which is the bottom of that box, or the top of this box. So,
+53:5753 minutes, 57 secondsmy targets are either going to be 350 to 380 on the upside, and on the downside,
+54:0754 minutes, 7 secondsI've got I mean, the hold there is really solid at $300.
+54:1454 minutes, 14 secondsAnd Broadcom is very institutionally held, has got a very big institutional
+54:2054 minutes, 20 secondsfloat. And so it tells me that they're probably going to hold this edge. And so if I want to go bullish, I can say,
+54:3154 minutes, 31 seconds"Sell me a bull put spread or I can sell a bull put spread and buy a long call
+54:3854 minutes, 38 secondsspread." And then my thought is in terms of putting it in the seasonal market news is
+54:4754 minutes, 47 secondsI have a conservative element that says listen you buy the stock and you sell the covered call. The moderate risk the
+54:5554 minutes, 55 secondsconservative uh approach the moderate approach which says you can sell the put
+55:0455 minutes, 4 secondsum and buy the call. No, actually that would be the most risk there if you sell
+55:1255 minutes, 12 secondsthe put the put and buy the call. But the moderate risk would be let's see if this holds. Hang on a second. I want to see what the market does. Right here.
+55:2255 minutes, 22 secondsYep. So the moderate risk would really be um a call spread or a short put spread.
+55:3255 minutes, 32 secondsAnd then the high risk would be long calls, short puts. And so that would give me that framework, but I can't do
+55:4255 minutes, 42 secondsanything until it closes above the prior earnings candle. It's got to
+55:5155 minutes, 51 secondsclose a day there. And then, you know, if it hopefully it
+55:5755 minutes, 57 secondscloses right on that 336 and then it gives us a nice good buy or it pulls all
+56:0656 minutes, 6 secondsthe way down to the base here and I get myself a buy at one of these other pivot points, right? Because it's it's holding the pivot point, right?
+56:1756 minutes, 17 secondsI mean, it's closed literally on the pivot. So, um,
+56:2356 minutes, 23 secondswhen do you buy? Do you buy on the intraday notification of moving above?
+56:3156 minutes, 31 secondsIt's got to be the beginning of the next day. You always you always execute after the candle close.
+56:4056 minutes, 40 secondsI see.
+56:4156 minutes, 41 secondsBecause you have no idea whether it's going to hold the level or not. Gotcha.
+56:4856 minutes, 48 secondsBy the way, do you get your notifications from Thinker Swim? I do. I do.
+56:5556 minutes, 55 secondsYeah. How do they come to you? SMS.
+56:5856 minutes, 58 secondsI have them by text. Yeah, I get them by text. Text.
+57:0257 minutes, 2 secondsThey have a little bit of lag, of course, cuz it's sink or swim. Um,
+57:1057 minutes, 10 secondsbut what I want to do this weekend with Claude is take this
+57:1957 minutes, 19 secondsearnings candle that I have and I'm going to take my top
+57:2657 minutes, 26 seconds20 stocks or so, maybe my top 50 that and I'm going to put it in a watch list
+57:3557 minutes, 35 secondsand say, "Listen, set me an alert. alert if the price action closes
+57:4157 minutes, 41 secondsover the high or below the low of the earnings candle. So, it gives me an
+57:5057 minutes, 50 secondsalert to do what I need to do because literally if I stare this down,
+58:0158 minutes, 1 secondum, yeah, if I stare this down, what ends up happening is I have
+58:0958 minutes, 9 secondsso many alerts sitting here and so many earnings that are popping off that I
+58:1858 minutes, 18 secondsjust don't have the bandwidth. I feel completely overwhelmed. And so what I have to do is
+58:2858 minutes, 28 secondsparse it down. And then I'm going to use the weeklies um on trade wave. That's one of the main
+58:3758 minutes, 37 secondsthings. And then one of my other questions was maybe
+58:4458 minutes, 44 secondsif we can get um the
+58:5058 minutes, 50 secondsuh tech on the back end to look at the five largest market caps that are
+58:5758 minutes, 57 secondsreporting that day and generate a story on them.
+59:0659 minutes, 6 secondsAnd then that way I can go in and say,
+59:1259 minutes, 12 seconds"Okay, here's what we've got going on post earnings and what we need to look for."
+59:1959 minutes, 19 secondsYou're talking about the five companies for that day. So every day this would be different or would you be
+59:2659 minutes, 26 secondsYeah, every Well, when earnings gets really messy, it'll be Yeah, it'll be every day. It'll be every day. So,
+59:3359 minutes, 33 secondsokay. What? Why I want to do? Hey, give me the five highest market caps because literally some days we have,
+59:4659 minutes, 46 secondsyou know,
+59:4959 minutes, 49 seconds600 companies reporting in one day. And so we want to just
+59:5759 minutes, 57 secondsskim the top and just figure out, you know, what
+1:00:041 hour, 4 secondsum what to do there. And now that I mean the next big thing that we can really
+1:00:101 hour, 10 secondslook at that could build a tremendous revenue stream in actually in just terms
+1:00:171 hour, 17 secondsof trading it is when they go to single stock futures again.
+1:00:231 hour, 23 secondsWhat and um the market becomes yeah the market becomes a 23 and a half hour
+1:00:291 hour, 29 secondstrading event. There's just I mean there's companies are have futures I know of a
+1:00:371 hour, 37 secondshandful in the past but yes they used to do in the past they stopped I know IBM did yeah they're going to do it they're going to do it again
+1:00:451 hour, 45 secondsreally yes they're going to do it again that's why early in the day I don't know if they're still up but look at who's up
+1:00:531 hour, 53 secondstoday in the financials the only things that are up are literally the ones with exposure directly to the market. CBOE,
+1:01:061 hour, 1 minute, 6 secondsMSCI, MCO, ICE, Ferve or Fidelity,
+1:01:111 hour, 1 minute, 11 secondsexcuse me. I don't know who Henry Jack is. H J Khy J Khilar.
+1:01:231 hour, 1 minute, 23 secondsYeah, I don't know who they are either,
+1:01:251 hour, 1 minute, 25 secondsbut yeah. So these guys, they are planning on turning the market into a
+1:01:311 hour, 1 minute, 31 secondsfullbore engine. And so what would be great is if we could put our noggin together
+1:01:391 hour, 1 minute, 39 secondsto um figure out how
+1:01:451 hour, 1 minute, 45 secondsto present the best of in terms of uh you know what maybe there's another
+1:01:541 hour, 1 minute, 54 secondsoffering that we can do that for. So that's that's the that's the earnings
+1:02:001 hour, 2 minutesone. So, let me show you what I do on Let me show you what I do intraday.
+1:02:091 hour, 2 minutes, 9 secondsThis is how I make my money to eat in general. This is your main source of revenue, huh?
+1:02:161 hour, 2 minutes, 16 secondsYes, this is my main source of revenue.
+1:02:201 hour, 2 minutes, 20 secondsOkay. So the studies,
+1:02:271 hour, 2 minutes, 27 secondslet's see the load studies.
+1:02:331 hour, 2 minutes, 33 secondsUm, what in the world did I call it?
+1:02:411 hour, 2 minutes, 41 secondsI call it inventory. No.
+1:02:471 hour, 2 minutes, 47 secondsUm, let me go to my studies. Let's see. We got this.
+1:02:561 hour, 2 minutes, 56 secondsWe got that. We don't need that. Take trend off.
+1:03:051 hour, 3 minutes, 5 secondsIV rank RTH. Okay. And then time price.
+1:03:151 hour, 3 minutes, 15 secondsSo this is fascinating. Um,
+1:03:271 hour, 3 minutes, 27 secondsso here here's what I Let me make sure I've got these pivot points sitting in here. Edit.
+1:03:351 hour, 3 minutes, 35 secondsUh,
+1:03:521 hour, 3 minutes, 52 secondsokay.
+1:03:561 hour, 3 minutes, 56 secondsLet's knock that off. We don't want to use that right now. I'll take that off.
+1:04:051 hour, 4 minutes, 5 secondsThis is when I'm doing just the futures and I'm not
+1:04:151 hour, 4 minutes, 15 secondsum buying any options. So this is what I will do
+1:04:241 hour, 4 minutes, 24 secondsfor futures. Do you just do ES? No, I do ES, NQ, CL, RTY.
+1:04:341 hour, 4 minutes, 34 secondsI don't normally trade the YM. Yeah, I trade oil all the time.
+1:04:401 hour, 4 minutes, 40 secondsAll the time. So, here's something super interesting.
+1:04:461 hour, 4 minutes, 46 secondsI have noticed that price action, and I know it looks noisy, but it really isn't.
+1:04:561 hour, 4 minutes, 56 secondsSo when a day begins, the first 30 minutes of a trading day from the
+1:05:031 hour, 5 minutes, 3 secondsGlobeEx event, it opens up a 30 minute candlestick that tends to be
+1:05:131 hour, 5 minutes, 13 secondssupport or resistance sometime during the course of the day. So let's say you're trading pre-market.
+1:05:221 hour, 5 minutes, 22 secondsHere's the first 30-inut candlestick.
+1:05:251 hour, 5 minutes, 25 secondsThis candlestick at 3:30 is a really important candlestick as
+1:05:331 hour, 5 minutes, 33 secondswell because it's the last 30 minutes of the day. Huge influx of um momentum and trend. So, let me remove
+1:05:431 hour, 5 minutes, 43 secondsall my drawings so we can see what's going on. So, the first thing I'll do is I'll come in and I'll look to the left
+1:05:511 hour, 5 minutes, 51 secondsand I'll see what the 4 a.m. candlestick was for the traders for the prior day and I'll draw a box there.
+1:06:021 hour, 6 minutes, 2 secondsWhy? That's Europe. Ton of things open up. Then I'm going to look at the initial balance, but I'm going to look
+1:06:101 hour, 6 minutes, 10 secondsat it in two structures. I'm going to look at a 9:30 low.
+1:06:161 hour, 6 minutes, 16 secondsThe 9:30 to 10:00 low and high. I'm going to look at that. The 10:00 candlestick. If it's an outside
+1:06:231 hour, 6 minutes, 23 secondscandlestick, meaning it completely engulfs the 9:30, I'm going to draw a line at the bottom of it. Okay? So,
+1:06:321 hour, 6 minutes, 32 secondsthat's the first thing I do. And then I look at my 3:30 candle. I look at my
+1:06:441 hour, 6 minutes, 44 seconds130 candle. I'll look at the lows and the highs.
+1:06:491 hour, 6 minutes, 49 secondsAnd now I'm beginning. And now I'm ready to trade the day. Here are the old levels. Just the prior day is the most important. O levels. I'll come in. First
+1:06:581 hour, 6 minutes, 58 secondsthing I'll look at is the 30 the first 30 minute open. And if it breaks out
+1:07:051 hour, 7 minutes, 5 secondsabove the first 30 minute open and I've made higher lows,
+1:07:121 hour, 7 minutes, 12 secondsI will take the long up into the pivot
+1:07:201 hour, 7 minutes, 20 secondsand I will get out. So I will take the long from 34 68 34 2. I'll normally cut it off 34 ticks below.
+1:07:301 hour, 7 minutes, 30 secondsHow many tick is that? What's that? How many texts is that?
+1:07:351 hour, 7 minutes, 35 secondsThat is about 13 13 points. So points 40.
+1:07:431 hour, 7 minutes, 43 secondsWow.
+1:07:441 hour, 7 minutes, 44 secondsYeah. A lot of ticks. So listen, if if all you did was work on this,
+1:07:521 hour, 7 minutes, 52 secondsyou could print cash literally all day long. All you have to do is watch your
+1:07:591 hour, 7 minutes, 59 secondsrisk and don't jump in front of things stupidly, which sometimes I do. I'm not going to lie. Sometimes I do. Sometimes I'm like, I know where this is going.
+1:08:111 hour, 8 minutes, 11 secondsAnd I'll be wrong. So that's the first thing. 4 a.m. Candlestick Europe has been very influential in terms of
+1:08:181 hour, 8 minutes, 18 secondsmotion. So I've always got my eye on that. Today it didn't matter. The 4hour
+1:08:261 hour, 8 minutes, 26 secondscandlestick was absolute resistance for today. The 4hour low from yesterday,
+1:08:331 hour, 8 minutes, 33 secondsexcuse me, the 4 a.m. low from yesterday was the high. Didn't have anything to worry about right there. Now I have my
+1:08:411 hour, 8 minutes, 41 seconds30 minute. I take the trade up there. My thought is now, okay, let me see if I can hold trend. If it comes back to the
+1:08:501 hour, 8 minutes, 50 secondspivot and that pivot is holding the 30 minute high, I'm going to buy it again and I'm going to do the same thing. Wash, rinse,
+1:09:031 hour, 9 minutes, 3 secondsrepeat. It comes to the top. I'm going to look for my momentum. If it stays flat, it comes back. I'm going to trade
+1:09:111 hour, 9 minutes, 11 secondsit again. Now, sometimes I'll have it waiting right at the pivot and it will not fill. it'll just go on without me.
+1:09:211 hour, 9 minutes, 21 secondsSo, my goal is if you miss it, don't chase it. Just wait for the next setup.
+1:09:291 hour, 9 minutes, 29 secondsSo, the next setup is the midnight candle. If the midnight candle does not
+1:09:361 hour, 9 minutes, 36 secondsbreak the prior uh pre-market highs,
+1:09:421 hour, 9 minutes, 42 secondsthen the first thing I have to look for is the failure of the low of the midnight candle and then I can take the
+1:09:521 hour, 9 minutes, 52 secondsshort where back to the opening candlestick formation. So what what could go wrong there?
+1:10:031 hour, 10 minutes, 3 secondsthe things that could go wrong. It breaks up above and over. I get in too early and I get stopped out. What do I
+1:10:121 hour, 10 minutes, 12 secondsdo? I go in again. I go here's my look below and go. That's what I call it
+1:10:191 hour, 10 minutes, 19 secondswhere it looks below. If it looks below and it bounces but does not clear the candlestick of measure,
+1:10:301 hour, 10 minutes, 30 secondsit is a short as soon as it loses the low of the candle.
+1:10:371 hour, 10 minutes, 37 secondsWhat's fantastic about this is if you see the pattern forming, you can have
+1:10:431 hour, 10 minutes, 43 secondsyour order waiting out there in that space. The size that you take of the
+1:10:511 hour, 10 minutes, 51 secondstrade depends on whether your trend or counter trend. So because I have a 30inut chart that is going straight up like this,
+1:11:031 hour, 11 minutes, 3 secondsI can only take small size on the short until it breaks pattern. Breaks pattern. Here's my 4 a.m.
+1:11:121 hour, 11 minutes, 12 secondscandlestick. This is the one. Super important.
+1:11:181 hour, 11 minutes, 18 secondscomes down into this area. So now I'm looking at the 4 a.m. candlestick.
+1:11:261 hour, 11 minutes, 26 secondsLook at the bottom of this 4 a.m.
+1:11:281 hour, 11 minutes, 28 secondscandlestick. It matches the 3:30 candlestick from the prior day.
+1:11:361 hour, 11 minutes, 36 secondsWhen you see that happen, you know what they're going to try and do is try and bounce.
+1:11:441 hour, 11 minutes, 44 secondsThe question is when. So, if you look at it, they're going to Everybody knows here's how they game each other.
+1:11:521 hour, 11 minutes, 52 secondsEverybody knows that if that 4 a.m. candlestick comes into the 3:30 p.m. candlestick,
+1:12:001 hour, 12 minutespeople are going to buy it. And so, what they do is they shake the trees to shake out all the people who want to
+1:12:091 hour, 12 minutes, 9 secondsgo long and then they turn around and go long. But look at where they choose to turn around and go long. It's the 130 candle.
+1:12:211 hour, 12 minutes, 21 secondsEvery day, Asheen. Every day.
+1:12:271 hour, 12 minutes, 27 secondsEvery day. By a couple of minutes. Doesn't even matter what's going on.
+1:12:351 hour, 12 minutes, 35 secondsCouple of minutes. It's It's crazy.
+1:12:401 hour, 12 minutes, 40 secondsIt's absolutely insane. What I want to do is try to do this with options
+1:12:471 hour, 12 minutes, 47 secondsin the same sort of space. So, I'm working on looking at the spy and seeing what the chains are doing. But right
+1:12:551 hour, 12 minutes, 55 secondsnow, because this is the way I pay my bills, I can't really
+1:13:011 hour, 13 minutes, 1 seconddivide my time properly. And so, here's here's the next patch. Here's something incredible. So, here is the 4 a.m.
+1:13:131 hour, 13 minutes, 13 secondscandlestick for the day. It pops in,
+1:13:171 hour, 13 minutes, 17 secondsshakes the trees down to the 130, top of the 130. Notice it looks above,
+1:13:251 hour, 13 minutes, 25 secondsit cannot get above the 30 minute candlestick low.
+1:13:321 hour, 13 minutes, 32 secondsIf it can't get above there, it's a short.
+1:13:381 hour, 13 minutes, 38 secondsbounces right into the area, turns around. See, you can take the trade and
+1:13:441 hour, 13 minutes, 44 secondssay, "Okay, my stop is halfway up that candlestick." So, you've got six points of risk for 30 points of reward.
+1:13:561 hour, 13 minutes, 56 secondsWow. It comes in, loses the level, and then where do you expect it to go?
+1:14:031 hour, 14 minutes, 3 secondsOne, the first is the top of the candle.
+1:14:071 hour, 14 minutes, 7 secondsIf it can't get back out over the top of this 130 candle, it's going to the bottom of the 130 candle.
+1:14:161 hour, 14 minutes, 16 secondsAnd if you're always trading in trend and you're not trying to pick a bottom, you're going to be in great shape. Now,
+1:14:251 hour, 14 minutes, 25 secondsthis is a news candle and so that's going to be an important one. This was the PPI number that was
+1:14:331 hour, 14 minutes, 33 secondsjust I think it was a PPI. It might be PMI. I don't know what it was. Could have been a jobs number. I don't know.
+1:14:391 hour, 14 minutes, 39 secondsIt was very bad. And so here's what you know. If it loses this candle,
+1:14:481 hour, 14 minutes, 48 secondsit's going back to the prior 9:30 candle.
+1:14:561 hour, 14 minutes, 56 secondsLook where it stops. My god. You're kidding me.
+1:15:041 hour, 15 minutes, 4 secondsI'm telling you this is it's crazy.
+1:15:111 hour, 15 minutes, 11 secondsIt's literally crazy.
+1:15:141 hour, 15 minutes, 14 secondsHow long have you been using this pattern?
+1:15:181 hour, 15 minutes, 18 secondsSo, I have been using the GlobeEx 30 minute open and the 4 a.m. open and the
+1:15:271 hour, 15 minutes, 27 secondsinitial balance high low for a really long time.
+1:15:321 hour, 15 minutes, 32 secondsI talked to Neil and he has this really sort of complex thing that runs on five minute candlesticks. He said, "Hey, my
+1:15:411 hour, 15 minutes, 41 secondsfriend showed it to me. I'm going to show it to you, but don't show it to anybody else." And I I get it, but it's
+1:15:471 hour, 15 minutes, 47 secondsjust too fast for me. Cuz I listen, I am a slow thinker, but I'm a deep
+1:15:551 hour, 15 minutes, 55 secondsthinker. I'm I'm just not fast. It's not I just It's just me. I'm not fast. So,
+1:16:021 hour, 16 minutes, 2 secondsit's very interesting. But what it confirmed to me was that he he got that info from a guy at a hedge fund doing
+1:16:111 hour, 16 minutes, 11 secondssomething or the other. And I'm thinking to myself, wow, you know, I just noticed these patterns.
+1:16:181 hour, 16 minutes, 18 secondsEvery day I go to the market and I go, let's see what patterns I can find. So,
+1:16:261 hour, 16 minutes, 26 secondsI'm always looking for the patterns and what it tells me just about every single
+1:16:341 hour, 16 minutes, 34 secondstime. Take a look at this 10:30 low. This is the 10:00 candle. 10
+1:16:401 hour, 16 minutes, 40 secondsto 10:30. Look at the low and our low today.
+1:16:471 hour, 16 minutes, 47 secondsWow.
+1:16:491 hour, 16 minutes, 49 secondsWhen the chart is in a sideways p pattern like this, these are the things that happen. They revisit over and over
+1:16:581 hour, 16 minutes, 58 secondsand over again. It's a gigantic range and it literally is wash, rinse, repeat,
+1:17:051 hour, 17 minutes, 5 secondswash, rinse, repeat, wash, rinse, repeat when it breaks trend. So, let me show you how it looks when trend breaks. So,
+1:17:151 hour, 17 minutes, 15 secondswhat we have to do is go back. Um,
+1:17:201 hour, 17 minutes, 20 secondslet's go back here and let's find Gosh, it's really hard to find trend around here.
+1:17:301 hour, 17 minutes, 30 secondsLet's take a look at this patch right here. We're going to look at this big trend break up here.
+1:17:411 hour, 17 minutes, 41 secondsAll right. So, what do we do? We stare down. There's our 1:30 candle.
+1:17:501 hour, 17 minutes, 50 secondsThere's our 9. There's our 4:00 a.m.
+1:17:591 hour, 17 minutes, 59 secondsOkay. Notice the 4:00 a.m. candle begins as resistance and then breaks through. So, what do how
+1:18:071 hour, 18 minutes, 7 secondsdo I trade that? If I see that the trend is sideways and I'm looking at a 30 minute and I've got my 9:30 and 10:30
+1:18:161 hour, 18 minutes, 16 secondscandles, what I'm really looking for is the breach of the 9:30 to 10:00 high. So
+1:18:241 hour, 18 minutes, 24 secondsnotice I get two chances to trade it. I could do a buy stop here where it buys as soon
+1:18:331 hour, 18 minutes, 33 secondsas it breaks the edge with my stop really wide. That's a pretty wide stop.
+1:18:401 hour, 18 minutes, 40 secondsBut if I did it, what I would do is if it broke down and it got inside of here,
+1:18:461 hour, 18 minutes, 46 secondsI would just get out. So I can do a buy stop here or I can do that look above
+1:18:531 hour, 18 minutes, 53 secondsand go because if it breaks out and it pulls back and cannot get inside of the
+1:19:001 hour, 19 minutescandlesticks, it is going to head in the direction of the break. Watch the measured move.
+1:19:121 hour, 19 minutes, 12 secondsWhat I'm going to do is measure the 930 candlestick and the 10:00
+1:19:201 hour, 19 minutes, 20 secondscandlestick on the 30 minute and I am going to walk it up by the 50s and the 200s. Look at how look at where resistance hits right at the 300.
+1:19:331 hour, 19 minutes, 33 secondsLook at where it retests right at the 250.
+1:19:381 hour, 19 minutes, 38 secondsIt is just a clockwork event. Here is our 4:00 a.m. candle.
+1:19:461 hour, 19 minutes, 46 secondsThe 4:00 a.m. candle holds the region that has the prior 8:30 candle. And so my thought is before I take a long,
+1:20:001 hour, 20 minutesI've got to get out of all the candle noise because I've got
+1:20:061 hour, 20 minutes, 6 secondsthis candle at 1:30 that everybody is sitting in. And so that's my space where
+1:20:141 hour, 20 minutes, 14 secondsI go, okay, as if it's holding that 1/3 candle and I've got all of these candle
+1:20:201 hour, 20 minutes, 20 secondsprints inside of it, what I'm going to look for is the strength of motion that
+1:20:271 hour, 20 minutes, 27 secondsputs me outside of that candle formation.
+1:20:331 hour, 20 minutes, 33 secondsAnd so here it is. Here's my 9:30. Look at where the 9:30 low comes in. midnight
+1:20:391 hour, 20 minutes, 39 secondscandle just just below my opening 30-inut candle. The midnight
+1:20:481 hour, 20 minutes, 48 secondscandle actually opens three ticks above my 30 minute candlestick formation.
+1:20:571 hour, 20 minutes, 57 secondsAll of these over and over again. Look at the high of the 30 minute. It's the high of the 4 hour.
+1:21:051 hour, 21 minutes, 5 secondsIt comes in, breaks down. We sit around here and then we start retracing this
+1:21:121 hour, 21 minutes, 12 seconds330 candle. And so for me, I'm looking for, hey, can I trade down here where
+1:21:191 hour, 21 minutes, 19 secondsit's holding the floor of my 330 candle from the prior day
+1:21:261 hour, 21 minutes, 26 secondsor my 130 candle right here in the space? Now, also, it's above my pivot.
+1:21:351 hour, 21 minutes, 35 secondsAnd if it's above my pivot and it pulls back and it holds, my pivot point says, "You got yourself a long."
+1:21:431 hour, 21 minutes, 43 secondsSo I will wait. What's that? When do I go in? Here's the great thing.
+1:21:481 hour, 21 minutes, 48 secondsI do two things to go in. First thing I'll do is I will look for I'll have time and sales
+1:21:561 hour, 21 minutes, 56 secondssitting on one of my other machines on another platform. I look for time and sales and I watch to see what happens at this price point.
+1:22:051 hour, 22 minutes, 5 secondsIf this price point holds, I'm going to take the long here and my stop is going
+1:22:111 hour, 22 minutes, 11 secondsto be just under this wick. So, my stop would be 19. My entry point would be 24.
+1:22:191 hour, 22 minutes, 19 secondsSo, I got five points of risk, but my goal is to get to the top of the 4hour
+1:22:261 hour, 22 minutes, 26 secondscandlestick, which gives me almost 40 points of upside.
+1:22:331 hour, 22 minutes, 33 secondsand I just move from one to the other.
+1:22:361 hour, 22 minutes, 36 secondsThe 4 a.m. candlestick, if I duplicate it, it gives me a measured move event.
+1:22:441 hour, 22 minutes, 44 secondsAnd that measured move tells me my next target.
+1:22:521 hour, 22 minutes, 52 secondsAlmost every day, almost every single day, that measured move will give me my target. Look at today. Let me move all of these. Let's clear the drawing set.
+1:23:041 hour, 23 minutes, 4 secondsYep. Take a look at today. We'll do the measured move on the 4 a.m.
+1:23:121 hour, 23 minutes, 12 secondscandlestick.
+1:23:161 hour, 23 minutes, 16 secondsIt's phenomenal. It truly here is the 4 a.m. Right. And so I'm going to use a Fibonacci rather than No, you know what?
+1:23:251 hour, 23 minutes, 25 secondsI'd normally draw the box to help me out. So I'll draw the box here and I'll just duplicate it. Here's our first box.
+1:23:311 hour, 23 minutes, 31 secondsOf course, my pivot points going to be important for me to help me realize what's going on. I lose my primary
+1:23:391 hour, 23 minutes, 39 secondspivot. I know I've got downward pressure. So, I'm going to be looking for shorts.
+1:23:481 hour, 23 minutes, 48 secondsAnd I'm going to replicate down. Look at that. It holds it as a floor. I'm going to replicate again.
+1:23:581 hour, 23 minutes, 58 secondsholes as a floor. Want to replicate it again.
+1:24:061 hour, 24 minutes, 6 secondsWhere is that? No,
+1:24:121 hour, 24 minutes, 12 secondsI need to draw. Let me edit these properties.
+1:24:171 hour, 24 minutes, 17 secondsMe make it just a little less.
+1:24:231 hour, 24 minutes, 23 secondsGive us default. And then that way it's easier to draw. Let's clear the drawing set.
+1:24:291 hour, 24 minutes, 29 secondsWhat's amazing about this is how rhythmic the price pattern is. And
+1:24:371 hour, 24 minutes, 37 secondsit is absolutely because of algorithmic trading over and over and over again.
+1:24:491 hour, 24 minutes, 49 secondsWow.
+1:24:501 hour, 24 minutes, 50 secondsHolding the floor so you get the movement. Let me move it up a little bit so it's not not cheating here. And then duplicate it again.
+1:25:031 hour, 25 minutes, 3 secondsLook at where the floor is from the 4hour candle.
+1:25:111 hour, 25 minutes, 11 secondsWow.
+1:25:121 hour, 25 minutes, 12 secondsNot coincidence. That's literally how they're trading it.
+1:25:201 hour, 25 minutes, 20 secondsIt's crazy. So,
+1:25:241 hour, 25 minutes, 24 secondsyou know what I would love is to automate something and just have it run on sort of like uh that's definitely doable.
+1:25:361 hour, 25 minutes, 36 secondsYeah. A discount uh a discount futures broker, you know, that will allow uh like Ninja, right? Ninja is a discount
+1:25:451 hour, 25 minutes, 45 secondsbroker that it will run in the space. I want to get this on the ninja platform
+1:25:531 hour, 25 minutes, 53 secondsas folks with they can buy it and use it. I just yeah I I don't know how to turn I have
+1:26:011 hour, 26 minutes, 1 secondtalked to people about this so many times and they just for sure it's not easy but it's doable.
+1:26:101 hour, 26 minutes, 10 secondsYeah. And you know, that's the thing.
+1:26:131 hour, 26 minutes, 13 secondsIt's there's so much that your eyes are doing
+1:26:211 hour, 26 minutes, 21 secondsand that your mind is doing when you've been trading for 25 years that you sort of forget
+1:26:301 hour, 26 minutes, 30 secondsthe little sub routines that are working in there while you're sitting around like, okay, I just I just lost the pivot
+1:26:371 hour, 26 minutes, 37 secondshere. So, if I'm if I'm I'm in trend and I duplicate down, then of course I'm
+1:26:451 hour, 26 minutes, 45 secondsgoing to go into support level one. But see, the measured move takes us directly to the target if we just simply walk it down.
+1:26:551 hour, 26 minutes, 55 secondsMhm. Yeah.
+1:26:591 hour, 26 minutes, 59 secondsYeah. This is definitely doable. The one thing that that my
+1:27:061 hour, 27 minutes, 6 secondsmind's going at 100 miles an hour right now is not actually how to create this. This is
+1:27:151 hour, 27 minutes, 15 secondsdefinitely I mean I wouldn't say straightforward doable is how do we determine when the
+1:27:241 hour, 27 minutes, 24 secondsalgorithm has changed and this is okay so yes and so once in a while you
+1:27:321 hour, 27 minutes, 32 secondssee that and the reason I can tell when the first thing I'll do is so today in the ES just as you said in the NQ,
+1:27:461 hour, 27 minutes, 46 secondsexcuse me, we had a problem.
+1:27:511 hour, 27 minutes, 51 secondsAnd the problem was the rhythm had shifted just slightly.
+1:27:581 hour, 27 minutes, 58 secondsAnd so instead of um instead of the 4hour candlestick today,
+1:28:091 hour, 28 minutes, 9 secondswhat I drew was the range of
+1:28:181 hour, 28 minutes, 18 secondsthe 9:30 to 10:30 candlestick formation.
+1:28:241 hour, 28 minutes, 24 secondsI said, "Yeah, that's the one that we need to use. Now, how did I know?
+1:28:371 hour, 28 minutes, 37 secondsA couple of things. one. Although the 4:00 a.m. candlestick,
+1:28:461 hour, 28 minutes, 46 secondslike very often hits the 3:30 bar, when I drew the Fibonacci on the 4hour candle, the 4:00 a.m. candlestick,
+1:28:571 hour, 28 minutes, 57 secondsit just wasn't holding like the way I like it to hold. out. It did a pretty good stinking job to be
+1:29:061 hour, 29 minutes, 6 secondsfair, but the wicks would have thrown us out of this trade.
+1:29:141 hour, 29 minutes, 14 secondsWe would not have been able to hang on with 70 points of risk.
+1:29:211 hour, 29 minutes, 21 secondsThat's just absurd.
+1:29:231 hour, 29 minutes, 23 secondsSo, when I saw it coming into the open and I saw how far the wicks were going,
+1:29:301 hour, 29 minutes, 30 secondsI said, "You know what? let's go to something bigger and see if we can manage that. And that's exactly where it came into. Now, wouldn't you know it,
+1:29:411 hour, 29 minutes, 41 secondslook to the left.
+1:29:431 hour, 29 minutes, 43 seconds4 a.m. candlestick from what? One, two, 3 days ago.
+1:29:541 hour, 29 minutes, 54 secondsIt's bananas.
+1:29:561 hour, 29 minutes, 56 secondsIt literally is bananas. These special time frames trap
+1:30:041 hour, 30 minutes, 4 secondsan amazing amount of price action in terms of where support is, where resistance is, and where you can take a
+1:30:121 hour, 30 minutes, 12 secondscalculated bet on the bottom of something. And once in a while, somebody
+1:30:201 hour, 30 minutes, 20 secondscomes in and you know, they knock your teeth in. But
+1:30:261 hour, 30 minutes, 26 secondsthe goal is you make your risk small and you make your reward bigger. And so how
+1:30:341 hour, 30 minutes, 34 secondsdo you stay in that trend? You want to make sure that your candlesticks of note
+1:30:431 hour, 30 minutes, 43 secondsare always creating either higher lows further up
+1:30:511 hour, 30 minutes, 51 secondsor see like this one right here. As soon as it starts breaking in this space, it's it tells you get out of the trade.
+1:31:001 hour, 31 minutesIt absolutely does. This formation right here where it does nothing for 1 2 3 4 5
+1:31:101 hour, 31 minutes, 10 secondshours until that 130 candlestick and then it immediately loses it. The fact that it can't get up above this 10 a.m. candle,
+1:31:231 hour, 31 minutes, 23 secondsit says don't buy this chart unless you're scalping it on a five minute. And then you can collapse into five-minute candles and it works the same because
+1:31:321 hour, 31 minutes, 32 secondsthese open up for me on 30 minute and five minute candles. So you can see what the structure looks like if you're
+1:31:401 hour, 31 minutes, 40 secondsscalping. Some days I come in and I will be very far from where I want to buy.
+1:31:481 hour, 31 minutes, 48 secondsLike maybe I want to buy here, but I've had meetings all day and price action is now here. I'll go to that 5 minute and
+1:31:551 hour, 31 minutes, 55 secondsI'll say, "All right, can I trade the last 30 minutes for, you know, 20 points or whatever in order to get it?" So I'll
+1:32:051 hour, 32 minutes, 5 secondsslip into a fiveminute formation to do that. thought it's a very
+1:32:121 hour, 32 minutes, 12 secondsreliable and rhythmic event. The only times it tends to shift is
+1:32:211 hour, 32 minutes, 21 secondsone if we have uh extreme exhaustion but then it's still following trend and you
+1:32:291 hour, 32 minutes, 29 secondsyou can still look and go all right am I below my support pivot am I below my anchor pivot do I have a downward
+1:32:381 hour, 32 minutes, 38 secondssloping moving average is my trend down is you know those sorts of things will bring you back into, all right, pay
+1:32:461 hour, 32 minutes, 46 secondsattention. Pay attention. Now, go look for your higher lows or go look for your
+1:32:531 hour, 32 minutes, 53 secondslower highs and start structure your trade like that. So, yeah, it works for everything. It works for the CL.
+1:33:031 hour, 33 minutes, 3 secondsSame thing. Exactly.
+1:33:051 hour, 33 minutes, 5 secondsBut the but the candles you are basing it on are going to be different, right?
+1:33:111 hour, 33 minutes, 11 secondsDifferent time. Oh, it's the same candles. Why? Because No, because we trade 24 hours now just about.
+1:33:231 hour, 33 minutes, 23 secondsThis is trading all day long. Take a look. There's a 30-minut open different volumes. And that that was
+1:33:311 hour, 33 minutes, 31 secondsit does, but the volume does not matter because we're looking at time. Ask you this one.
+1:33:391 hour, 33 minutes, 39 secondsI don't know how many contracts you do trade, but don't you think if you do it
+1:33:461 hour, 33 minutes, 46 secondsat a certain level of contracts, it's Oh, I always trade small.
+1:33:511 hour, 33 minutes, 51 secondsYeah, I always trade small. I don't ever have more than two or three ES on at a
+1:33:571 hour, 33 minutes, 57 secondstime. I do not my days of swinging big are well past me simply because I just
+1:34:071 hour, 34 minutes, 7 secondsI don't want to you know when I first started trading I lost so much money
+1:34:171 hour, 34 minutes, 17 secondsso much money I don't ever want to go back and so
+1:34:241 hour, 34 minutes, 24 secondsI can make I can make tons trading just two or three contracts.
+1:34:311 hour, 34 minutes, 31 secondsYeah, that that my question wasn't about that. My question was about is there a certain number of contracts that's going to alter the behavior.
+1:34:421 hour, 34 minutes, 42 secondsOh, that's a good question. I don't know cuz I've never been there.
+1:34:471 hour, 34 minutes, 47 secondsI am certain there is because like if you're trading silver the liquidity
+1:34:541 hour, 34 minutes, 54 secondsin the dome the depth of market if you don't have a tight bid ask and
+1:35:021 hour, 35 minutes, 2 secondsyou've got 30 ticks between your bid and your ask
+1:35:081 hour, 35 minutes, 8 secondswhen you know 30 ticks is is $5 for silver.
+1:35:161 hour, 35 minutes, 16 secondsSo, I mean, if you're if that's every single trigger, you're not going to do that. So, you want to make sure it's
+1:35:251 hour, 35 minutes, 25 secondsliquid enough. You don't want your candlesticks to be gappy.
+1:35:321 hour, 35 minutes, 32 secondsIt's not an environment for gappy candlesticks. But if your candlesticks are normal
+1:35:391 hour, 35 minutes, 39 secondslike these, right? Look at the trending formation. 4:00 a.m. breaks right out above it. And
+1:35:481 hour, 35 minutes, 48 secondstake a look for this one. The 3:30 candle is well down here, but that's because oil is already closed.
+1:36:001 hour, 36 minutesOil closes on this candle, that 2:30, right?
+1:36:041 hour, 36 minutes, 4 secondsYes. And so sitting in that space, the 2 to 2:30 candlestick, this 4:00 a.m.
+1:36:131 hour, 36 minutes, 13 secondsThe low of this 4:00 a.m. is the close of the 2:30 candle of the 2:00 candle
+1:36:201 hour, 36 minutes, 20 secondsthat closes at 2:30 when price action breaks down.
+1:36:271 hour, 36 minutes, 27 secondsSame. That would be the candle that you look at if you're trading oil, not the 331 because that's not when the close
+1:36:361 hour, 36 minutes, 36 secondsis. The close is before that in that space. And so what is trend?
+1:36:431 hour, 36 minutes, 43 secondsIt's up. What's momentum? It's up. You take the breakout above it. And as long as you don't break
+1:36:521 hour, 36 minutes, 52 secondsthe low of that 4:00 a.m., you just continue to ride it up. Take a look. Here's the 9:00 a.m.
+1:37:011 hour, 37 minutes, 1 secondExcuse me. Here's the 9:30 candle.
+1:37:041 hour, 37 minutes, 4 secondsHere's the range. In general, look at what it does. It pulls back and bounces.
+1:37:091 hour, 37 minutes, 9 secondsgives us another high and it pulls back again and bounces and then delivers
+1:37:161 hour, 37 minutes, 16 secondsshort price action. For me, 90 was my thought where this chart would end today. So, by the time it got to 92, I'm
+1:37:251 hour, 37 minutes, 25 secondslike, I'm not touching that. I mean, the the call wall for oil is down at $80.
+1:37:351 hour, 37 minutes, 35 secondsThere are so many people upside down in oil. They're just thinking. See,
+1:37:421 hour, 37 minutes, 42 secondshere's what happens to people.
+1:37:441 hour, 37 minutes, 44 secondsThey get used to looking at a pattern and they go, "That's just the way it is." And instead of using market
+1:37:541 hour, 37 minutes, 54 secondsgenerated information to help them reinform their minds, they just go,
+1:38:031 hour, 38 minutes, 3 seconds"This is this will turn around eventually. It's short."
+1:38:071 hour, 38 minutes, 7 secondsThey have no I they won't even look at price. They're like, "Yeah, yeah, I know, but it it's a short." And so a huge hedge fund went short two days ago.
+1:38:201 hour, 38 minutes, 20 secondsI'm going to tell you, they are going to get taken to the woodshed.
+1:38:251 hour, 38 minutes, 25 secondsNo doubt about it. It is going to be it's going to be horrific for them. Truly,
+1:38:321 hour, 38 minutes, 32 secondshow big of a short did they go on sale?
+1:38:351 hour, 38 minutes, 35 secondsUh, big enough to have a lot of people talking about it. I don't know the size.
+1:38:431 hour, 38 minutes, 43 secondsWow.
+1:38:441 hour, 38 minutes, 44 secondsBut, but it's big. A lot of people are talking about it. And so if we if we stare down the futures market here and
+1:38:511 hour, 38 minutes, 51 secondswe go to the let's go to the see these guys they're still in backwardation.
+1:39:001 hour, 39 minutesLook at the active contract 90 bucks the forward contract. Look.
+1:39:081 hour, 39 minutes, 8 secondsWow. Total backwardation. They're all short. That's $15.
+1:39:161 hour, 39 minutes, 16 secondsYeah, they are going to get destroyed.
+1:39:211 hour, 39 minutes, 21 secondsThey are going to get destroyed. But they're still thinking, hey, don't worry. Oil's going to collapse. It is.
+1:39:291 hour, 39 minutes, 29 secondsIt's going to collapse. And for as long as the trade wave,
+1:39:381 hour, 39 minutes, 38 secondswhat's that? What does trade wave think?
+1:39:391 hour, 39 minutes, 39 secondsI said, now suddenly I want to look what Trade Wave thinks. I Yeah. What does Trade Wave think? I I I haven't looked at it actually.
+1:39:471 hour, 39 minutes, 47 secondsYou have to look at it. Let me know. Not lately. Yeah.
+1:39:501 hour, 39 minutes, 50 secondsUm let me see. Futures CL
+1:40:141 hour, 40 minutes, 14 secondsIt's actually not coming up. I don't know why.
+1:40:221 hour, 40 minutes, 22 secondsLet me find it here.
+1:40:301 hour, 40 minutes, 30 secondsYeah, I have a problem with CL. I don't know what it is. Hopefully my data provider didn't drop it.
+1:40:391 hour, 40 minutes, 39 secondsUm, so I can't access it right now.
+1:40:421 hour, 40 minutes, 42 secondsYeah, no worries. But in any case, this is this is my structure and
+1:40:511 hour, 40 minutes, 51 secondsI feel like it's very it's pretty reliable, especially if you
+1:41:001 hour, 41 minutesuse something to anchor it like the pivots.
+1:41:041 hour, 41 minutes, 4 secondsWhat do you mean by pivots? So pivot points, these pivot points,
+1:41:101 hour, 41 minutes, 10 secondsI think I know what you mean by pivot points, but um maybe So if I'm above my my anchored pivot,
+1:41:181 hour, 41 minutes, 18 secondsthe pivot that comes in from the measurement that they calculate for the day. Oh, I got you. Okay. Yeah.
+1:41:251 hour, 41 minutes, 25 secondsIf I'm above it, then I know that I'm okay.
+1:41:321 hour, 41 minutes, 32 secondsI got it's it's just uh it's just a good way to go, hey, if I'm above it, I can think long. Let me just watch my other
+1:41:391 hour, 41 minutes, 39 secondspatterns. And if I'm below it, I'm going to have to think about short or short into support if I'm moving sideways,
+1:41:491 hour, 41 minutes, 49 secondsright? Which is, you know, you have to every day you have to reorient yourself in terms of saying,
+1:41:581 hour, 41 minutes, 58 secondsokay, what is the pattern of the last three days done?
+1:42:021 hour, 42 minutes, 2 secondsI'm always looking at t minus 3. So I'm going to look at all right, let's see what the last three days have been. If they're sitting in a box,
+1:42:121 hour, 42 minutes, 12 secondsI know they're building inventory. And if they're going to build inventory,
+1:42:171 hour, 42 minutes, 17 secondsthen they're either going to distribute at a discount or distribute at a premium. And if I know what the area is
+1:42:251 hour, 42 minutes, 25 secondsof general distribution, it's going to be the same measured move all the way up to the top,
+1:42:331 hour, 42 minutes, 33 secondswhich is why I called 90 at the top of my range. 91 was the next ledge, but I really never thought
+1:42:421 hour, 42 minutes, 42 secondsit would get there. I really did not think it would get there, but it did.
+1:42:471 hour, 42 minutes, 47 secondsBut that the measured move gives me the exact price. Look, resistance. support. It's perfect.
+1:42:541 hour, 42 minutes, 54 secondsYeah. It's the It's just It's so uh routine.
+1:43:041 hour, 43 minutes, 4 secondsMhm. You know that the quants that are sitting in like last time, last earnings
+1:43:111 hour, 43 minutes, 11 secondsevent, Goldman Sachs said their trading desk made
+1:43:171 hour, 43 minutes, 17 seconds$13 billion or some kind of crazy number per quarter or whatever. Maybe it was
+1:43:261 hour, 43 minutes, 26 secondssome gigantic number just on the trading desk. And I thought maybe it's 1.6
+1:43:331 hour, 43 minutes, 33 secondsbillion. I don't know. It was a really big number compared to everybody else and it took them right over the hump.
+1:43:401 hour, 43 minutes, 40 secondsAnd it's because they're just doing this stuff and people are around using simple moving averages and momentum and I'm
+1:43:481 hour, 43 minutes, 48 secondslike that is not what these traders are doing. They they are not they're looking at price time and they're just
+1:43:581 hour, 43 minutes, 58 secondswriting out the upper edges of prices or the lower edges of prices. They're not doing anything more complex than that.
+1:44:071 hour, 44 minutes, 7 secondsSo, you've asked, you have talked to other developers about this and they couldn't do this for years. I've talked to them about it.
+1:44:151 hour, 44 minutes, 15 secondsYou're kidding me. So, you've been doing this for years. Yes.
+1:44:191 hour, 44 minutes, 19 secondsI can tell you exactly why they can't do it. Okay. Let me hear it.
+1:44:281 hour, 44 minutes, 28 secondsYou know the routine you just told me? Yes. which is absolutely fascinating.
+1:44:351 hour, 44 minutes, 35 secondsIt's actually not as simple as you think outside of your mind. The number of
+1:44:421 hour, 44 minutes, 42 secondssteps Oh, exactly.
+1:44:451 hour, 44 minutes, 45 secondssomebody to get is Yeah. Oh, I know exactly how to do this.
+1:44:501 hour, 44 minutes, 50 secondsYeah. I can't I have never been able to get that sub routine that sits out here.
+1:44:551 hour, 44 minutes, 55 secondsOh, I can out here. So,
+1:45:001 hour, 45 minutesdo you want do you want work with me to auto?
+1:45:041 hour, 45 minutes, 4 secondsYeah, of course. That's why I'm telling you why you're telling me this. Yes, that's why I'm telling you.
+1:45:091 hour, 45 minutes, 9 secondsIt's not going to be quick. It It's going to take us I don't listen. I've been waiting for 15 years.
+1:45:151 hour, 45 minutes, 15 secondsYou're kidding. You've been doing this for 15 years. Actually, probably 12. Yes.
+1:45:221 hour, 45 minutes, 22 secondsI can tell you what I'll do. Okay. After I get this video. Mhm. Because I can I need to go back. Okay.
+1:45:311 hour, 45 minutes, 31 secondsI have to write this down as a series of steps. Mhm.
+1:45:381 hour, 45 minutes, 38 secondsAnd the number of steps are going to be many. Yes. Going to be like a flowchart. Yep.
+1:45:461 hour, 45 minutes, 46 secondsSo as simple as it seems for you. Yeah.
+1:45:501 hour, 45 minutes, 50 secondsThe number. I know I know it's not simple and I know it's got the sub routine sitting inside of there because I've tried to explain it so many times.
+1:46:001 hour, 46 minutesIt's not easy for most people to understand this. Yeah.
+1:46:041 hour, 46 minutes, 4 secondsIncluding for me, but because I know that and I'll have the recording, I'll try to document it.
+1:46:121 hour, 46 minutes, 12 secondsYeah. The one thing that I would love for you to be able to catch is,
+1:46:221 hour, 46 minutes, 22 secondshey, your logic is squishy here.
+1:46:261 hour, 46 minutes, 26 secondsI'll get to that, too. And I and I'll come up with a ways. We are in the world of AI now.
+1:46:341 hour, 46 minutes, 34 secondsWe can use AI to to simplify anything that's too hard. And we can use AI to
+1:46:421 hour, 46 minutes, 42 secondsactually monitor this. So, but that's not the first step. Yeah.
+1:46:501 hour, 46 minutes, 50 secondsThe first step is to be able to document this. So, I am going to write this down.
+1:46:581 hour, 46 minutes, 58 secondsYou can't do it because you're too close to it. Okay? I have to do it. Okay? Because I'm not close to it.
+1:47:051 hour, 47 minutes, 5 secondsOkay? When I can write this down, then I'm going to give it to you.
+1:47:111 hour, 47 minutes, 11 secondsAnd you need to go over it and see if it maps perfect what it is in your mind.
+1:47:211 hour, 47 minutes, 21 secondsYeah.
+1:47:211 hour, 47 minutes, 21 secondsAnd you'll probably make changes to it orations or whatever. And we we need to
+1:47:291 hour, 47 minutes, 29 secondsgo back and forth on that one a few times. Mhm.
+1:47:331 hour, 47 minutes, 33 secondsUntil it could be 1,400 steps. Doesn't mean Right.
+1:47:421 hour, 47 minutes, 42 secondsBut it all has to be there. It's not for 1400 steps, but I think I get it. I know what you're saying. Yeah. Yeah.
+1:47:491 hour, 47 minutes, 49 seconds30 to 50 steps, believe it or not. Yeah. That's my guess right now.
+1:47:551 hour, 47 minutes, 55 secondsI believe it. when we can define the workflow. Mhm.
+1:48:011 hour, 48 minutes, 1 secondAnd the workflow has to be everything you just said, including when things changed.
+1:48:091 hour, 48 minutes, 9 secondsYes.
+1:48:101 hour, 48 minutes, 10 secondsAnd when we can have it down and you you're going to say this is it, this is what I do.
+1:48:191 hour, 48 minutes, 19 secondsThen we can automate it. Yeah.
+1:48:211 hour, 48 minutes, 21 secondsWithout much effort. What we could do also is have some sort of
+1:48:291 hour, 48 minutes, 29 secondsuh state that it's always checking against to go, hey, has market state changed?
+1:48:371 hour, 48 minutes, 37 secondsExactly. I mean, no, that's a step two. Okay.
+1:48:411 hour, 48 minutes, 41 secondsSo, step one would be what is your process? Because your step two is something that goes on the back of your mind.
+1:48:491 hour, 48 minutes, 49 secondsYes. Mhm. Mhm.
+1:48:511 hour, 48 minutes, 51 secondsThen we'll train an AI for monitoring it and seeing if it's
+1:48:591 hour, 48 minutes, 59 secondsactually behaving the way it's supposed to.
+1:49:041 hour, 49 minutes, 4 secondsWe'll basically have an AI sitting monitoring and making either changes or stopping it. Okay.
+1:49:131 hour, 49 minutes, 13 secondsBut the AI is so incredibly intelligent these days that we can give it things that By the
+1:49:201 hour, 49 minutes, 20 secondsway, do you ever give pictures to your AI?
+1:49:261 hour, 49 minutes, 26 secondsI don't I should You should I'd have fun.
+1:49:341 hour, 49 minutes, 34 secondsWhat kind of picture should I send it?
+1:49:371 hour, 49 minutes, 37 secondsHave you ever sent me a diagram or a picture or a or a chart or anything? You can't do that with AI too.
+1:49:481 hour, 49 minutes, 48 secondsOkay.
+1:49:481 hour, 49 minutes, 48 secondsI literally give a picture of a article the those seasonal market news.
+1:49:551 hour, 49 minutes, 55 secondsI take a full screen picture which is like this long and I send it to them because I want them to not only read it
+1:50:021 hour, 50 minutes, 2 secondsbut also tell me about charts that are in there. It understands it now.
+1:50:101 hour, 50 minutes, 10 secondsOh my gosh, it's insane.
+1:50:131 hour, 50 minutes, 13 secondsSo what I'm saying is that I will have the AI look at each one of those candlesticks for me. You have thinker swim.
+1:50:261 hour, 50 minutes, 26 secondsYes.
+1:50:261 hour, 50 minutes, 26 secondsOkay. Let me give you this code for um for coloring things.
+1:50:351 hour, 50 minutes, 35 secondsYeah. Oh, sure.
+1:50:371 hour, 50 minutes, 37 secondsJust the whole code for you know what what we're doing here. So, let me edit studies. So, I want to give you Oops.
+1:50:501 hour, 50 minutes, 50 secondsUm share right I will put it in the chat.
+1:51:051 hour, 51 minutes, 5 secondsSo that one is the pivot points and then the time price levels. And of course you
+1:51:131 hour, 51 minutes, 13 secondscan look at that code and go here's how you can make that better which I would love frankly.
+1:51:201 hour, 51 minutes, 20 secondsYeah. Long time ago I wrote something called swim code but the language is weird. I didn't
+1:51:291 hour, 51 minutes, 29 secondslike Yeah. Well, you know code does all mine.
+1:51:311 hour, 51 minutes, 31 secondsI mean claw does all mine. So yeah. I mean, I I actually didn't want to do it
+1:51:381 hour, 51 minutes, 38 secondsbecause I didn't like the language. I'm I'm used to very high and yeah,
+1:51:451 hour, 51 minutes, 45 secondsI mean, that's why I liked um Ninja Trader so much. They don't use crappy languages like Think or Swim.
+1:51:541 hour, 51 minutes, 54 secondsThey++.
+1:51:561 hour, 51 minutes, 56 secondsI'm like, that's why I love Ninja Trader. Okay. So, what I'm going to try and do this weekend is get my chart back
+1:52:051 hour, 52 minutes, 5 secondsup and then I have to submit all my forms, my chart, my website back up. I have to submit all my forms to Ninja.
+1:52:141 hour, 52 minutes, 14 secondsAnd then I think what we ought to do as one of our key things to accomplish in
+1:52:211 hour, 52 minutes, 21 secondsthe following month is let's
+1:52:271 hour, 52 minutes, 27 secondssend let's use my um fact that I am uh
+1:52:351 hour, 52 minutes, 35 secondsone of the affiliates that gets to um put it up on the place to sell. And let's put it up there.
+1:52:461 hour, 52 minutes, 46 secondsAbsolutely.
+1:52:471 hour, 52 minutes, 47 secondsYeah, let's put it up there. Um, in the they have like a it's called like a marketplace. Ninja
+1:52:551 hour, 52 minutes, 55 secondsTrader has like a marketplace for all their Yeah, we'll put it up there.
+1:53:001 hour, 53 minutesThat That would be awesome. And in any ways you want to do any deals you want to make, it's up to you. You figure it out.
+1:53:071 hour, 53 minutes, 7 secondsYeah, we'll we'll we'll figure it out.
+1:53:091 hour, 53 minutes, 9 secondsAnd then I could talk to Tom and see what he said. He's been my account manager over there for like 10 years.
+1:53:171 hour, 53 minutes, 17 secondsAnd so the one thing I have to do is just sort of be careful in terms of how widely I promote it because I have this
+1:53:241 hour, 53 minutes, 24 secondsthing with top step that is like my
+1:53:301 hour, 53 minutes, 30 secondsum my constraints are are
+1:53:381 hour, 53 minutes, 38 secondsbuilt to I can't promote the platform but I can promote our products. And so that's
+1:53:461 hour, 53 minutes, 46 secondsthat's what I want to think about. I want to think about designing the earnings
+1:53:531 hour, 53 minutes, 53 secondssetup so they can buy it for themselves and then we can do some stuff and then tie it to trade wave so we can just I
+1:54:021 hour, 54 minutes, 2 secondsjust think there's all kinds of stuff we can do on the Ninja platform and then if we can get ourselves anchored there it
+1:54:101 hour, 54 minutes, 10 secondsmight be an easier way for Trade Station to go, "Oh, all right. We'll we'll we'll we'll take a look at that and see how it works. So,
+1:54:201 hour, 54 minutes, 20 secondsby the way, if if you ever want to have any legal questions Uhhuh.
+1:54:261 hour, 54 minutes, 26 secondsinstead of go talking to a lawyer or anything, go to Gemini. Oh, Gemini does that. Okay.
+1:54:341 hour, 54 minutes, 34 secondsDo not go to Claude. They have put they have put walls in front of it. So, they keep saying call a lawyer. Gemini
+1:54:431 hour, 54 minutes, 43 secondsdoesn't. Gemini is actually as good as a lawyer inside of your computer. It is incredible.
+1:54:511 hour, 54 minutes, 51 secondsOkay. Gotcha. All right. Gemini.google.com. Okay. All right. So,
+1:55:001 hour, 55 minutesyeah, that's it. And um let me look at my schedule next week and let's see what I need to have accomplished.
+1:55:121 hour, 55 minutes, 12 secondsSo, I've got to get with uh All right.
+1:55:261 hour, 55 minutes, 26 secondsSo, I need to get them on the books. I got to get and then
+1:55:401 hour, 55 minutes, 40 secondsOkay. Thursday is the next day next week. Thursday the 12th because I'm gone that Friday the 13th.
+1:55:491 hour, 55 minutes, 49 secondsI'll be in Chicago. Okay.
+1:55:521 hour, 55 minutes, 52 secondsAnd um so let's do 1 to 2:30.
+1:56:011 hour, 56 minutes, 1 second1 to 230. Does that work for you? Let me bring my calendar up.
+1:56:191 hour, 56 minutes, 19 secondsto 230.
+1:56:251 hour, 56 minutes, 25 secondsIt could work for me.
+1:56:301 hour, 56 minutes, 30 secondsOkay. What What can we do? I have a couple hours to shift around there, but I have a hard meeting at 300 p.m. and
+1:56:391 hour, 56 minutes, 39 secondsI've got um a hard meeting at
+1:56:451 hour, 56 minutes, 45 secondsI've got my serious business radio and then I've got some stuff for benzinga
+1:56:521 hour, 56 minutes, 52 secondsand so I have from I could meet from noon to 1.
+1:56:581 hour, 56 minutes, 58 secondson N one will definitely but just give me one second. I'm going to tell
+1:57:041 hour, 57 minutes, 4 secondsyou for sure if what time I I have a scheduled webinar but if nobody has Oh yes
+1:57:121 hour, 57 minutes, 12 secondsif nobody has signed up for that date I'll check that's the reason.
+1:57:201 hour, 57 minutes, 20 secondsOkay you do that webinar on Zoom right? What's that? Yes. Okay.
+1:57:271 hour, 57 minutes, 27 secondsI do know. So I do not have anybody signed up. I will change that. So anytime you want. You said 1 to 2:30.
+1:57:361 hour, 57 minutes, 36 secondsYes. I am going to make that the 12th.
+1:57:471 hour, 57 minutes, 47 secondsOkay. And then I will share um as soon as we get off here, I will
+1:57:541 hour, 57 minutes, 54 secondsshare the um I'll share the recording with you.
+1:58:001 hour, 58 minutesOkay. It's going to take a little while before it's um ready. Yes, I know. I'll just send you the link anyway.
+1:58:071 hour, 58 minutes, 7 secondsYeah, it it takes a little bit. 20 minutes sometimes. Yeah. Yeah.
+1:58:121 hour, 58 minutes, 12 secondsYeah. So, I'm going to think about all this. I probably watch that video again, maybe even transcribe it.
+1:58:201 hour, 58 minutes, 20 secondsYeah.
+1:58:211 hour, 58 minutes, 21 secondsThe next step on that, it might take us a month to Yeah. Yeah.
+1:58:291 hour, 58 minutes, 29 secondsBut the step is to document it in steps that can be automated. That's the goal we want to get to.
+1:58:381 hour, 58 minutes, 38 secondsOkay. So, next week when we meet the goal will be
+1:58:451 hour, 58 minutes, 45 secondshow are we going to uh set up our times and content for the stock trader network.
+1:58:531 hour, 58 minutes, 53 secondsOkay. I'm going to email them. What's that?
+1:58:561 hour, 58 minutes, 56 secondsYou're going to be talking to them again? Yes, I'm talking to them on Monday. Oh, you are?
+1:59:021 hour, 59 minutes, 2 secondsYes, I'm talking to them on Monday. And so I'm going to send you,
+1:59:081 hour, 59 minutes, 8 secondslet me see where that is. Um,
+1:59:181 hour, 59 minutes, 18 secondsoops.
+1:59:261 hour, 59 minutes, 26 secondsOh jeez. Let me just send this to you really quick. It's giving you
+1:59:381 hour, 59 minutes, 38 secondsAha. Document shared with you.
+1:59:491 hour, 59 minutes, 49 secondsAll right. Um,
+1:59:521 hour, 59 minutes, 52 secondswhere is the document?
+2:00:022 hours, 2 secondsSon of a Ah, okay. I'm going to forward this to you.
+2:00:102 hours, 10 secondsOh, it might not let you in there. All right, let me let me open this up because I think it's permission based. So, let me share this.
+2:00:242 hours, 24 secondsActually,
+2:00:262 hours, 26 secondsI'm just going to take a snapshot of it and I'm going to send it to you. Okay.
+2:00:352 hours, 35 secondsSo, this is sort of what they want us to do and maybe on Thursday we'll sort of
+2:00:432 hours, 43 secondsmap out a sub routine to figure out what to do with that. And then
+2:00:502 hours, 50 secondsum that ought to take us a little bit of time.
+2:01:032 hours, 1 minute, 3 secondsSDN document
+2:01:222 hours, 1 minute, 22 secondsoff to the races. Okay, good. We have that. And yeah, that's that's good. I will I'm going to be working on a couple things.
+2:01:332 hours, 1 minute, 33 secondsI'm going to try and get um I'm going to get the colors
+2:01:412 hours, 1 minute, 41 secondsoff of uh your website. That's going to be easy because I've got like an HTML
+2:01:492 hours, 1 minute, 49 secondsidentifier and it'll it'll just pick those up. So, I'll be I'll be okay with that. If I run into problems, I might send you a text that asks X, Y, or Z.
+2:02:002 hours, 2 minutesBut um yeah, we'll go from there.
+2:02:062 hours, 2 minutes, 6 secondsUm I am going to start making videos next week. Okay.
+2:02:132 hours, 2 minutes, 13 secondsAnd by the way, you wanted to you were talking about a video also that we should do together.
+2:02:182 hours, 2 minutes, 18 secondsYes. Yes. Do you want what which videos do you want to do next week? What day of the week would you like to do a video?
+2:02:242 hours, 2 minutes, 24 secondsUm Oh, it's really You have a Okay. So, that mind.
+2:02:302 hours, 2 minutes, 30 secondsHow about How about during that? All right, let me see.
+2:02:382 hours, 2 minutes, 38 secondsWe got to I got to give a bunch of blood on on next week, Wednesday. So, and I got to do a full CT scan and so I'm out
+2:02:462 hours, 2 minutes, 46 secondson Wednesday or we would be able to meet there. So, it's not bad. It's not bad at all.
+2:02:522 hours, 2 minutes, 52 secondsI have a dentist appointment on Wednesday.
+2:02:542 hours, 2 minutes, 54 secondsOh, well, there you go. I I I am a professional dental patient.
+2:03:002 hours, 3 minutesMy only major health problem since I was a teenager.
+2:03:052 hours, 3 minutes, 5 secondsOh, I feel bad for you. My sister's like that.
+2:03:092 hours, 3 minutes, 9 secondsThere's at least a Ferrari that came out of my mouth. Oh my word. Yeah. Oh, wait. Um,
+2:03:192 hours, 3 minutes, 19 secondsI can do I tell you what, let's record a video on
+2:03:262 hours, 3 minutes, 26 secondsTuesday together. Tuesday's bad.
+2:03:322 hours, 3 minutes, 32 secondsTuesdays are the best for me. I Tuesdays are the best. Okay. Yeah. Let's do um let's do a a let's record a video at 3 p.m.
+2:03:502 hours, 3 minutes, 50 secondsAnd the video is just going to be trade wave.
+2:03:542 hours, 3 minutes, 54 secondsYes. Just the stuff that you would normally do and we would be talking about things. And you want me to write a list of things
+2:04:022 hours, 4 minutes, 2 secondsthat are in it so that you can use that as a Absolutely. framework this CV for you.
+2:04:092 hours, 4 minutes, 9 secondsYes, thank you. I appreciate that this weekend. Okay, very good.
+2:04:152 hours, 4 minutes, 15 secondsYeah, I am ready though. I mean the next part of trade wave itself. Okay,
+2:04:212 hours, 4 minutes, 21 secondsreally trade automation which is not something I want to do yet. Right. Okay. Hey, listen. Sounds good.
+2:04:292 hours, 4 minutes, 29 secondsWe are we are rolling. We are rolling.
+2:04:342 hours, 4 minutes, 34 secondsYeah. All right. Everything everything is Yeah. Good. Good. Okay. I will see you on Tuesday then.
+2:04:412 hours, 4 minutes, 41 secondsAnd if you send me the write up, we'll we'll go according to that one, two,
+2:04:462 hours, 4 minutes, 46 secondsthree, and I'll be thinking about uh what we can share and,
+2:04:522 hours, 4 minutes, 52 secondsyou know, maybe we can tease out some exciting things about, you know,
+2:04:582 hours, 4 minutes, 58 secondsum what we're what we're going to do next. Stay tuned. get involved before prices go up. Wink wink, nunch, notch.
+2:05:072 hours, 5 minutes, 7 secondsYeah, that sort of thing.
+2:05:082 hours, 5 minutes, 8 secondsI literally literally I'm gonna send a email to my current subscribers and going to tell them go buy the book
+2:05:172 hours, 5 minutes, 17 secondsbecause I'm actually going to raise the price next week and start promoting it as Oh, excellent.
+2:05:232 hours, 5 minutes, 23 secondsUm, I mean, I don't know how successful I'll be, but I'll try it.
+2:05:282 hours, 5 minutes, 28 secondsYeah, it'll be great. I think it'll be fun. It'll be great. Yes. All right. Hey, have a good weekend.
+2:05:362 hours, 5 minutes, 36 secondsThanks for all the time today. I appreciate it. It was awesome. Yeah. Yeah. Yeah. It was good.
+2:05:412 hours, 5 minutes, 41 secondsThank you for sharing all your You're welcome. You're Thank you. Fascinating. Yeah, it's pretty amazing. Yeah.
+2:05:502 hours, 5 minutes, 50 secondsAnd I will be working on documenting it.
+2:05:532 hours, 5 minutes, 53 secondsThank God for AI that can help me. Why not?
+2:05:562 hours, 5 minutes, 56 secondsBut I got to figure out if I can make it look like steps when it does. Yeah.
+2:06:032 hours, 6 minutes, 3 secondsThen I'll then we'll be good. Yes. Okay. Well,
+2:06:062 hours, 6 minutes, 6 secondsfingers crossed. And then we'll just fill in the gaps when we don't when we go, hey, how can we turn this into a step? So, I I have absolute faith,
+2:06:152 hours, 6 minutes, 15 secondscomplete confidence in you.
+2:06:172 hours, 6 minutes, 17 secondsOh, the way you described it, I don't have a doubt that we can pull this one off.
+2:06:242 hours, 6 minutes, 24 secondsAll right. All right. I'm excited. All right.
+2:06:272 hours, 6 minutes, 27 secondsI just know I love it. It's Yeah.
+2:06:302 hours, 6 minutes, 30 secondsI don't like easy things. This is not easy. That makes me like it. All right. Okay. I'm happy to hear it. I'm serious.
+2:06:382 hours, 6 minutes, 38 secondsI No, I believe you.
+2:06:402 hours, 6 minutes, 40 secondsSomebody got to tell me this cannot be done and suddenly I lose sleep at night.
+2:06:452 hours, 6 minutes, 45 secondsI Well, I hope I'm not responsible for that, but No, no, no. In a good way. Yeah. Okay. All right. Okay. Take care.
+2:06:542 hours, 6 minutes, 54 secondsI'll see you soon. Bye-bye.

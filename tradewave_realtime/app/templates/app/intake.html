@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}Meet your coach{% endblock %}
+{% block content %}
+<div class="chat intake">
+  <div class="chat-head">
+    <div class="coach-ava">AM</div>
+    <div>
+      <div class="who">{{ COACH_NAME }} <span class="ai-tag">&#129302; {{ COACH_LABEL }}</span></div>
+      <div class="small muted">A few questions before we start - the way she'd start with any new trader</div>
+    </div>
+    <div class="intake-progress small muted" id="progress">1 of {{ total }}</div>
+  </div>
+
+  <div class="chat-log" id="log" data-step="{{ step }}" data-total="{{ total }}">
+    <div class="msg coach">
+      <div class="mini-ava">AM</div>
+      <div class="bubble">I'm glad you're here. I'm not going to hand you a pile of lessons -
+      I want to know where YOU are first, the way Anne-Marie would ask. Six quick questions,
+      then we build your plan.</div>
+    </div>
+    <div class="msg coach">
+      <div class="mini-ava">AM</div>
+      <div class="bubble">{{ question }}</div>
+    </div>
+  </div>
+
+  <form class="chat-form" id="chatForm">
+    <textarea id="input" placeholder="Tell me in your own words..." rows="1" autofocus></textarea>
+    <button class="btn btn-primary" type="submit" id="send">Send</button>
+  </form>
+  <div class="small muted center" style="padding:6px 0">
+    Your answers build your private trader profile - you can see, edit, or delete it anytime.
+    Never share account sizes or balances.
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+(function () {
+  const log = document.getElementById('log');
+  const form = document.getElementById('chatForm');
+  const input = document.getElementById('input');
+  const send = document.getElementById('send');
+  const progress = document.getElementById('progress');
+  const total = parseInt(log.dataset.total, 10);
+
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function inline(t){return t.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');}
+  function bubble(role, html) {
+    const w = document.createElement('div');
+    w.className = 'msg ' + (role === 'user' ? 'user' : 'coach');
+    w.innerHTML = (role === 'user' ? '' : '<div class="mini-ava">AM</div>') +
+      '<div class="bubble">' + html + '</div>';
+    log.appendChild(w); log.scrollTop = log.scrollHeight;
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const text = input.value.trim();
+    if (!text) return;
+    input.value = ''; input.style.height = 'auto';
+    bubble('user', esc(text));
+    send.disabled = true; input.disabled = true;
+    try {
+      const res = await fetch('{{ url_for("mentor.intake_answer") }}', {
+        method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({answer: text})
+      });
+      const data = await res.json();
+      if (data.done) {
+        bubble('coach', inline(esc(data.wrap || 'Welcome aboard.')).replace(/\n/g,'<br>'));
+        progress.textContent = 'done';
+        form.style.display = 'none';
+        // The held breath, then the first read streams in slowly - the aha moment.
+        if (data.first_read) {
+          await sleep(1600);                         // a silence that means it's thinking
+          const w = document.createElement('div');
+          w.className = 'msg coach';
+          w.innerHTML = '<div class="mini-ava">AM</div>' +
+            '<div class="bubble" id="frBubble" style="border-left:3px solid #7c5dfa;' +
+            'background:rgba(124,93,250,.06)"></div>';
+          log.appendChild(w);
+          const fr = document.getElementById('frBubble');
+          const words = data.first_read.split(' ');
+          for (let i = 0; i < words.length; i++) {
+            fr.innerHTML = inline(esc(words.slice(0, i + 1).join(' ')));
+            log.scrollTop = log.scrollHeight;
+            await sleep(95 + Math.random() * 70);    // deliberate, human-paced reveal
+          }
+        }
+        const a = document.createElement('div');
+        a.style.cssText = 'text-align:center;padding:18px 0';
+        a.innerHTML = '<a class="btn btn-primary btn-lg" href="' + data.redirect +
+          '">See today\'s full map &rarr;</a>';
+        log.appendChild(a); log.scrollTop = log.scrollHeight;
+        return;
+      }
+      if (data.question) {
+        if (data.ack) bubble('coach', esc(data.ack) + ' ' + esc(data.question));
+        else bubble('coach', esc(data.question));
+        progress.textContent = (data.step + 1) + ' of ' + total;
+      }
+    } catch (err) {
+      bubble('coach', 'Something went wrong - try that again.');
+    } finally {
+      send.disabled = false; input.disabled = false; input.focus();
+    }
+  });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); }
+  });
+})();
+</script>
+{% endblock %}

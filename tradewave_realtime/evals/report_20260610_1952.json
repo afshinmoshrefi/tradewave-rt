@@ -1,0 +1,81 @@
+{
+  "ran_at": "2026-06-10T19:50:33.666761",
+  "suites": {
+    "method": [
+      {
+        "case": "institutional candle time",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question, and it's one of the foundational anchors of the whole method.\n\nFor **index futures** (ES, NQ, RTY), the institutional candle is the **3:30 PM ET** 30-minute candle. That's where size positions for the overnight, so the high and low of that candle become key reference levels for the n"
+      },
+      {
+        "case": "moc rule",
+        "ok": false,
+        "missing": [
+          "20\\s?%|1\\.2"
+        ],
+        "reply": "Great question, and this is one of those details that separates a level that really matters from one you treat with less conviction.\n\n## The Institutional Candle Volume Check\n\nThe institutional candle is the 3:30 PM ET close (10:00 AM for crude). It marks where size positions for the overnight, whic"
+      },
+      {
+        "case": "trailing stops",
+        "ok": true,
+        "missing": [],
+        "reply": "No, she does not. This is one of her firmest rules, and she states it plainly: \"I don't trail any stops. I go level A to level B and I'm done.\" She goes further than that, actually - she calls trailing stops \"terrible.\"\n\nHere is why the rule exists, and it is worth understanding the reasoning:\n\n**Th"
+      },
+      {
+        "case": "exits",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question, and honestly this is where most traders leak the most money, so let's get into it.\n\n## Level A to Level B - that's it\n\nAnne-Marie's exit doctrine is simple and she does not deviate from it: **you enter at a level (A) and you exit at the next structural level (B).** When price gets to"
+      },
+      {
+        "case": "entries",
+        "ok": true,
+        "missing": [],
+        "reply": "Limits only. Always.\n\nAnne-Marie will not touch a market order. Her reasoning is straightforward: a market order in a thin or fast book gets filled at whatever price the market gives you, and that price is rarely the one you planned. You lose your edge before the trade even begins.\n\nThe discipline s"
+      },
+      {
+        "case": "max trades",
+        "ok": true,
+        "missing": [],
+        "reply": "Her hard cap is around **five trades per day** - and she'll often say \"usually my max max is five.\"\n\nBut here's the spirit behind that number: it's not a target, it's a ceiling. Plenty of days she takes one or two. Some days she takes zero, and she'll tell you straight up that **a zero-trade day is "
+      },
+      {
+        "case": "europe candle",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question. The specific candle she marks from the European session is the **4:00 AM ET candle** - that is the Europe open.\n\nShe watches three things from it:\n\n- The **high**\n- The **low**\n- The **close**\n\nAll three become reference levels that price tends to react to during the RTH session. You"
+      },
+      {
+        "case": "sideways",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question, and it's one of the most important to get right, because sideways days are where most traders do the most damage to themselves.\n\nHere is how the method handles it.\n\n**First, the recognition.**\n\nWhen the candles are nested (each one fitting inside the prior one, not stepping higher or"
+      },
+      {
+        "case": "trend gate",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question, and this is the foundation of everything else, so let's make sure it's solid.\n\nThe trend gate lives on the **30-minute chart** and uses two moving averages:\n\n- The **200 SMA**\n- The **50 SMA**\n\nHere is how you read the gate:\n\n**Long-only permission:** Price is above the 50, the 50 is"
+      },
+      {
+        "case": "130 candle",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question. The 1:30 PM ET candle is one of those time anchors that shows up repeatedly as a turning point in the afternoon session.\n\nHere is what makes it worth watching:\n\n**It marks a known shift in afternoon character.** After the morning session works through its setups, the 1:30 candle ofte"
+      },
+      {
+        "case": "zero trade",
+        "ok": true,
+        "missing": [],
+        "reply": "Not even a little bit. A zero-trade day is a win.\n\nHere is why that is not just a comforting phrase - it is mathematically true:\n\n**Your edge only exists when the setup is real.**\nThe method works because you wait for trend alignment, a real structural level, and a proper entry trigger. When those t"
+      },
+      {
+        "case": "breakout",
+        "ok": true,
+        "missing": [],
+        "reply": "Short answer: no. That is almost the one thing she will not do.\n\n\"Wait for the fade, never buy the breakout\" is as close to a hard rule as she has on entries. Here is why she holds that line so firmly.\n\n**The problem with buying the breakout**\n\nWhen price is pushing through a level and looks excitin"
+      }
+    ]
+  }
+}

@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+{% block title %}Today{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div>
+    <div class="eyebrow">Today</div>
+    <h1 style="font-size:1.9rem">{{ maps[0].session_date if maps else "" }}{% if not maps %}The Daily Level Map{% endif %}</h1>
+    {% if time_note %}<div class="small muted" style="margin-top:4px">{{ time_note }}</div>{% endif %}
+  </div>
+  <a class="btn btn-primary" href="{{ url_for('chat.coach') }}">Ask your coach &rarr;</a>
+</div>
+
+<div class="today-grid">
+  <div class="today-main">
+    {% if show_onramp %}
+    <div class="insight-slot" style="border-color:rgba(94,224,160,.35);background:rgba(52,199,123,.06)">
+      <div class="who" style="color:#8ee9bb">New to this page?</div>
+      <div style="margin-top:4px" class="small">
+        This is the Daily Level Map - Anne-Marie's read of the market, computed fresh
+        every session. You don't need to understand it all today.
+        <a href="{{ url_for('chat.coach') }}?q=Walk me through the Today page like I'm brand new - what is a level, and what does the map tell me?">Ask your coach to walk you through it &rarr;</a>
+        {% if beginner %}or start with
+        <a href="{{ url_for('main.library') }}">your first lesson</a> - the map will make
+        more sense every day.{% endif %}
+      </div>
+    </div>
+    {% endif %}
+    {% if insight %}
+    <div class="insight-slot">
+      <div class="who">From Anne-Marie today
+        <span class="small muted" style="font-weight:400">&middot; {{ insight_time }}</span></div>
+      <div style="margin-top:4px">{{ insight.body | md }}</div>
+    </div>
+    {% endif %}
+    {% if maps and access == 'full' and not paid %}
+    <div class="insight-slot" style="border-color:rgba(124,93,250,.45);background:rgba(124,93,250,.07)">
+      <div class="who" style="color:#cdbdfd">This is today's full map - free</div>
+      <div class="small" style="margin-top:4px">The real numbers, computed her way this morning, the same map every member sees. Use Copy levels now. <b>Starting tomorrow</b>, the precise daily levels and the indicator are part of your membership - your daily read, the coach, and the method library are always free.</div>
+    </div>
+    {% endif %}
+    {% if not maps %}
+      <div class="card">
+        <h3>The map is warming up</h3>
+        <p class="muted">No level data has been loaded yet. Once the market data engine runs,
+        Anne-Marie's daily levels for ES and NQ appear here every session, automatically.</p>
+      </div>
+    {% endif %}
+
+    {% for m in maps %}
+    <section class="card today-card">
+      <div class="today-card-head">
+        <h2>{{ m.instrument }}</h2>
+        <span class="pill verdict-{{ m.verdict }}">
+          {% if m.verdict == 'up' %}Stepping up{% elif m.verdict == 'down' %}Stepping down
+          {% elif m.verdict == 'sideways' %}Sideways - trade the edges
+          {% else %}Map building{% endif %}
+        </span>
+        {% if m.status != 'ok' %}
+          <span class="pill pill-warn" title="Some candle windows are not captured yet">partial map</span>
+        {% endif %}
+      </div>
+
+      <div class="direction-read">
+        {% for s in m.sentences %}<p>{{ s }}</p>{% endfor %}
+      </div>
+
+      {% if m.levels %}
+      {% if access == 'full' %}
+      <div class="levels-head">
+        <h3>Levels - today + prior 2 sessions</h3>
+        <button class="btn btn-sm btn-ghost copy-levels" data-instrument="{{ m.instrument }}">Copy levels</button>
+      </div>
+      <table class="table levels-table" id="levels-{{ m.instrument }}">
+        <thead><tr><th>Price</th><th>Level</th><th>Session</th></tr></thead>
+        <tbody>
+        {% for lv in m.levels %}
+          <tr class="age-{{ lv.age|replace('-','m') }}">
+            <td class="lv-price">{{ "%.2f"|format(lv.price) }}{% if lv.approx %}<span class="approx" title="Captured live from the delayed feed (body price). Reconciles to the exact candle high/low tonight.">~</span>{% endif %}</td>
+            <td>{{ lv.label }}</td>
+            <td class="muted">{{ "today" if lv.age == "today" else lv.session_date }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      {# Free tier past day 1: the read is above, the precise numbers are members-only. #}
+      <div class="locked-levels" style="border:1px dashed rgba(255,255,255,.18);border-radius:10px;padding:14px;text-align:center;margin-top:6px">
+        <div style="font-weight:600">&#128274; Today's {{ m.levels|length }} levels are members-only</div>
+        <div class="small muted" style="margin:4px 0 8px">You can see today's read above. The precise level numbers, her indicator, and the trade debrief come with membership.</div>
+        <a class="btn btn-primary btn-sm" href="#subscribe">Unlock today's levels &rarr;</a>
+      </div>
+      {% endif %}
+      {% endif %}
+      <div class="small muted" style="margin-top:8px">
+        Published identically to every member. Educational reference - not trade signals or advice.
+      </div>
+    </section>
+    {% endfor %}
+
+    {% if not paid and billing_enabled %}
+    <div class="card" id="subscribe" style="border-color:rgba(255,193,7,.45);background:rgba(255,193,7,.05);margin-top:14px">
+      <h3>{% if access == 'full' %}Tomorrow's map: in your membership{% else %}Unlock today's full map{% endif %}</h3>
+      <p class="small" style="margin:8px 0">
+        {% if access == 'full' %}Today you saw the real daily level map. Starting tomorrow, the precise level numbers, the NinjaTrader indicator that draws them on your chart, and the trade debrief are part of your membership.{% else %}You can see today's read above. The precise levels, the indicator that draws them on your chart, and the trade debrief come with membership.{% endif %}
+        Your daily read, the coach, and the full method library are free forever.</p>
+      <p class="small muted" style="margin:8px 0">Founding rate: <b>$99/mo</b>, locked for life while you stay subscribed. It rises to $149 for new members after the founding window. <b>14-day money-back guarantee</b>, no questions asked.</p>
+      <form method="post" action="{{ url_for('billing.checkout') }}" style="display:inline">
+        <input type="hidden" name="plan" value="monthly">
+        <button class="btn btn-primary btn-lg" type="submit">Start membership - $99/mo</button>
+      </form>
+      <form method="post" action="{{ url_for('billing.checkout') }}" style="display:inline;margin-left:8px">
+        <input type="hidden" name="plan" value="annual">
+        <button class="btn btn-ghost btn-sm" type="submit">Annual - $990 (~2 months free)</button>
+      </form>
+      <div class="small muted" style="margin-top:10px">Founding members also get 3 months of TradeWave EOD included - our seasonal-pattern product, separate, no extra charge.</div>
+    </div>
+    {% endif %}
+  </div>
+
+  <aside class="today-rail">
+    {% if profile and profile.intake_done and step %}
+    <div class="card rail-card" style="border-color:rgba(167,139,250,.4)">
+      <div class="eyebrow">Your next step</div>
+      <a class="btn btn-primary btn-sm" href="{{ step.url }}" style="margin-top:6px">{{ step.label }} &rarr;</a>
+    </div>
+    {% endif %}
+    {% if profile and profile.intake_done %}
+    {% if checkin_phase == 'closed' %}
+    {# Weekend / holiday mode: markets closed, so review the week or study, not "plan today". #}
+    <div class="card rail-card checkin-card">
+      <h3>Markets are closed - make the day count</h3>
+      {% set existing = checkins.get('review') %}
+      {% if existing and existing.reply %}
+        <div class="small" style="margin-bottom:6px">You: {{ existing.text }}</div>
+        <div class="checkin-reply">{{ existing.reply | md }}</div>
+      {% else %}
+        <p class="small muted" style="margin-bottom:8px">A closed day is a gift: review the week, or study a lesson. The buffet is open again next session.</p>
+        <form id="checkinForm" data-kind="review">
+          <textarea id="checkinText" rows="2" placeholder="One line: what did you learn from your week, or what do you want to work on?"></textarea>
+          <button class="btn btn-sm btn-primary" type="submit">Reflect</button>
+        </form>
+        <div class="checkin-reply" id="checkinReply" style="display:none"></div>
+      {% endif %}
+    </div>
+    {% else %}
+    <div class="card rail-card checkin-card">
+      <h3>{% if checkin_phase == 'plan' %}What's your plan today?{% else %}How did it go today?{% endif %}</h3>
+      {% set existing = checkins.get(checkin_phase) %}
+      {% if existing and existing.reply %}
+        <div class="small" style="margin-bottom:6px">You: {{ existing.text }}</div>
+        <div class="checkin-reply">{{ existing.reply | md }}</div>
+      {% else %}
+        <form id="checkinForm" data-kind="{{ checkin_phase }}">
+          <textarea id="checkinText" rows="2" placeholder="{% if beginner %}{% if checkin_phase == 'plan' %}One line: what will you watch or practice today?{% else %}One line: what did you notice today?{% endif %}{% elif checkin_phase == 'plan' %}One line: what does the method say, and what will you do?{% else %}One line: what happened, and did you follow your rules?{% endif %}"></textarea>
+          <button class="btn btn-sm btn-primary" type="submit">Check in</button>
+        </form>
+        <div class="checkin-reply" id="checkinReply" style="display:none"></div>
+      {% endif %}
+    </div>
+    {% endif %}
+    {% if profile.assigned %}
+    <div class="card rail-card">
+      <h3>Your focus this week</h3>
+      {% for a in profile.assigned[:3] %}
+        <div class="rail-post">
+          <a href="{{ url_for('main.library_entry', entry_id=a.entry_id) }}">{{ a.title }}</a>
+        </div>
+      {% endfor %}
+      <a class="small muted" href="{{ url_for('mentor.profile_page') }}">What your coach knows about you &rarr;</a>
+    </div>
+    {% endif %}
+    {% endif %}
+    <div class="card rail-card">
+      <h3>Day rails</h3>
+      <ul class="rails">
+        <li>Limits only - never chase</li>
+        <li>Max 5 trades. Zero is a win</li>
+        <li>Level to level - no trailing
+        <li>Flat by 3:00 ET</li>
+        {% for m in maps %}{% if m.moc.state == 'gray' or m.moc.state == 'unvalidated' %}
+        <li class="rail-flag">{{ m.instrument }}: MOC {{ m.moc.state }} - reduced size day</li>
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
+    <div class="card rail-card">
+      <h3>Ask the coach <span class="ai-tag">AI coach</span></h3>
+      <a class="chip" href="{{ url_for('chat.coach') }}?q=Walk me through today's map">Walk me through today's map</a>
+      <a class="chip" href="{{ url_for('chat.coach') }}?q=Explain the stair-step read">Explain the stair-step read</a>
+      <a class="chip" href="{{ url_for('chat.coach') }}?q=What does MOC validation mean?">What is MOC validation?</a>
+    </div>
+    <div class="card rail-card">
+      <h3>Keep learning</h3>
+      <p class="small muted">{{ lib_count }} lessons on her method and psychology.</p>
+      <a class="btn btn-sm btn-ghost" href="{{ url_for('main.library') }}">Open the method &rarr;</a>
+    </div>
+    {% if next_live %}
+    <div class="card rail-card" style="border-color:rgba(167,139,250,.4)">
+      <h3>&#128249; Anne-Marie live</h3>
+      <div><b>{{ next_live.title }}</b></div>
+      <div class="small muted">{{ next_live.where }} &middot; {{ next_live.starts_at_et }}</div>
+      {% if next_live.note %}<div class="small" style="margin-top:4px">{{ next_live.note }}</div>{% endif %}
+    </div>
+    {% endif %}
+    {% if posts %}
+    <div class="card rail-card">
+      <h3>From Anne-Marie</h3>
+      {% for p in posts %}
+        <div class="rail-post">
+          <strong>{{ p.title }}</strong>
+          <div class="small muted">{{ p.created_at.strftime('%b %-d') }}</div>
+        </div>
+      {% endfor %}
+      <a class="small" href="{{ url_for('main.feed') }}">Open the feed &rarr;</a>
+    </div>
+    {% endif %}
+  </aside>
+</div>
+
+<div class="disclosure" style="margin-top:18px">
+  <span>&#129302;</span>
+  <div>Your coach is an {{ COACH_LABEL }} - not Anne-Marie herself, and not financial advice.
+  Levels are computed reference data published to all members alike.</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function () {
+  var form = document.getElementById('checkinForm');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var text = document.getElementById('checkinText').value.trim();
+    if (!text) return;
+    var btn = form.querySelector('button');
+    btn.disabled = true; btn.textContent = 'Thinking...';
+    fetch('{{ url_for("mentor.checkin") }}', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({kind: form.dataset.kind, text: text})
+    }).then(function (r) { return r.json(); }).then(function (data) {
+      form.style.display = 'none';
+      var out = document.getElementById('checkinReply');
+      out.textContent = data.reply || 'Logged.';
+      out.style.display = 'block';
+    }).catch(function () { btn.disabled = false; btn.textContent = 'Check in'; });
+  });
+})();
+document.querySelectorAll('.copy-levels').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var table = document.getElementById('levels-' + btn.dataset.instrument);
+    var lines = [];
+    table.querySelectorAll('tbody tr').forEach(function (tr) {
+      var cells = tr.querySelectorAll('td');
+      lines.push(cells[0].textContent.trim() + '  ' + cells[1].textContent.trim() +
+                 ' (' + cells[2].textContent.trim() + ')');
+    });
+    navigator.clipboard.writeText(btn.dataset.instrument + ' levels\n' + lines.join('\n'))
+      .then(function () {
+        btn.textContent = 'Copied';
+        setTimeout(function () { btn.textContent = 'Copy levels'; }, 1600);
+      });
+  });
+});
+</script>
+{% endblock %}

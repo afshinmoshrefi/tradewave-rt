@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}The Method{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div>
+    <div class="eyebrow">Learn</div>
+    <h1 style="font-size:1.9rem">The Method</h1>
+  </div>
+  {% if next_lesson %}
+  <a class="btn btn-primary" href="{{ url_for('main.library_entry', entry_id=next_lesson.id) }}">Continue &rarr;</a>
+  {% endif %}
+</div>
+
+<p class="muted" style="max-width:680px">Her process, in the order she'd teach it - read the day,
+find the levels, earn permission, manage the trade, master yourself. Work it in order, or ask
+the coach to walk you through any lesson.</p>
+
+<div class="method-progress">
+  <div class="bar"><span style="width:{{ (100 * total_done / total)|round(0, 'floor') if total else 0 }}%"></span></div>
+  <div class="small muted">{{ total_done }} of {{ total }} lessons done{% if next_lesson %} &middot; next: {{ next_lesson.title }}{% endif %}</div>
+</div>
+
+{% for s in stages %}
+<details class="stage card" {% if s.no == current_stage %}open{% endif %}>
+  <summary>
+    <span class="stage-n">Stage {{ s.no }}</span>
+    <span class="stage-title">{{ s.title }}</span>
+    <span class="stage-meta small muted">{{ s.done }}/{{ s.lessons|length }}</span>
+  </summary>
+  <p class="small muted stage-blurb">{{ s.blurb }}</p>
+  <ol class="stage-lessons">
+    {% for e in s.lessons %}
+    <li class="{{ 'done' if e.id in done_ids }}">
+      <a href="{{ url_for('main.library_entry', entry_id=e.id) }}">{{ e.title }}</a>
+      {% if e.id in done_ids %}<span class="tick">&#10003;</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  <a class="chip" href="{{ url_for('chat.coach') }}?q=Quiz me on stage {{ s.no }}, {{ s.title }}">Quiz me on this stage</a>
+</details>
+{% endfor %}
+
+<details class="stage card reference">
+  <summary>
+    <span class="stage-n">Reference</span>
+    <span class="stage-title">Glossary, vocabulary, and background</span>
+    <span class="stage-meta small muted">{{ reference|length }}</span>
+  </summary>
+  <ul class="stage-lessons" style="margin-top:10px">
+    {% for e in reference %}
+    <li><a href="{{ url_for('main.library_entry', entry_id=e.id) }}">{{ e.title }}</a></li>
+    {% endfor %}
+  </ul>
+</details>
+{% endblock %}

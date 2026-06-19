@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Your coach{% endblock %}
+{% block content %}
+<div class="chat">
+  <div class="chat-head">
+    <div class="coach-ava">AM</div>
+    <div>
+      <div class="who">{{ COACH_NAME }} <span class="ai-tag">🤖 {{ COACH_LABEL }}</span></div>
+      <div class="small muted">Educational coaching · not financial advice · won't give trade calls</div>
+    </div>
+  </div>
+
+  <div class="chat-log" id="log" data-thread="{{ thread.id if thread else '' }}">
+    {% if has_earlier %}
+      <div class="center" style="padding:6px 0">
+        <button class="btn btn-sm btn-ghost" id="loadEarlier"
+                data-before="{{ history[0].id if history }}">Load earlier messages</button>
+      </div>
+    {% endif %}
+    {% if history %}
+      {% for m in history %}
+        <div class="msg {{ 'user' if m.role=='user' else 'coach' }}">
+          {% if m.role != 'user' %}<div class="mini-ava">AM</div>{% endif %}
+          <div class="bubble">{{ m.content | md }}</div>
+          {% if m.role != 'user' %}
+          <div class="rate" data-mid="{{ m.id }}">
+            <button class="rate-btn up{{ ' on' if m.rating == 1 }}" data-v="1" title="Good answer">&#128077;</button>
+            <button class="rate-btn down{{ ' on' if m.rating == -1 }}" data-v="-1" title="Not how she would say it - flags for Anne-Marie's review">&#128078;</button>
+          </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% else %}
+      <div class="msg coach">
+        <div class="mini-ava">AM</div>
+        <div class="bubble">{{ greeting | md }}</div>
+      </div>
+      <div>
+        <span class="chip" data-q="How does the 30-minute trend gate work?">The trend gate</span>
+        <span class="chip" data-q="What is the institutional candle and why does it matter?">The institutional candle</span>
+        <span class="chip" data-q="How do I take a failed-retest entry?">Failed-retest entry</span>
+        <span class="chip" data-q="I keep chasing trades and revenge trading. Help.">Stop me chasing</span>
+        <span class="chip" data-q="How should I think about risk and position sizing?">Risk &amp; sizing</span>
+      </div>
+    {% endif %}
+  </div>
+
+  <form class="chat-form" id="chatForm">
+    <textarea id="input" placeholder="Ask about a setup, a rule, or your mindset…" rows="1" autofocus></textarea>
+    <button class="btn btn-primary" type="submit" id="send">Send</button>
+  </form>
+  <div class="small muted center" style="padding:6px 0">
+    {{ COACH_NAME }} is an AI trained on Anne-Marie's strategy - not Anne-Marie herself. Educational only.
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+{% endblock %}

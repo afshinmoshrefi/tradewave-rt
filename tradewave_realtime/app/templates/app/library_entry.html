@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}{{ entry.title }}{% endblock %}
+{% block content %}
+<div style="margin:22px 0 6px"><a class="small muted" href="{{ url_for('main.library') }}">&larr; The Method</a></div>
+<div class="card prose">
+  {% if entry.kind == 'lesson' and stage_meta %}
+    <span class="badge cat">Stage {{ entry.stage }} - {{ stage_meta[0] }}</span>
+  {% else %}
+    <span class="badge cat">Reference</span>
+  {% endif %}
+  <h1 style="font-size:1.7rem;margin:10px 0 14px">{{ entry.title }}</h1>
+  {% if prefer_plain %}
+    {# Beginner/developing: the plain-English layer leads; her full version is one click away. #}
+    <div class="small muted" style="margin-bottom:8px">In plain English (you can read her full version below).</div>
+    <div id="plainBody">{{ entry.plain | md }}</div>
+    <details style="margin-top:12px"><summary class="small muted">Read Anne-Marie's full version</summary>
+      <div style="margin-top:8px">{{ entry.content | md }}</div></details>
+  {% else %}
+    <div>{{ entry.content | md }}</div>
+    {% if has_plain %}
+    <details style="margin-top:12px"><summary class="small muted">Explain this like I'm brand new</summary>
+      <div style="margin-top:8px">{{ entry.plain | md }}</div></details>
+    {% endif %}
+  {% endif %}
+</div>
+
+<div class="lesson-actions">
+  <a class="btn btn-primary" href="{{ url_for('chat.coach') }}?q=Walk me through the lesson: {{ entry.title }}">Ask the coach about this &rarr;</a>
+  {% if entry.kind == 'lesson' %}
+  <form method="post" action="{{ url_for('main.library_entry_done', entry_id=entry.id) }}" style="display:inline">
+    <button class="btn btn-ghost" type="submit">{{ "Marked done &#10003;"|safe if done else "Mark done" }}</button>
+  </form>
+  {% endif %}
+</div>
+
+{% if entry.kind == 'lesson' %}
+<div class="lesson-nav">
+  <div>{% if prev_e %}<a href="{{ url_for('main.library_entry', entry_id=prev_e.id) }}">&larr; {{ prev_e.title }}</a>{% endif %}</div>
+  <div style="text-align:right">{% if next_e %}<a href="{{ url_for('main.library_entry', entry_id=next_e.id) }}">{{ next_e.title }} &rarr;</a>{% endif %}</div>
+</div>
+{% endif %}
+{% endblock %}

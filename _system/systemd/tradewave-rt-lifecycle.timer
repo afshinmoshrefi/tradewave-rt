@@ -1,0 +1,9 @@
+[Unit]
+Description=Lifecycle pass once daily at 16:30 ET (re-engagement + Sunday-evening weekend touch)
+
+[Timer]
+OnCalendar=*-*-* 16:30:00 America/New_York
+Persistent=true
+
+[Install]
+WantedBy=timers.target

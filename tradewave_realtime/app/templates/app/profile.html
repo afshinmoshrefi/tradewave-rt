@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}What your coach knows{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div>
+    <div class="eyebrow">Your trader profile</div>
+    <h1 style="font-size:1.9rem">What your coach knows about you</h1>
+  </div>
+</div>
+
+<p class="muted" style="max-width:640px">This is everything the coach uses to personalize
+your teaching. It's yours: edit anything, or delete it all. It never includes account
+sizes, balances, or positions - and it never will.</p>
+
+{% if saved %}<div class="flash">Saved. Your coach picks this up immediately.</div>{% endif %}
+
+{% if not profile.intake_done %}
+<div class="card" style="margin-top:14px">
+  <p>You haven't met your coach yet. The intake takes two minutes - it's how she'd start
+  with any new trader.</p>
+  <a class="btn btn-primary" href="{{ url_for('mentor.intake') }}">Start the conversation &rarr;</a>
+</div>
+{% else %}
+<form method="post" class="form profile-form" style="max-width:640px">
+  <div class="field"><label>Where you are in your trading</label>
+    <input name="experience" value="{{ profile.experience }}"></div>
+  <div class="field"><label>What you trade</label>
+    <input name="instruments" value="{{ profile.instruments }}"></div>
+  <div class="field"><label>Account context (personal / prop - never amounts)</label>
+    <input name="account_type" value="{{ profile.account_type }}"></div>
+  <div class="field"><label>Your goal</label>
+    <textarea name="goal" rows="2">{{ profile.goal }}</textarea></div>
+  <div class="field"><label>How it's been going</label>
+    <textarea name="recent" rows="2">{{ profile.recent }}</textarea></div>
+  <div class="field"><label>What trips you up</label>
+    <textarea name="struggles_raw" rows="2">{{ profile.struggles_raw }}</textarea></div>
+  <div class="field"><label>When you trade</label>
+    <input name="schedule" value="{{ profile.schedule }}"></div>
+  <button class="btn btn-primary" type="submit">Save</button>
+</form>
+
+{% if profile.coaching_summary %}
+<div class="card" style="margin-top:18px;max-width:640px">
+  <h3>Your coach's notes</h3>
+  <p class="small muted">A rolling summary your coach keeps so it can coach you better.
+  Deleting your profile deletes this too.</p>
+  <div class="review-q" style="margin-top:6px">{{ profile.coaching_summary }}</div>
+</div>
+{% endif %}
+
+{% if profile.assigned %}
+<div class="card" style="margin-top:18px;max-width:640px">
+  <h3>Your current focus (assigned by your coach)</h3>
+  <ul>
+  {% for a in profile.assigned %}
+    <li><a href="{{ url_for('main.library_entry', entry_id=a.entry_id) }}">{{ a.title }}</a>
+      <span class="small muted"> - {{ a.why }}</span></li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<div class="btn-row" style="margin-top:22px">
+  <form method="post" action="{{ url_for('mentor.chats_delete') }}" style="display:inline"
+        onsubmit="return confirm('Delete your entire conversation history with the coach? Its notes from those chats are erased too. Your profile answers stay.')">
+    <button class="btn btn-ghost" type="submit">Delete my conversation history</button>
+  </form>
+  <form method="post" action="{{ url_for('mentor.profile_delete') }}" style="display:inline"
+        onsubmit="return confirm('Delete your whole profile and check-in history? Your coach will start from zero.')">
+    <button class="btn btn-danger" type="submit">Delete my profile and check-ins</button>
+  </form>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,28 @@
+{
+  "ran_at": "2026-06-11T18:58:24.411449",
+  "suites": {
+    "today": [
+      {
+        "case": "What are today's ES levels on the map?",
+        "ok": true,
+        "hits": [
+          "7283",
+          "7326.5",
+          "7335.5",
+          "7337.25",
+          "7384.25"
+        ],
+        "invented": [],
+        "reply": "Here are today's ES levels from the map, organized so they're easy to read:\n\n**Today's session levels (ES, June 11 2026)**\n\n| Level | Price |\n|---|---|\n| 1:30 watch high (today) | 7384.25~ |\n| Europe open high (today) | 7337.25 |\n| US open high (today) | 7335.50 |\n| Europe open low (today) | 7326.50"
+      },
+      {
+        "case": "Walk me through today's NQ read in two s",
+        "ok": true,
+        "verdict_match": true,
+        "gate_match": true,
+        "invented": [],
+        "reply": "The candles are nested and not stepping, which is a sideways read - her rule is to trade the edges, not the middle, until a break resolves the range. The 30-minute SMA gate is not aligned (50 and 200 both falling but price not clearly below both in a clean stack), so her standing instruction is to s"
+      }
+    ]
+  }
+}

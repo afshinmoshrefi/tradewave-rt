@@ -1,0 +1,45 @@
+{
+  "ran_at": "2026-06-10T17:55:21.714218",
+  "suites": {
+    "today": [
+      {
+        "case": "What are today's ES levels on the map?",
+        "ok": true,
+        "hits": [
+          "7347.25",
+          "7350.75",
+          "7367.75",
+          "7374.25",
+          "7387.75",
+          "7390.5",
+          "7390.75",
+          "7395.5",
+          "7396.25",
+          "7410.5",
+          "7413",
+          "7416.75",
+          "7423.75",
+          "7424.25",
+          "7425.75",
+          "7428",
+          "7431",
+          "7445.5",
+          "7446.5",
+          "7454.5",
+          "7469.25",
+          "7491"
+        ],
+        "invented": [],
+        "reply": "Here are the ES structural levels from today's map, listed high to low:\n\n**Above current area (prior session reference levels):**\n- 7491.00 - US open high (-1d)\n- 7469.25 - US open high (-2d)\n- 7454.50 - US open low (-1d)\n- 7446.50 - 1:30 watch high (-2d)\n- 7445.50 - Europe open high (-1d)\n- 7431.00"
+      },
+      {
+        "case": "Walk me through today's NQ read in two s",
+        "ok": true,
+        "verdict_match": true,
+        "gate_match": true,
+        "invented": [],
+        "reply": "The 30-minute gate is aligned down on NQ (price below a falling 50 and falling 200), so the bias today is bounces are sell zones, not dips are buys. The candles are nested rather than stepping, which means we're in a sideways read - her rule is to trade the edges of the structure, not the middle, an"
+      }
+    ]
+  }
+}

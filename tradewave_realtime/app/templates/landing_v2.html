@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}A real expert who remembers how you trade the seasons{% endblock %}
+{% block content %}
+
+<div class="preview-banner">
+  <b>A preview of where TradeWave is headed.</b> The Anne-Marie coach is live today. The seasonal memory and cross-horizon coaching described here are the direction we are building toward.
+</div>
+
+{# ---------------- HERO ---------------- #}
+<section class="hero">
+  <div class="hero-inner">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="pill">Where TradeWave is going</span>
+      <h1>A real expert who remembers how you trade <span class="grad">the seasons</span>, and grows with you across <span class="grad">every horizon</span></h1>
+      <p class="sub">
+        A coach that is a real, named expert, <b>Anne-Marie Baiynd</b>, wired into TradeWave's own
+        seasonal engine. It learns how <i>you</i> trade, remembers it, and stays with you from your
+        first intraday trade to how you invest for the next decade. One coach. One memory. Your
+        whole journey.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="{{ url_for('auth.signup') }}">Start with the coach today</a>
+        <a class="btn btn-ghost" href="#different">See what makes it different</a>
+      </div>
+      <div class="cta-micro">The coach is live now and free. The seasonal memory and cross-horizon coaching are in development.</div>
+      <div class="disclosure-micro">An AI trained on her strategy, not Anne-Marie herself. Educational only, never buy or sell calls.</div>
+    </div>
+    <div class="hero-visual">
+      <img class="hero-portrait"
+           src="{{ url_for('static', filename='img/anne-marie-baiynd.png') }}"
+           alt="Anne-Marie Baiynd, futures trader and author of The Trading Book">
+    </div>
+  </div>
+  </div>
+</section>
+
+{# ---------------- THREE DIFFERENTIATORS ---------------- #}
+<section class="section" id="different">
+  <div class="center" style="margin-bottom:24px">
+    <div class="eyebrow">What you get</div>
+    <h2>Three things that come together only here</h2>
+    <p class="muted" style="max-width:600px;margin:8px auto 0">A real expert, a real edge, and a coach that stays with you for the long run.</p>
+  </div>
+  <div class="grid grid-3">
+    <div class="card feat">
+      <div class="ic">🎓</div>
+      <h3>A real expert, not a bot</h3>
+      <p>It is Anne-Marie Baiynd, a credentialed, respected trader and author. The coach speaks with her actual method and her trading psychology, in her voice.</p>
+    </div>
+    <div class="card feat">
+      <div class="ic">🌗</div>
+      <h3>It knows the seasons</h3>
+      <p>It is wired into TradeWave's proprietary seasonal pattern engine, and it remembers how <i>you</i> trade those seasons. Your edge, learned, not a generic tip.</p>
+    </div>
+    <div class="card feat">
+      <div class="ic">📈</div>
+      <h3>It grows across every horizon</h3>
+      <p>One coach, one memory, from intraday discipline to swing setups to long-term investing. It does not forget you when your trading matures.</p>
+    </div>
+  </div>
+</section>
+
+{# ---------------- THE SEASONAL-MEMORY FUSION (the moat) ---------------- #}
+<section class="section">
+  <div class="eyebrow">The part no one else can copy</div>
+  <h2>It remembers how you trade the seasons</h2>
+  <p class="muted lead">Most coaches know only your last trade, or know only the market. This one knows
+  both, and how they meet in you. It pairs your personal patterns with TradeWave's seasonal engine, so
+  it can tell you things only a coach that remembers you and reads the seasons could say: that you exit
+  your seasonal-tailwind trades three days too early every spring, or that you chase the same setup every
+  December. That is not advice anyone could give you. That is your own edge, learned and handed back.</p>
+</section>
+
+{# ---------------- ACROSS EVERY HORIZON (graduation) ---------------- #}
+<section class="section">
+  <div class="eyebrow">One coach for your whole journey</div>
+  <h2>It grows with you across every horizon</h2>
+  <p class="muted lead">You start where you are: intraday discipline with Anne-Marie, swing setups as you
+  build patience, long-term seasonal investing as your money grows. Most tools make you switch apps and
+  start over at every stage. Here you keep the same coach and the same memory. The coach that watched you
+  overtrade at the open is the same one that reminds you not to panic-sell your long-term holds in the
+  very same volatility. You never outgrow it. It grows with you.</p>
+</section>
+
+{# ---------------- THE ANNE-MARIE SOUL ---------------- #}
+<section class="section" id="anne-marie">
+  <div class="card who-card">
+    <div class="who-photo">
+      <img src="{{ url_for('static', filename='img/anne-marie-baiynd.png') }}" alt="Anne-Marie Baiynd">
+    </div>
+    <div class="who-body">
+      <div class="eyebrow">The part that makes it hers</div>
+      <h2>And it never stops learning from Anne-Marie</h2>
+      <p class="muted">Anne-Marie keeps teaching it, in her own words, so it keeps getting sharper and more
+      like her over time. Her decades of
+      hard-won discipline, reaching every trader who uses it, personally, around the clock. Her wisdom,
+      scaled, without her having to repeat herself a thousand times. The coach becomes more Anne-Marie
+      every week, and every trader feels it.</p>
+    </div>
+  </div>
+</section>
+
+{# ---------------- YOU OWN IT ---------------- #}
+<section class="section">
+  <div class="eyebrow">Honest by design</div>
+  <h2>You own what it remembers</h2>
+  <p class="muted lead">You can see everything the coach has learned about you, change it, or wipe it
+  whenever you want. It is educational coaching, not financial advice, and it will never tell you what to
+  trade, even when you ask. The coach learns how to coach you better. It does not trade for you, and your
+  trading stays yours.</p>
+</section>
+
+{# ---------------- FINAL CTA ---------------- #}
+<section class="section center">
+  <div class="card final-cta">
+    <h2>The one coach you can't outgrow</h2>
+    <p class="muted" style="max-width:580px;margin:10px auto 20px">A real expert, who reads the seasons,
+    who remembers how you trade them, and who grows with you from your first trade to your last. Most
+    tools you outgrow. This one only gets more valuable the longer you stay. You can start with the coach
+    today, for free, and grow into the rest as we build it.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('auth.signup') }}">Start with the coach today</a>
+    <div class="cta-micro">Free, no credit card. The seasonal memory and cross-horizon coaching described here are in development.</div>
+  </div>
+</section>
+{% endblock %}

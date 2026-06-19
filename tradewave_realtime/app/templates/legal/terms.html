@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Terms{% endblock %}
+{% block content %}
+<div class="card prose" style="margin:24px auto">
+  <h1>Terms of Service</h1>
+  <p class="muted">Last updated: June 2026 · A short, plain-language summary for early access.</p>
+
+  <h2>1. Who we are</h2>
+  <p>TradeWave Realtime is operated by Tara Data Research LLC (“we”, “us”). By creating an
+  account you agree to these terms.</p>
+
+  <h2>2. Educational service</h2>
+  <p>We provide trading education and an AI coaching tool. We do not provide financial,
+  investment, tax, or legal advice. See our <a href="{{ url_for('main.legal', page='disclaimer') }}">Disclaimer</a>.</p>
+
+  <h2>3. Your account</h2>
+  <p>You must be 18 or older. Keep your login secure. You're responsible for activity under
+  your account. During early access the service is provided free and “as is,” and features may
+  change.</p>
+
+  <h2>4. Acceptable use</h2>
+  <p>Don't misuse the service, attempt to extract or resell the coach's content at scale, or
+  use it to harm others. We may suspend accounts that abuse the platform.</p>
+
+  <h2>5. No guarantees</h2>
+  <p>Trading involves substantial risk of loss. We make no guarantee of results. The service is
+  provided without warranties to the fullest extent permitted by law, and our liability is
+  limited to the amount you paid us (currently $0 during free early access) or USD $100,
+  whichever is greater.</p>
+
+  <h2>6. Changes</h2>
+  <p>We may update these terms; continued use means you accept the updates.</p>
+</div>
+{% endblock %}

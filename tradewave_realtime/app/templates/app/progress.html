@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Your month{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div><div class="eyebrow">Your progress - process, not P&amp;L</div>
+  <h1 style="font-size:1.9rem">Your month with the coach</h1></div>
+</div>
+<p class="muted" style="max-width:640px">She measures process, not profit, so this does too. No dollars,
+no win rate - just the things that actually build a trader: showing up, learning, and trading your rules.</p>
+
+<div class="kpi" style="margin:18px 0">
+  <div class="k"><div class="n">{{ stats.active_days }}</div><div class="l">Days you showed up</div></div>
+  <div class="k"><div class="n">{{ stats.lessons_done }}/{{ stats.lessons_total }}</div><div class="l">Lessons completed</div></div>
+  {% if stats.learner_lead %}
+  <div class="k"><div class="n">{{ stats.lessons_viewed }}</div><div class="l">Lessons opened</div></div>
+  <div class="k"><div class="n">{{ stats.reviews }}</div><div class="l">Days you reflected</div></div>
+  {% else %}
+  <div class="k"><div class="n">{{ stats.trades }}</div><div class="l">Trades debriefed</div></div>
+  <div class="k"><div class="n">{{ stats.reviews }}</div><div class="l">Days you reviewed</div></div>
+  {% endif %}
+</div>
+
+{% if stats.trades %}
+<div class="card" style="max-width:640px">
+  <h3>How you traded your rules</h3>
+  <p class="small" style="margin-top:6px">Of {{ stats.trades }} trades you debriefed,
+  <b>{{ stats.at_level }}</b> were entered right at a map level, and <b>{{ stats.held_process }}</b>
+  held the full process (at a level, sized for the day). That second number is the one that compounds.</p>
+</div>
+{% else %}
+<div class="card" style="max-width:640px">
+  <p class="small muted">Debrief a trade and your process scorecard starts here. Even one a week shows you the pattern.</p>
+  <a class="btn btn-sm btn-primary" href="{{ url_for('trades.trades_page') }}" style="margin-top:8px">Log a trade &rarr;</a>
+</div>
+{% endif %}
+
+<div class="card" style="max-width:640px;margin-top:12px">
+  <p class="small muted">A zero-trade day is a win. Showing up and studying on a day you should not trade is
+  the discipline that separates the traders who last. Keep coming back - the buffet is open every day.</p>
+</div>
+{% endblock %}

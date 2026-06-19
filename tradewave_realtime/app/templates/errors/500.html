@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Something went wrong{% endblock %}
+{% block content %}
+<div class="center" style="padding:80px 0">
+  <h1 style="font-size:3rem" class="grad">500</h1>
+  <p class="muted" style="margin:10px 0 20px">Something hiccuped on our end. It's logged and we're on it - give it a moment and try again.</p>
+  <a class="btn btn-primary" href="{{ url_for('main.index') }}">Back home</a>
+</div>
+{% endblock %}

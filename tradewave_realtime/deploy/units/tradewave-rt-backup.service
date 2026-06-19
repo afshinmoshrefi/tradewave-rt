@@ -1,0 +1,6 @@
+[Unit]
+Description=TradeWave RT - daily SQLite backup
+
+[Service]
+Type=oneshot
+ExecStart=/home/flask/tradewave_realtime/.venv/bin/python /home/flask/tradewave_realtime/backup_db.py

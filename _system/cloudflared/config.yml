@@ -1,0 +1,21 @@
+# TradeWave Realtime - cloudflared tunnel (dev)
+# Routes the public hostname to the Flask/gunicorn app running on this box (:5001).
+#
+# Promote to production later by either:
+#   (a) adding another hostname block below (e.g. rt.trxstat.com) pointing at the
+#       production origin, then `cloudflared tunnel route dns rt-dev rt.trxstat.com`; or
+#   (b) creating a parallel `rt-prod` tunnel with its own config mirroring this file
+#       (matches your tw2-prod / tw2-stage split).
+tunnel: abf8a47a-97a3-4b8f-af48-1b444207e125
+credentials-file: /root/.cloudflared/abf8a47a-97a3-4b8f-af48-1b444207e125.json
+
+# Connect to multiple Cloudflare edge locations for resilience.
+ingress:
+  - hostname: rt-dev.trxstat.com
+    service: http://localhost:5001
+    originRequest:
+      # The app is plain HTTP on localhost; Cloudflare terminates TLS at the edge.
+      httpHostHeader: rt-dev.trxstat.com
+      connectTimeout: 30s
+  # Everything else gets a 404 rather than being proxied.
+  - service: http_status:404

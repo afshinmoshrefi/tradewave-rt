@@ -1,0 +1,79 @@
+{
+  "ran_at": "2026-06-10T19:53:44.907739",
+  "suites": {
+    "method": [
+      {
+        "case": "institutional candle time",
+        "ok": true,
+        "missing": [],
+        "reply": "The institutional candle forms at the **3:30 PM ET** close on index futures (ES, NQ, RTY).\n\nThe logic behind that specific time: it's where size - the institutions - are positioning for the overnight session. That's why Anne-Marie treats its high and low as primary reference levels the next day. Whe"
+      },
+      {
+        "case": "moc rule",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question - this is one of those details that separates a high-conviction setup from a \"maybe\" day.\n\n## The MOC Volume Validation\n\nThe institutional candle is the 3:30 PM ET close (10:00 AM for crude). But the candle alone is not enough. Anne-Marie validates it by comparing its volume to the 3:"
+      },
+      {
+        "case": "trailing stops",
+        "ok": true,
+        "missing": [],
+        "reply": "No, she does not. This is one of her firmest rules, and she states it plainly: \"I don't trail any stops. I go level A to level B and I'm done.\" She goes further than that - she calls trailing stops \"terrible.\"\n\nHere is why the rule exists, because the reasoning matters as much as the rule itself:\n\n*"
+      },
+      {
+        "case": "exits",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question, and this is where a lot of traders give back everything they worked hard to build. Let me walk you through it.\n\n## The core rule: level A to level B\n\nAnne-Marie does not trail stops. Full stop. She is blunt about it: trailing stops are terrible. They shake you out of good trades at t"
+      },
+      {
+        "case": "entries",
+        "ok": true,
+        "missing": [],
+        "reply": "Limits only. Always.\n\nAnne-Marie is very direct about this: she never uses market orders to enter a trade. In a thin or fast-moving book, a market order gets chewed up - you fill at a terrible price and your risk/reward is already broken before the trade even starts.\n\nThe whole method is built aroun"
+      },
+      {
+        "case": "max trades",
+        "ok": true,
+        "missing": [],
+        "reply": "Her hard cap is around **five trades per day** - and that's the maximum, not the target.\n\nMost days she takes fewer. Some days she takes zero, and she means it when she says a zero-trade day is a win. If nothing shows up that passes the trend gate AND arrives at a real level AND fits her entry patte"
+      },
+      {
+        "case": "europe candle",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question. The specific candle she marks from the European session is the **4:00 AM ET candle** - that is the Europe open.\n\nShe tracks three things from it:\n\n- The **high**\n- The **low**\n- The **close**\n\nAll three become reference levels that price tends to react to during the RTH session. You "
+      },
+      {
+        "case": "sideways",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question, and honestly one of the most important ones you can ask, because sideways days are where a lot of traders bleed out slowly by forcing trades that aren't there.\n\nHere is what the method says to do when the candles are nested and the market is in a box (which, by the way, is exactly wh"
+      },
+      {
+        "case": "trend gate",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question, and this is really the foundation of the whole method, so let's make sure it's solid.\n\nThe trend gate lives on the **30-minute chart** and uses two moving averages:\n\n- The **200 SMA**\n- The **50 SMA**\n\nHere is how she reads them:\n\n**Long-only permission:**\nPrice is above the 50, the "
+      },
+      {
+        "case": "130 candle",
+        "ok": true,
+        "missing": [],
+        "reply": "Great question. The 1:30 PM ET candle is one of those time anchors that shows up repeatedly as a turning point in the afternoon session. Here is why it matters in the method:\n\n**It marks a known afternoon shift window.** After the morning session plays out (the 9:30 open, the first-hour algo pushes,"
+      },
+      {
+        "case": "zero trade",
+        "ok": true,
+        "missing": [],
+        "reply": "Absolutely not. A zero-trade day is a win.\n\nI mean that literally, not as a consolation prize. Here is why.\n\n**The method only works when conditions are met.** You need the trend gate aligned, a real structural level, and a clean Pattern A or B setup. On some days, none of that lines up. The market "
+      },
+      {
+        "case": "breakout",
+        "ok": true,
+        "missing": [],
+        "reply": "No - and that's actually one of her most repeated rules.\n\n**She does not buy breakouts.** Full stop.\n\nHere's the thinking behind it. When price breaks out, it has already moved away from structure. The risk/reward has flipped against you: you're buying extended price, chasing the crowd that already "
+      }
+    ]
+  }
+}

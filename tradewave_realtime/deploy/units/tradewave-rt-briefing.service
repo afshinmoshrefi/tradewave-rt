@@ -1,0 +1,9 @@
+[Unit]
+Description=TradeWave RT - pull + digest Anne-Marie's morning video into the feed and coach context
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/flask/tradewave_realtime
+EnvironmentFile=/etc/tradewave_realtime/secrets.env
+ExecStart=/home/flask/tradewave_realtime/.venv/bin/python pull_briefing.py

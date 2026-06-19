@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Anne-Marie's feed{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div><div class="eyebrow">From Anne-Marie</div><h1 style="font-size:1.9rem">The feed</h1></div>
+</div>
+{% if posts %}
+  {% for p in posts %}
+    <div class="post">
+      <h2>{{ p.title }}</h2>
+      <div class="meta">{{ p.created_at.strftime('%B %-d, %Y') }}{% if p.author %} · {{ p.author.display_name }}{% endif %}</div>
+      <div class="body">{{ p.body | md }}</div>
+    </div>
+  {% endfor %}
+{% else %}
+  <div class="card center muted">No posts yet - check back soon.</div>
+{% endif %}
+{% endblock %}

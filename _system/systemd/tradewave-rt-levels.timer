@@ -1,0 +1,9 @@
+[Unit]
+Description=Levels sync every 15 minutes (captures land within ~15 min of each candle boundary)
+
+[Timer]
+OnCalendar=*-*-* *:05,20,35,50:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

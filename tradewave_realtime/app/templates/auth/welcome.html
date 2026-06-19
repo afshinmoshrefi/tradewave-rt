@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Before you start{% endblock %}
+{% block content %}
+<div class="auth-wrap">
+  <h1>One quick thing before you start</h1>
+  <div class="card">
+    <div class="disclosure" style="margin-bottom:16px">
+      <span>🤖</span>
+      <div>
+        <span class="b">Your coach is an AI - not Anne-Marie herself.</span><br>
+        “{{ COACH_NAME }}” is an {{ COACH_LABEL }}. It speaks in her voice and teaches her
+        method, but it's software. Anne-Marie helps shape what it knows; she does not read or
+        answer your messages personally here.
+      </div>
+    </div>
+    <p class="muted" style="margin-bottom:14px">
+      It's a <b>coach for education and discipline</b> - it will not tell you what to buy or
+      sell, give you live entries or targets, or predict the market. Everything here is for
+      learning only and is <b>not financial advice</b>. Trading futures carries substantial
+      risk of loss.
+    </p>
+    <form method="post" action="{{ url_for('auth.welcome') }}">
+      <input type="hidden" name="next" value="{{ next }}">
+      <label class="check" style="margin-bottom:16px">
+        <input type="checkbox" name="acknowledge" value="1" required>
+        <span>I understand the coach is an AI trained on Anne-Marie's strategy (not Anne-Marie
+        herself), and that it's educational only - not financial advice.</span>
+      </label>
+      <button class="btn btn-primary" type="submit" style="width:100%">Got it - take me in</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

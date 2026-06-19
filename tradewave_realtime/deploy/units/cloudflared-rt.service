@@ -1,0 +1,15 @@
+[Unit]
+Description=cloudflared tunnel rt-dev (TradeWave Realtime -> rt-dev.trxstat.com)
+After=network.target tradewave-rt.service
+Wants=tradewave-rt.service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/cloudflared --no-autoupdate --config /root/.cloudflared/config.yml tunnel run rt-dev
+Restart=always
+RestartSec=5
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target

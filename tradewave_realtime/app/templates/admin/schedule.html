@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Schedule{% endblock %}
+{% block content %}
+<div class="app-head">
+  <div>
+    <div class="eyebrow">When you'll be live</div>
+    <h1 style="font-size:1.9rem">Your schedule</h1>
+  </div>
+</div>
+<p class="muted" style="max-width:640px">Anything you add here shows on every member's
+Today page, and the coach can mention it when members ask to see you. Remove it any
+time - nothing here is a commitment to anyone but yourself.</p>
+
+<form method="post" class="card" style="max-width:640px;margin-top:14px">
+  <div class="grid grid-2">
+    <div class="field"><label>What</label>
+      <input type="text" name="title" placeholder="Live drop-in: this week's quiz results" required></div>
+    <div class="field"><label>Where</label>
+      <input type="text" name="where" value="Discord"></div>
+  </div>
+  <div class="grid grid-2">
+    <div class="field"><label>Date</label><input type="date" name="date" required></div>
+    <div class="field"><label>Time (ET)</label><input type="time" name="time" required></div>
+  </div>
+  <div class="field"><label>Note (optional)</label>
+    <input type="text" name="note" placeholder="Bring your day-type questions"></div>
+  <button class="btn btn-primary" type="submit">Add to the schedule</button>
+</form>
+
+<h3 style="margin-top:22px">Upcoming</h3>
+{% if not upcoming %}<p class="muted">Nothing scheduled - and that's fine. Members are
+never promised appearances; scheduled ones are a bonus.</p>{% endif %}
+{% for a in upcoming %}
+<div class="card" style="max-width:640px;margin-top:10px">
+  <b>{{ a.title }}</b> &middot; {{ a.where }}
+  <div class="small muted">{{ a.starts_at_et }}
+    {% if a.note %} &middot; {{ a.note }}{% endif %}</div>
+  <form method="post" action="{{ url_for('admin.schedule_delete', appearance_id=a.id) }}" style="margin-top:8px">
+    <button class="btn btn-sm btn-ghost" type="submit">Remove</button>
+  </form>
+</div>
+{% endfor %}
+{% endblock %}
