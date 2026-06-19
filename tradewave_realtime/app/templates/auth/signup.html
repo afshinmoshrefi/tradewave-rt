@@ -7,9 +7,9 @@
   {% if WORKOS_ENABLED %}
   <div class="card">
     <a class="btn btn-primary" style="width:100%;display:block;text-align:center"
-       href="{{ url_for('auth.workos_start', next=next) }}">Continue with your TradeWave account</a>
-    <p class="small muted center" style="margin-top:10px">One login for TradeWave Realtime and
-    TradeWave EOD - creates your account if you don't have one.</p>
+       href="{{ url_for('auth.workos_start', next=next, screen_hint='sign-up') }}">Create your free account</a>
+    <p class="small muted center" style="margin-top:10px">Free, no credit card. Your TradeWave
+    login works across Realtime and EOD.</p>
   </div>
   <details class="auth-alt" style="margin-top:10px">
   <summary class="small muted">Use a local account (dev)</summary>

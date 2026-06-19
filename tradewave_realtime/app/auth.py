@@ -37,13 +37,18 @@ def workos_start():
     state = pysecrets.token_urlsafe(24)
     session["workos_state"] = state
     session["workos_next"] = _safe_next()
-    params = urllib.parse.urlencode({
+    qs = {
         "client_id": current_app.config["WORKOS_CLIENT_ID"],
         "redirect_uri": url_for("auth.workos_callback", _external=True),
         "response_type": "code",
         "provider": "authkit",
         "state": state,
-    })
+    }
+    # Open AuthKit on the right screen: signup page asks for sign-up, login for sign-in.
+    hint = request.args.get("screen_hint")
+    if hint in ("sign-up", "sign-in"):
+        qs["screen_hint"] = hint
+    params = urllib.parse.urlencode(qs)
     return redirect(f"https://api.workos.com/user_management/authorize?{params}")
 
 

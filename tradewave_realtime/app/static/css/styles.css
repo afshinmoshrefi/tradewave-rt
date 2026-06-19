@@ -24,10 +24,12 @@ a:hover{text-decoration:underline}
 .nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);
   background:rgba(15,10,21,.82);border-bottom:1px solid var(--border)}
 .nav-in{display:flex;align-items:center;gap:18px;height:62px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;font-size:1.05rem;color:var(--text)}
+.brand{display:flex;align-items:baseline;gap:10px;font-weight:800;letter-spacing:-.02em;font-size:30px;color:var(--text)}
 .brand:hover{text-decoration:none}
-.brand .dot{width:11px;height:11px;border-radius:50%;background:var(--grad);box-shadow:0 0 12px var(--accent)}
-.brand .rt{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand .dot{width:11px;height:11px;border-radius:50%;background:var(--grad);box-shadow:0 0 12px var(--accent);align-self:center}
+.brand .wordmark{color:#eaf0f8;font-weight:800;letter-spacing:-.02em}
+.brand .wordmark b{color:#7c5cff;font-weight:800}
+.brand .rt{color:#b9a7ff;font-weight:600;font-size:.6em;letter-spacing:.03em}
 .nav-links{display:flex;gap:6px;margin-left:auto;align-items:center;flex-wrap:wrap}
 .nav-links a{color:var(--muted);padding:7px 12px;border-radius:9px;font-size:.92rem}
 .nav-links a:hover{color:var(--text);background:var(--card);text-decoration:none}

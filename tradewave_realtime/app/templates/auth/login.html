@@ -7,9 +7,9 @@
   {% if WORKOS_ENABLED %}
   <div class="card">
     <a class="btn btn-primary" style="width:100%;display:block;text-align:center"
-       href="{{ url_for('auth.workos_start', next=next) }}">Sign in with your TradeWave account</a>
-    <p class="small muted center" style="margin-top:10px">One login for TradeWave Realtime and
-    TradeWave EOD. New here? The same button creates your account.</p>
+       href="{{ url_for('auth.workos_start', next=next, screen_hint='sign-in') }}">Sign in</a>
+    <p class="small muted center" style="margin-top:10px">Your TradeWave login works across
+    Realtime and EOD.</p>
   </div>
   <details class="auth-alt" style="margin-top:10px">
     <summary class="small muted">Use a local account (dev)</summary>
@@ -26,6 +26,7 @@
       <button class="btn btn-primary" type="submit" style="width:100%">Sign in</button>
     </form>
   </details>
+  <div class="auth-alt">New to TradeWave? <a href="{{ url_for('auth.signup', next=next) }}">Create a free account</a></div>
   {% else %}
   <form method="post" action="{{ url_for('auth.login') }}" class="card">
     <input type="hidden" name="next" value="{{ next }}">
