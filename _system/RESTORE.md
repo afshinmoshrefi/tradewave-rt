@@ -1,8 +1,7 @@
-# TradeWave Realtime - Disaster Recovery Runbook
+# TradeWave Realtime - Deploy / Rebuild Runbook
 
-Rebuild the tradewave-rt box (LAN `192.168.1.177`, public `https://rt-dev.trxstat.com`)
-to its exact running state from this repo. Everything runs as **root**. The app tree
-lives at **`/home/flask`**.
+Stand up the tradewave-rt box (LAN `192.168.1.177`, public `https://rt-dev.trxstat.com`)
+from this repo. Everything runs as **root**. The app tree lives at **`/home/flask`**.
 
 > This is a PRIVATE repo, but SECRETS ARE NOT IN IT. The repo holds all code, config,
 > systemd units, the DB snapshot, and this runbook. The secrets (`secrets.env`), the
@@ -65,15 +64,25 @@ chmod 0644 /root/.cloudflared/config.yml
 chown -R root:root /root/.cloudflared
 ```
 
-## 6. Restore the database
-```bash
-install -d -o root -g root /home/flask/tradewave_realtime/data
-cp /home/flask/_system/data/tradewave_rt.db /home/flask/tradewave_realtime/data/tradewave_rt.db
-sqlite3 /home/flask/tradewave_realtime/data/tradewave_rt.db 'PRAGMA integrity_check;'   # expect: ok
-```
-This committed snapshot is **authoritative** (13 users, 54 knowledge_entries at capture).
-Do NOT `flask seed` - the live `knowledge_entries` has drifted from `knowledge_seed/`.
-Older nightly snapshots (history) are in `_system/data/backups/` if you need point-in-time.
+## 6. Database
+The DB is NOT in git (runtime data + PII). The schema auto-creates on first app boot
+(`db.create_all()`); you then populate it one of two ways:
+
+- **Fresh install / dev** - rebuild content from versioned source:
+  ```bash
+  cd /home/flask/tradewave_realtime
+  .venv/bin/flask seed
+  ```
+  Loads the 54 `knowledge_entries` from `knowledge_seed/*.md` (verified byte-identical to
+  the production knowledge), plus the admin/partner accounts and the welcome post. Idempotent.
+
+- **Recover real production data** (live users, subscriptions, posts, day_maps) - restore the
+  most recent off-box snapshot instead of seeding:
+  ```bash
+  cp <snapshot>.db /home/flask/tradewave_realtime/data/tradewave_rt.db
+  ```
+  Snapshots live in the nightly `backups/` dir on the box and in the
+  `tradewave-rt-FULL-backup-*.tar.gz` tarball. Verify: `sqlite3 ... 'PRAGMA integrity_check;'` -> ok.
 
 ## 7. Rebuild the Python virtualenv (the 317M .venv is git-ignored)
 ```bash

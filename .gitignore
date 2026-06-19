@@ -27,9 +27,11 @@ __pycache__/
 *.db-shm
 *.db-journal
 
-# --- Live/working copies: the committed authoritative DB lives under _system/data ---
+# --- Runtime data (NOT version-controlled): knowledge is rebuilt via `flask seed` from
+#     knowledge_seed/*.md; real users/subscriptions/posts live in off-box backups. ---
 tradewave_realtime/data/*.db
 /backups/
+_system/data/
 
 # --- OS / editor junk ---
 .DS_Store
