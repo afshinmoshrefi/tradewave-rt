@@ -11,8 +11,11 @@
     <p class="small muted center" style="margin-top:10px">Free, no credit card. Your TradeWave
     login works across Realtime and EOD.</p>
   </div>
+  {% endif %}
+  {% if ALLOW_DEV_LOGIN or not WORKOS_ENABLED %}
+  {% if WORKOS_ENABLED %}
   <details class="auth-alt" style="margin-top:10px">
-  <summary class="small muted">Use a local account (dev)</summary>
+  <summary class="small muted">Use a local account</summary>
   {% endif %}
   <form method="post" action="{{ url_for('auth.signup') }}" class="card">
     <input type="hidden" name="next" value="{{ next }}">
@@ -31,6 +34,7 @@
     <button class="btn btn-primary" type="submit" style="width:100%">Create account</button>
   </form>
   {% if WORKOS_ENABLED %}</details>{% endif %}
+  {% endif %}
   <div class="auth-alt">Already have an account? <a href="{{ url_for('auth.login', next=next) }}">Sign in</a></div>
 </div>
 {% endblock %}

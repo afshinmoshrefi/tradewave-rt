@@ -74,6 +74,12 @@ class Config:
     WORKOS_API_KEY = os.environ.get("WORKOS_API_KEY", "").strip()
     WORKOS_AUTHKIT_DOMAIN = os.environ.get("WORKOS_AUTHKIT_DOMAIN", "").strip().rstrip("/")
 
+    # DEV-only affordances that must NEVER be exposed on the public production site:
+    # the local email/password login fallback and the /v2 roadmap-preview page. Off by
+    # default (production shows SSO only and /v2 404s); set ALLOW_DEV_LOGIN=1 in dev's
+    # secrets.env to keep them for local testing.
+    ALLOW_DEV_LOGIN = os.environ.get("ALLOW_DEV_LOGIN", "0") == "1"
+
     # Stripe - RT keeps its own products (product_line=rt) so revenue stays cleanly
     # separable for the monthly Anne-Marie statement.
     STRIPE_PUBLISHABLE_KEY = os.environ.get("STRIPE_PUBLISHABLE_KEY", "").strip()

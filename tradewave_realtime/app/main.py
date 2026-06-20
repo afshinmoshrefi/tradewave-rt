@@ -1,5 +1,5 @@
 """Public landing, member area pages, and legal."""
-from flask import Blueprint, abort, redirect, render_template, request, url_for
+from flask import Blueprint, abort, current_app, redirect, render_template, request, url_for
 
 from .models import KnowledgeEntry, Post
 from .rag import index as kb_index
@@ -17,7 +17,10 @@ def index():
 
 @bp.route("/v2")
 def v2():
-    """Public preview of the V2 direction (the coach that learns you). Unlisted; share via URL."""
+    """V2 roadmap-direction preview. DEV ONLY - its copy is an older draft and is NOT
+    public-launch compliant, so it 404s in production (gated on ALLOW_DEV_LOGIN)."""
+    if not current_app.config.get("ALLOW_DEV_LOGIN"):
+        abort(404)
     return render_template("landing_v2.html")
 
 

@@ -165,6 +165,7 @@ def _register_template_helpers(app):
             "RISK_DISCLAIMER": persona.RISK_DISCLAIMER,
             "LLM_ENABLED": bool(cfg.get("ANTHROPIC_TOKEN")),
             "WORKOS_ENABLED": bool(cfg.get("WORKOS_CLIENT_ID") and cfg.get("WORKOS_API_KEY")),
+            "ALLOW_DEV_LOGIN": bool(cfg.get("ALLOW_DEV_LOGIN")),
             "BILLING_ENABLED": bool(cfg.get("STRIPE_SECRET_KEY")),
             "current_user": user,
         }

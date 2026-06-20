@@ -11,8 +11,9 @@
     <p class="small muted center" style="margin-top:10px">Your TradeWave login works across
     Realtime and EOD.</p>
   </div>
+  {% if ALLOW_DEV_LOGIN %}
   <details class="auth-alt" style="margin-top:10px">
-    <summary class="small muted">Use a local account (dev)</summary>
+    <summary class="small muted">Use a local account</summary>
     <form method="post" action="{{ url_for('auth.login') }}" class="card" style="margin-top:8px">
       <input type="hidden" name="next" value="{{ next }}">
       <div class="field">
@@ -26,6 +27,7 @@
       <button class="btn btn-primary" type="submit" style="width:100%">Sign in</button>
     </form>
   </details>
+  {% endif %}
   <div class="auth-alt">New to TradeWave? <a href="{{ url_for('auth.signup', next=next) }}">Create a free account</a></div>
   {% else %}
   <form method="post" action="{{ url_for('auth.login') }}" class="card">
