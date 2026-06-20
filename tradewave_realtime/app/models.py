@@ -372,6 +372,41 @@ class Trade(db.Model):
 
     SIZE_BUCKETS = ["smallest", "small", "normal", "large", "unknown"]
 
+    # The words members and the contract vocabulary actually use, mapped onto the 4 canonical
+    # money-blind buckets - so a reported "micro"/"mini"/"full" (or MES/MNQ) is preserved, not
+    # silently lost as "unknown" (which would put a wrong fact into the member's history).
+    SIZE_ALIASES = {
+        "micro": "smallest", "micros": "smallest", "mes": "smallest", "mnq": "smallest",
+        "m2k": "smallest", "mym": "smallest", "tiny": "smallest", "min": "smallest",
+        "one": "smallest", "single": "smallest",
+        "half": "small", "reduced": "small", "lighter": "small", "light": "small",
+        "mini": "normal", "minis": "normal", "standard": "normal", "regular": "normal",
+        "usual": "normal", "es": "normal", "nq": "normal",
+        "full": "large", "fullsize": "large", "big": "large", "max": "large",
+        "oversized": "large", "double": "large", "doubled": "large", "heavy": "large",
+    }
+
+    @staticmethod
+    def normalize_size(raw):
+        """Resolve a reported size into a canonical bucket. Returns 'unknown' ONLY when nothing
+        in the text maps - so 'micro'/'mini'/'full' and instrument shorthand are never dropped."""
+        s = (raw or "").strip().lower()
+        if not s:
+            return "unknown"
+        if s in Trade.SIZE_BUCKETS:
+            return s
+        if s in Trade.SIZE_ALIASES:
+            return Trade.SIZE_ALIASES[s]
+        compact = s.replace("-", "").replace(" ", "")
+        if compact in Trade.SIZE_ALIASES:
+            return Trade.SIZE_ALIASES[compact]
+        for w in s.replace("-", " ").split():
+            if w in Trade.SIZE_BUCKETS:
+                return w
+            if w in Trade.SIZE_ALIASES:
+                return Trade.SIZE_ALIASES[w]
+        return "unknown"
+
     @property
     def grade(self):
         import json

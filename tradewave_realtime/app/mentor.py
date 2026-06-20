@@ -40,8 +40,10 @@ INTAKE_STEPS = [
      "too big, overtrading, hesitating on good setups, revenge trading after a "
      "loss - what's your pattern?"),
     ("schedule",
-     "Last one. When do you trade? Every morning at the open, afternoons, or just "
-     "a few days a week?"),
+     "Last one, and it matters more than it sounds. When do you actually trade, and "
+     "what does your day look like around it? Every morning at the open, afternoons, "
+     "a few days a week - and do you have a day job or a night shift I should work "
+     "around? I want my timing to fit your real life, not the other way around."),
 ]
 
 INTAKE_ACKS = ["Got it.", "Okay, good to know.", "Thank you for being straight with me.",
@@ -253,16 +255,40 @@ def _years_mentioned(low):
     return max(nums) if nums else 0
 
 
+_PRO_HINTS = ("full time", "full-time", "professional", "prop", "funded", "combine",
+              "allocated", "own capital", "for a living", "trade for a living",
+              "decade", "veteran", "seasoned")
+
+
 def experience_tier(profile):
-    """beginner | developing | experienced - from the intake experience answer.
-    Drives both coach posture AND which lessons are assigned. Biased so a knowledge
-    signal (multi-year count, strong phrase) is respected, but newness-framing
-    demotes; result/struggle words never demote a knowledgeable trader's tier."""
+    """beginner | developing | experienced - from the intake experience answer (and the
+    instruments/account answer, which carries prop/funded). Drives both coach posture AND
+    which lessons are assigned. Biased so a knowledge signal (multi-year count, professional
+    history) is respected, but newness-framing demotes; result/struggle words never demote a
+    knowledgeable trader's tier. A clear veteran (many years, or years + a professional/prop
+    signal) is PINNED to experienced and can never be talked down to as developing, even if
+    their answer also carries humble or struggle language - struggle is orthogonal to
+    experience, and condescending to an 11-year pro loses them in 30 seconds."""
+    # Prop/funded shows up in the instruments answer, not just the experience answer; pull
+    # both so a "11 years, 4 of them prop" trader floors at experienced from either field.
     low = (profile.experience or "").lower()
+    acct = ((profile.instruments or "") + " " + (profile.account_type or "")).lower()
+    both = low + " " + acct
     if any(h in low for h in BEGINNER_HINTS):
         return "beginner"
     yrs = _years_mentioned(low)
     newish = any(h in low for h in NEWNESS_HINTS)
+    pro = any(h in both for h in _PRO_HINTS)
+    # HIGH-confidence veteran that PINS to experienced even past newness/struggle language: a
+    # professional / prop / own-capital / decade signal. Struggle words ('my edge is fine, I
+    # give back gains') and humility never demote a real pro - condescending to an 11-year/prop
+    # trader loses them in 30 seconds. A professional/prop signal also OVERRIDES a 'new to
+    # futures' framing (a funded multi-year trader is not a developing member).
+    if (pro and (yrs >= 2 or "years" in both)) or (yrs >= 3 and pro) or yrs >= 10:
+        return "experienced"
+    # Strong-but-not-pro experience (multi-year, or a clear veteran phrase): experienced UNLESS
+    # they explicitly frame themselves as new (e.g. '5 years in stocks but new to futures' still
+    # wants the futures floor - that newness is real, not false modesty about results).
     strong = yrs >= 3 or any(h in low for h in EXPERIENCED_HINTS)
     if strong and not newish:
         return "experienced"
@@ -439,12 +465,27 @@ def maybe_update_summary(user):
         if ci_text:
             transcript = (ci_text + "\n" + transcript) if transcript else ci_text
         prompt = (
-            "You maintain a trading coach's private notes on one member. Merge the "
-            "existing notes with the new conversation into UPDATED NOTES: under 120 "
-            "words, plain prose, focused on what helps coach them better (recurring "
-            "mistakes, progress, emotional patterns, lessons covered, commitments "
-            "made). Never record account sizes, balances, or specific positions. "
-            "No em dashes.\n\n"
+            "You maintain a tough, candid trading coach's private notes on ONE member - "
+            "the kind of notes a friend who is invested in them keeps so they can pick up "
+            "exactly where they left off, bring the right thing back at the right moment, "
+            "and not re-teach what is already landed. Merge the EXISTING NOTES with the NEW "
+            "CONVERSATION into UPDATED NOTES. Keep it under 130 words, plain prose, and "
+            "capture, in priority order:\n"
+            "1. HABITS / recurring trading mistakes and leaks (chasing, oversizing after a "
+            "win, revenge after a loss, hesitating) - and whether each is improving or still "
+            "live.\n"
+            "2. PERSONALITY / how they talk and take coaching (anxious and self-doubting, "
+            "cocky and hype-allergic, impulsive, curt, needs reassurance vs needs a kick) - "
+            "so the next session matches their wavelength.\n"
+            "3. REAL PROGRESS worth celebrating, with the concrete evidence.\n"
+            "4. COMMITMENTS they made and the NEXT GATE/RULE you agreed to build next.\n"
+            "5. PERSONAL CONTEXT that should be handled with care (e.g. works nights, trades "
+            "before a shift, a prop/funded reality, a rough stretch).\n"
+            "Then end with ONE LINE starting exactly 'NEXT TIME:' that names the single most "
+            "important dated callback hook to open the next session with - the specific thing "
+            "to check against them (e.g. 'NEXT TIME: ask if the grab-it-now urge showed up, "
+            "and whether the two-loss stop held'). Never record account sizes, balances, "
+            "dollar amounts, or specific live positions. No em dashes.\n\n"
             f"EXISTING NOTES: {profile.coaching_summary or '(none yet)'}\n\n"
             f"NEW CONVERSATION:\n{transcript}\n\nUPDATED NOTES:")
         client = anthropic.Anthropic(api_key=api_key)

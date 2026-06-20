@@ -199,9 +199,7 @@ def log_trade():
     inst = (f.get("instrument") or "ES").strip().upper()[:8]
     side = (f.get("side") or "").strip().lower()
     side = side if side in ("long", "short") else "long"
-    size = (f.get("size_bucket") or "unknown").strip().lower()
-    if size not in Trade.SIZE_BUCKETS:
-        size = "unknown"
+    size = Trade.normalize_size(f.get("size_bucket"))
     try:
         sd = datetime.strptime(f.get("session_date") or "", "%Y-%m-%d").date()
     except ValueError:
@@ -219,15 +217,21 @@ def log_trade():
 
 
 def recent_trades_context(user, limit=5):
-    """Compact, money-blind trade history for the coach's member_context, so it can
-    say 'this is the second time you forced an entry on a stand-down day'."""
+    """Compact, money-blind trade history for the coach's member_context - the RECEIPTS the
+    coach quotes back so it reads as watching, not just listening. Ordered OLDEST-first within
+    the latest session and numbered, so the coach can say 'the size jumped on trade two, not
+    trade four' and get the sequence right (newest-first list misleads 'first/then' narration).
+    """
     rows = (Trade.query.filter_by(user_id=user.id)
             .order_by(Trade.session_date.desc(), Trade.id.desc()).limit(limit).all())
     if not rows:
         return ""
-    lines = ["- Recent logged trades (money-blind; grade vs that day's map - teach the "
-             "process, never dollars, never tell them their next trade):"]
-    for t in rows:
+    rows = list(reversed(rows))  # chronological: trade 1, trade 2, ... as the member lived it
+    lines = ["- RECENT LOGGED TRADES (money-blind receipts; numbered in the order they were "
+             "taken). QUOTE these actual entries/sizes/levels back to the member before relying "
+             "on their memory - they are the objective signal. Grade vs that day's map; teach "
+             "the process, never dollars, never tell them their next trade:"]
+    for i, t in enumerate(rows, 1):
         g = t.grade
         bits = []
         if g.get("at_level") is not None:
@@ -236,8 +240,12 @@ def recent_trades_context(user, limit=5):
             bits.append("with trend" if g["with_trend"] else "against trend")
         if g.get("size_flag"):
             bits.append("oversized for an unclear day")
+        if g.get("no_map"):
+            bits.append("no map that day to grade against - say so out loud, grade only "
+                        "what they describe")
         tag = ", ".join(bits) or "process unclear"
         ep = f"{t.entry_price:.2f}" if t.entry_price else "?"
-        lines.append(f"  {t.session_date} {t.instrument} {t.side} (entry ~{ep}, "
+        xp = f" -> exit ~{t.exit_price:.2f}" if t.exit_price else ""
+        lines.append(f"  trade {i}: {t.session_date} {t.instrument} {t.side} (entry ~{ep}{xp}, "
                      f"size {t.size_bucket}): {tag}")
     return "\n".join(lines)

@@ -121,7 +121,7 @@ _DIRECTIONAL_PATTERNS = [
                r"'m gonna| plan to| intend to| am about to) (?:" + _PLAIN_VERB + r"|" +
                _STRONG_VERB + r"|be a (?:buyer|seller))\b"),
     re.compile(r"(?i)\bi(?:'d|'m| am| would| will)? ?lean(?:ing)? (?:long|short)\b"),
-    re.compile(r"(?i)\btake (?:the|a) (?:long|short|trade) (?:here|now|today|right now|at \d)"),
+    re.compile(r"(?i)\btake (?:the|a) (?:long|short|trade) (?:here|now|today|right now|at \d{2,})"),
     re.compile(r"(?i)\bthe (?:play|setup|trade|call|move) (?:here |today )?"
                r"(?:is|:) (?:a |to )?(?:long|short|buy|sell|go long|go short)\b"),
     re.compile(r"(?i)\bmy (?:trade|position|call|bias|play|view|plan) (?:is|would be|for today|:)"),
@@ -132,17 +132,35 @@ _DIRECTIONAL_PATTERNS = [
     re.compile(r"(?i)\b" + _PLAIN_VERB + r" (?:it|this|here|now|today|right here|right now)\b"),
     re.compile(r"(?i)\b" + _PLAIN_VERB + r" (?:some|a few) " + _SCREEN_INSTR + r"\b"),
     re.compile(r"(?i)\b" + _PLAIN_VERB + r" (?:the )?" + _SCREEN_INSTR +
-               r" (?:now|here|today|right now|right here|at \d|into)\b"),
+               r"(?: (?:now|here|today|right now|right here|into)\b| at \d{2,})"),
     # add-to-position is a sizing/entry instruction
     re.compile(r"(?i)\badd(?:ing)? (?:to |into )(?:your |the )?position\b|\badd (?:here|now)\b"),
-    # zero-verb structural call: "ES long here", "NQ short at 5300"
-    re.compile(r"(?i)\b" + _SCREEN_INSTR + r" (?:long|short) (?:here|now|today|at \d)"),
-    # explicit price plan / stop / target
-    re.compile(r"(?i)\b(?:buy|sell|short|long|enter|entry) (?:at )?\d{3,}\b"),
-    re.compile(r"(?i)\b(?:stop|target)(?: is| at| of)? \d{3,}\b"),
     # named-action idioms
     re.compile(r"(?i)\b(?:back up the truck|hit the bid|lift the offer)\b"),
 ]
+
+# Structural price patterns that ALSO legitimately appear when the coach quotes the member's
+# OWN past, completed trade back to them in a debrief ("your long at 5305 was the revenge
+# trade", "trade 2: large long at 5305"). These are kept separate so a debrief-context guard
+# can exempt them WITHOUT loosening any forward-directed call pattern above. A current/forward
+# call still needs an imperative/urgency that the patterns above catch.
+_DIRECTIONAL_STRUCTURAL = [
+    # zero-verb structural call: "ES long here", "NQ short at 5300"
+    re.compile(r"(?i)\b" + _SCREEN_INSTR + r" (?:long|short)(?: (?:here|now|today)\b| at \d{2,})"),
+    # explicit price plan / stop / target
+    re.compile(r"(?i)\b(?:buy|sell|short|long|enter|entry) (?:at )?\d{3,}\b"),
+    re.compile(r"(?i)\b(?:stop|target)(?: is| at| of)? \d{3,}\b"),
+]
+
+# Cues that a clause is NARRATING a member's already-completed/owned trade (the debrief), not
+# issuing a fresh call. When present, the structural price patterns are debrief receipts, so
+# they are exempted (the forward-directed patterns stay fully active either way).
+_PAST_TRADE_NARRATION = re.compile(
+    r"(?i)(\byour\b|\byou (?:went|took|got|were|had|entered|exited|sold|bought|shorted|"
+    r"longed|sized)\b|\bthat (?:was|trade)\b|\bthe (?:first|second|third|fourth|last|next) "
+    r"(?:trade|long|short|entry|loss|one)\b|\btrade \d\b|\bearlier\b|\bstopped (?:out|for)\b|"
+    r"\bentry was\b|\bexit was\b|\bwas a (?:normal|large|small|big)\b|\bgave (?:it|that) back\b|"
+    r"\b(?:revenge|chase) (?:trade|long|short)\b|\bafter (?:the|that|your) (?:loss|stop)\b)")
 
 # Income/earnings projection. Money-specific verbs (net/pull/clear/earn...) trip on any
 # number; the ambiguous verb "make" requires a money marker so her "make 5 trades a day"
@@ -227,6 +245,11 @@ def screen_reply(text):
             continue
         if any(p.search(c) for p in _DIRECTIONAL_PATTERNS):
             return False, "individualized buy/sell/entry call"
+        # Structural price patterns: a fresh call UNLESS the clause is clearly narrating the
+        # member's own past/completed trade in a debrief ("your long at 5305", "trade 2: ...").
+        if not _PAST_TRADE_NARRATION.search(c) and any(p.search(c)
+                                                       for p in _DIRECTIONAL_STRUCTURAL):
+            return False, "individualized buy/sell/entry call"
     return True, ""
 
 
@@ -274,12 +297,29 @@ def method_corpus():
     return text
 
 
+# A related-lesson chip is only shown if it is actually relevant to the turn. A wrong chip
+# (a sizing lesson on a pure-psychology turn) costs more trust than a missing one - it reveals
+# keyword-matching, not conversation-tracking. Two cuts: an absolute floor, and a relative
+# drop-off from the top hit so we never keep a chip far weaker than the best match.
+_CITE_MIN_SCORE = 0.05
+_CITE_REL_DROP = 0.55
+
+
 def _citations(chunks):
-    """One citation per entry, in retrieval order - an entry can match on
-    several chunks and members shouldn't see duplicate source chips."""
+    """One relevant citation per entry, best-first. Dedupes entries (an entry can match on
+    several chunks) and suppresses weakly-related chips so the related-lesson chips reinforce
+    'it knows where I am' rather than undercut it with an off-topic staple-on."""
+    if not chunks:
+        return []
+    top = max((c.get("score", 0.0) for c in chunks), default=0.0)
+    floor = max(_CITE_MIN_SCORE, top * _CITE_REL_DROP) if top else _CITE_MIN_SCORE
     seen, out = set(), []
     for c in chunks:
         if c["entry_id"] in seen:
+            continue
+        # Keep the strongest match even if everything scored low, so a valid on-topic answer
+        # is not left with zero chips; drop the rest below the relevance floor.
+        if c.get("score", 0.0) < floor and out:
             continue
         seen.add(c["entry_id"])
         out.append({"title": c["title"], "category": c["category"],
@@ -442,6 +482,54 @@ def _day_type_phrase(ds):
     return "a mixed day that needs careful reading before any commitment"
 
 
+def _day_type_phrase_beginner(ds):
+    """The same read for a true beginner: plain English FIRST, her term named only after
+    the meaning, glossed inline. Never leads with 'stand-down' or 'trend gate' undefined."""
+    v, g = ds.get("verdict", ""), ds.get("gate", "")
+    if g == "stand_down" or v in ("sideways", "pending"):
+        return ("there is no clear direction up or down right now, which is the kind of day "
+                "she sits out (she calls it a stand-down day)")
+    if v.startswith("up"):
+        return ("the market is drifting higher in steps, so she waits for small dips back "
+                "before she is interested (an upward day)")
+    if v.startswith("down"):
+        return ("the market is drifting lower in steps, so she waits for small bounces up "
+                "before she is interested (a downward day)")
+    return "the direction is not clean yet, so it is a day to read carefully before doing anything"
+
+
+def _has_fresh_read(ds, closed):
+    """True only when a REAL computed map exists FOR TODAY and the market is open today.
+    This is the gate for asserting a same-day read as fact: a stale prior-session map or a
+    closed day must NEVER be presented as 'today reads as...'. Empty ds -> no map at all."""
+    if not ds or closed:
+        return False
+    from .marketdata import ET
+    return ds.get("session_date") == datetime.now(ET).date().isoformat()
+
+
+_NIGHT_HINTS = ("night", "nights", "overnight", "graveyard", "third shift", "3rd shift",
+                "swing shift", "late shift", "wake up at 4", "wake at 4", "wake up at 5",
+                "wake at 5", "sleep during the day", "work nights", "afternoon", "evening",
+                "after work", "after my shift", "p.m.", "pm shift")
+
+
+def _closing_promise(profile):
+    """The schedule-aware forward-promise - the most emotionally load-bearing line, so it must
+    never contradict the member's stated life. 'before your coffee' is gated behind a clear
+    morning signal; a night-shift / afternoon member gets 'before your shift / before you sit
+    down'. When the schedule is unknown, stay neutral (no time-of-day claim at all)."""
+    sched = (getattr(profile, "schedule", "") or "").lower()
+    if any(h in sched for h in _NIGHT_HINTS):
+        return ("Tomorrow this is computed and waiting before you sit down to trade, whenever "
+                "that is for you")
+    if "morning" in sched or "open" in sched or "9:30" in sched or "premarket" in sched or \
+            "pre-market" in sched or "early" in sched:
+        return "Tomorrow this is computed and waiting before your coffee"
+    # Unknown schedule: keep the promise, drop the time-of-day claim so it can't contradict.
+    return "Tomorrow this is computed and waiting for you before the bell"
+
+
 def _matched_rule(ds, struggle_keys):
     """The single most relevant real rule for THIS day type x THIS struggle (the engine
     picks the fusion; the model only voices it)."""
@@ -466,32 +554,132 @@ _FR_IMPERATIVE = re.compile(
 _FR_ATTRIB = re.compile(
     r"(?i)her (method|rule|read|framework|bias)|by her method|she (would|teaches|says|waits)")
 
+# Method terms a true beginner cannot be assumed to know. Each must be glossed in plain
+# English within a short window BEFORE/AROUND first use, or the read is rejected for a beginner.
+_FR_JARGON = [
+    "stand-down day", "stand down day", "trend gate", "30-minute trend gate",
+    "30 minute trend gate", "in-charge candle", "in charge candle", "institutional candle",
+    "stair-step", "stair step", "failed retest", "stepping candle", "master candle",
+]
+# Plain-English gloss cues; if one appears in the run-up to the jargon (same sentence,
+# before it, plus a short parenthetical lookahead), the term is considered defined. These
+# are intentionally meaning words, NOT the generic closer "that is what this is".
+_FR_GLOSS = re.compile(
+    r"(?i)(means|meaning|which is|i\.e\.|in other words|no clear direction|no direction|"
+    r"sits out|sit out|stands? aside|drifting (?:up|higher|down|lower)|when (?:price|the "
+    r"average)|the (?:direction )?filter|moving average|she (?:calls|sits|waits|skips)|"
+    r"plain english|simply put|the kind of day|too choppy|\bchop\b|no edge|averages? (?:are|is) "
+    r"flat|going (?:nowhere|sideways)|nothing clean|wait(?:s|ing)? (?:on the sidelines|it out)|"
+    r"steps? (?:up|down|higher|lower)|bounce|dip|institution|the big (?:players|money)|look(?:s|"
+    r"ed)? (?:above|below) and fail|tells? you (?:the )?direction|reads? the (?:trend|direction))")
 
-def first_read_ok(text):
-    """Deterministic compliance lint - runs BEFORE the read is shown. No price number,
-    no individualized trade imperative, must carry an impersonal her-method attribution,
-    no em dash."""
-    if _FR_NUMBER.search(text):
+
+def _jargon_glossed(text):
+    """For a beginner read: every method term used must have a plain-English gloss in the
+    run-up to it - the same sentence and before the term, plus a short parenthetical
+    lookahead (so 'no clear direction, she calls it a stand-down day' passes but a bare
+    'today is a stand-down day' does not). Returns the first unglossed term or None.
+    The forward window is deliberately tiny so the standard 'That's what this is' closer
+    after the term can never be mistaken for a definition."""
+    low = text.lower()
+    for term in _FR_JARGON:
+        idx = low.find(term)
+        if idx == -1:
+            continue
+        sent_start = max(low.rfind(".", 0, idx), low.rfind("!", 0, idx),
+                         low.rfind("?", 0, idx), low.rfind(":", 0, idx)) + 1
+        # From the start of the sentence up to just past the term (15 chars: room for an
+        # immediately-following parenthetical gloss only, never the trailing closer).
+        window = text[max(sent_start, idx - 140): idx + len(term) + 15]
+        if not _FR_GLOSS.search(window):
+            return term
+    return None
+
+
+def _verbatim_echo(text, profile, min_run=7):
+    """True if the read copies a long run (>= min_run words) straight from the member's raw
+    intake - the 'reads my own words back to me, mid-sentence' fortune-cookie failure. The
+    mirror must be the coach's OWN paraphrase, not a paste of their struggle string."""
+    src = ((getattr(profile, "struggles_raw", "") or "") + " "
+           + (getattr(profile, "goal", "") or "")).lower()
+    src_words = re.findall(r"[a-z']+", src)
+    if len(src_words) < min_run:
+        return False
+    out_words = re.findall(r"[a-z']+", text.lower())
+    src_runs = {" ".join(src_words[i:i + min_run])
+                for i in range(len(src_words) - min_run + 1)}
+    for i in range(len(out_words) - min_run + 1):
+        if " ".join(out_words[i:i + min_run]) in src_runs:
+            return True
+    return False
+
+
+def first_read_ok(text, tier="experienced", profile=None):
+    """Deterministic compliance + quality lint - runs BEFORE the read is shown. No price
+    number, no individualized trade imperative, must carry an impersonal her-method
+    attribution, no em dash, must end on terminal punctuation (never a truncated fragment),
+    must not paste the member's raw words back, and for a beginner must gloss every method
+    term in plain English before naming it."""
+    t = (text or "").strip()
+    if _FR_NUMBER.search(t):
         return False, "contains a price number"
-    if _FR_IMPERATIVE.search(text):
+    if _FR_IMPERATIVE.search(t):
         return False, "individualized trade imperative"
-    if chr(0x2014) in text:
+    if chr(0x2014) in t:
         return False, "em dash"
-    if not _FR_ATTRIB.search(text):
+    if not _FR_ATTRIB.search(t):
         return False, "missing impersonal her-method attribution"
+    if not t or t[-1] not in ".!?\"')":
+        return False, "truncated / no terminal punctuation"
+    if profile is not None and _verbatim_echo(t, profile):
+        return False, "echoes the member's raw words verbatim"
+    if tier == "beginner":
+        bad = _jargon_glossed(t)
+        if bad:
+            return False, f"unglossed beginner jargon: {bad!r}"
     return True, ""
 
 
-def _first_read_fallback(profile, ds, rule):
-    """Always-compliant deterministic first read (no key / closed day / lint failure)."""
-    mirror = (f"You told me {profile.struggles_raw[:120]}."
-              if getattr(profile, "struggles_raw", "") else
-              "You told me where you are and what you want to change.")
+def _safe_mirror(profile):
+    """The coach's OWN one-line paraphrase of what the member wants to fix - NEVER a raw
+    slice of their intake (that truncates mid-word and reads like a glitch). Built from the
+    deterministic struggle keys, falling back to a clean generic line."""
+    labels = {
+        "chasing": "you chase entries instead of letting price come to you",
+        "overtrading": "you take too many trades and cannot sit on your hands",
+        "sizing": "you size up and give back gains",
+        "hesitation": "you freeze on the good setups",
+        "revenge": "a loss tilts you into trying to win it right back",
+        "discipline": "the rules slip when it matters",
+        "overwhelm": "it can all feel like too much at once",
+    }
+    keys = [k for k in (getattr(profile, "struggles_keys", "") or "").split(",") if k]
+    phrases = [labels[k] for k in keys if k in labels][:2]
+    if phrases:
+        return "You told me " + " and ".join(phrases) + "."
+    return "You told me where you are and what you want to change."
+
+
+def _first_read_fallback(profile, ds, rule, has_fresh=False, tier="experienced"):
+    """Always-compliant deterministic first read (no key / closed day / lint failure).
+    Asserts a same-day read ONLY when a fresh computed map exists; otherwise teaches the
+    matching principle generically without claiming today is that day. Schedule-aware close;
+    a concrete memory contract; ends on a hook, not just a promise."""
+    mirror = _safe_mirror(profile)
+    if has_fresh:
+        phrase = _day_type_phrase_beginner(ds) if tier == "beginner" else _day_type_phrase(ds)
+        today = (f"Here is what today reads as by her method: {phrase}. "
+                 f"Her rule for a day like this: {rule}. ")
+    else:
+        # No fresh map -> never assert today's read. Teach the principle as a principle.
+        today = (f"I don't have today's map computed in front of me yet, so I won't call "
+                 f"today's read - but here is the kind of rule of hers we will work from: "
+                 f"{rule}. ")
+    promise = _closing_promise(profile)
     return _no_emdash(
-        f"{mirror} Here is what today reads as by her method: {_day_type_phrase(ds)}. "
-        f"Her rule for a day like this: {rule}. Tomorrow morning I will have this computed "
-        f"and waiting before your coffee, and I will be right here when the screen is open "
-        f"and the urge hits. That is what this is.")
+        f"{mirror} {today}{promise}, and I'll be right here when the screen is open and the "
+        f"urge hits. I'll remember what trips you up and check it against you as we go. "
+        f"That's what this is.")
 
 
 def first_read(profile):
@@ -504,38 +692,71 @@ def first_read(profile):
     from .mentor import experience_tier
     ds = day_state((getattr(profile, "instruments", "") or "").split(",")[0].strip()[:8])
     closed = session_state().get("closed_today")
+    has_fresh = _has_fresh_read(ds, closed)
     struggles = [k for k in (getattr(profile, "struggles_keys", "") or "").split(",") if k]
     rule = _matched_rule(ds, struggles)
-    api_key = current_app.config.get("ANTHROPIC_TOKEN")
-    # No live read available (no map, or market closed) -> safe generic-but-labeled fallback.
-    if not ds or closed or not api_key:
-        return _first_read_fallback(profile, ds, rule)
     tier = experience_tier(profile)
+    api_key = current_app.config.get("ANTHROPIC_TOKEN")
+    if not api_key:
+        return _first_read_fallback(profile, ds, rule, has_fresh=has_fresh, tier=tier)
     altitude = {
-        "beginner": "Explain each idea in plain English before naming it; tie it to a concept to "
-                    "learn, not a trade. Never assume they have or should have real money at risk.",
+        "beginner": "Explain each idea in PLAIN ENGLISH and let the meaning land BEFORE you name "
+                    "her term, then gloss the term in the same sentence (write 'there is no clear "
+                    "direction, the kind of day she sits out, she calls it a stand-down day' - "
+                    "NEVER lead with 'stand-down day' or 'trend gate' undefined). Tie it to a "
+                    "concept to learn, not a trade. Never assume they have or should have real "
+                    "money at risk. Shorter is kinder here.",
         "developing": "Use her vocabulary with a one-line gloss. Assume chart literacy, not her system.",
         "experienced": "Meet them as a peer - shortest, most precise version, her real vocabulary, "
-                       "no scaffolding.",
+                       "no scaffolding. Lead with the differentiated insight, not a textbook "
+                       "moving-average description a skeptic will call generic.",
     }[tier]
+    promise = _closing_promise(profile)
+    # The same-day-read beat is ONLY allowed when a fresh computed map exists for today.
+    if has_fresh:
+        today_instruction = (
+            "(2) say what TODAY reads as by her method, naming the day type (use the day type "
+            "and rule given below, exactly - do not invent any other condition); (3) cite her "
+            "one real rule for that;")
+        today_facts = (f"Today by her method: day type = "
+                       f"{_day_type_phrase_beginner(ds) if tier == 'beginner' else _day_type_phrase(ds)}; "
+                       f"verdict = {ds.get('verdict')}; gate = {ds.get('gate')}; "
+                       f"in-charge = {ds.get('in_charge')}.\n"
+                       f"The rule to cite for this combination: \"{rule}\".")
+    else:
+        today_instruction = (
+            "(2) say HONESTLY that today's map is not computed in front of you yet, so you will "
+            "not call today's read (do NOT state any same-day condition like 'stand-down' or "
+            "'the gate is flat' - you were not given one); (3) instead cite the kind of rule of "
+            "hers you will work from for a pattern like theirs;")
+        today_facts = ("Today by her method: NO fresh map is available for today (do not assert "
+                       "any same-day market condition).\n"
+                       f"The rule of hers to teach generically (not as today's call): \"{rule}\".")
+    hook = ("end with exactly: That's what this is." if tier != "experienced" else
+            "end on ONE pointed question that invites a reply (e.g. when the urge hits, what is "
+            "the first thing you reach for?) so this starts a conversation, not a monologue.")
     system = (persona.SYSTEM_PROMPT
-              + "\n\nThis is the new member's FIRST moment, right after intake. Write ONE short "
-                "paragraph (60 to 85 words) in Anne-Marie's voice that makes them feel you heard "
-                "exactly what they want and are handing them precisely that, proven on today. "
-                "STRUCTURE, in this order: (1) mirror back what THEY said they want to fix, in their "
-                "own words; (2) say what today reads as by her method, naming the day type; (3) cite "
-                "her one real rule for that; (4) one forward-promise sentence: tomorrow this is "
-                "computed and waiting before their coffee, and you are right here when the hard "
-                "moment hits; (5) close with exactly: That's what this is. "
+              + "\n\nThis is the new member's FIRST moment, right after intake, and it must show "
+                "obvious value instantly. Write ONE short paragraph (60 to 85 words) in "
+                "Anne-Marie's voice that makes them feel you heard exactly what they want and are "
+                "handing them precisely that. STRUCTURE, in this order: (1) mirror back what THEY "
+                "said they want to fix, IN YOUR OWN WORDS - paraphrase it, NEVER paste their "
+                "sentence back at them (reading their own words back reads like a broken template); "
+                + today_instruction +
+                " (4) one forward-promise sentence using EXACTLY this phrasing for the timing so it "
+                "fits their real schedule: \"" + promise + "\", plus that you are right here when "
+                "the hard moment hits; (5) a concrete memory contract - that you will remember the "
+                "specific thing that trips them up and bring it back / check it against them next "
+                "time; (6) " + hook + " "
                 + altitude
                 + " HARD: no price numbers, no 'you should' trade calls, no size or income, no "
-                  "urgency/sales language, no em dashes. Always frame as 'her method reads' or 'her "
-                  "rule', never as your own call.")
+                  "urgency/sales language, no em dashes, and never copy a run of their own words. "
+                  "Always frame as 'her method reads' or 'her rule', never as your own call.")
     content = (f"What they said they want to change: {getattr(profile, 'goal', '')[:160]}\n"
-               f"What trips them up (their words): {getattr(profile, 'struggles_raw', '')[:200]}\n"
-               f"Today by her method: day type = {_day_type_phrase(ds)}; verdict = {ds.get('verdict')}; "
-               f"gate = {ds.get('gate')}; in-charge = {ds.get('in_charge')}.\n"
-               f"The rule to cite for this combination: \"{rule}\".")
+               f"What trips them up (their words, for YOUR understanding - paraphrase, do not "
+               f"quote): {getattr(profile, 'struggles_raw', '')[:200]}\n"
+               f"Their schedule/life: {getattr(profile, 'schedule', '')[:160] or '(not stated)'}\n"
+               f"{today_facts}")
     try:
         import anthropic
         client = anthropic.Anthropic(api_key=api_key)
@@ -545,14 +766,14 @@ def first_read(profile):
             messages=[{"role": "user", "content": content}])
         text = _no_emdash("".join(b.text for b in resp.content
                                   if getattr(b, "type", "") == "text").strip())
-        ok, why = first_read_ok(text)
+        ok, why = first_read_ok(text, tier=tier, profile=profile)
         if not ok:
             current_app.logger.warning("first_read lint rejected (%s); using fallback", why)
-            return _first_read_fallback(profile, ds, rule)
+            return _first_read_fallback(profile, ds, rule, has_fresh=has_fresh, tier=tier)
         return text
     except Exception as exc:  # pragma: no cover
         current_app.logger.warning("first_read LLM failed: %s", exc)
-        return _first_read_fallback(profile, ds, rule)
+        return _first_read_fallback(profile, ds, rule, has_fresh=has_fresh, tier=tier)
 
 
 def checkin_reply(user, kind, text):
