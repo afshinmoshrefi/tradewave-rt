@@ -68,7 +68,7 @@ h3{font-size:1.12rem;letter-spacing:-.01em}
 .hero h1{margin:16px auto;max-width:780px}
 .hero .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero .sub{font-size:1.16rem;color:var(--muted);max-width:620px;margin:0 auto 26px}
-.hero .cta-row{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+.hero .cta-row{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;margin:18px 0 0}
 .partner-line{display:inline-flex;align-items:center;gap:9px;margin-top:6px;color:var(--muted);font-size:.95rem}
 .partner-line b{color:var(--text)}
 
@@ -185,7 +185,7 @@ code{background:var(--card2);border:1px solid var(--border2);border-radius:5px;p
 
 /* ===== Landing v2 ===== */
 .btn-lg{padding:14px 26px;font-size:1.02rem}
-.cta-micro{margin-top:10px;color:var(--muted);font-size:.88rem}
+.cta-micro{margin-top:18px;color:var(--muted);font-size:.88rem}
 .disclosure-micro{margin-top:10px;color:var(--faint);font-size:.78rem;max-width:520px;line-height:1.5}
 .lead{font-size:1.08rem;max-width:680px}
 .coach-ava.sm{width:36px;height:36px;font-size:.9rem}
